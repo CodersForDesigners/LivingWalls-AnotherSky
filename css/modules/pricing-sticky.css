@@ -1,0 +1,57 @@
+
+.sticky-selector {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(20,20,20,0.85);
+	z-index: 1;
+}
+
+.sticky-selector .section-row {
+	font-size: 0;
+	width: 100%;
+	height: auto;
+	padding: 10px; 
+}
+
+.sticky-selector .button,
+.sticky-selector .input-field {
+	font-size: 14px;
+	display: inline-block;
+	line-height: 1.75;
+	padding: 0 10px;
+	margin: 0 2px
+}
+
+.sticky-type .button {
+	text-align: center;
+	min-width: 70px;
+}
+
+.sticky-budget select {
+	min-width: 85px;
+}
+
+.sticky-budget .label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 2;
+	font-weight: 300;
+	padding: 0 3px;
+}
+
+.sticky-find .find {
+	text-align: center;
+	min-width: 90px;
+	margin-left: 10px;
+}
+
+.sticky-find .help {
+	font-weight: 700;
+}
+
+@media(max-width: 640px) {
+	.sticky-selector { display: none; }
+}

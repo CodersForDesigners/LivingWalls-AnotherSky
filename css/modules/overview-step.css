@@ -1,0 +1,377 @@
+/* -- Step Styles -- */
+
+
+/* - 1 - */
+
+
+.step-1-highlight {
+	color: #ffffff;
+	background-color: #D6170D;
+}
+
+.step-1-base {
+	color: #ffffff;
+	background-color: #07070b;
+	background-image: url('../../media/images/tabletops/commute.jpg?v=1.1');
+
+	padding-top: 400px;
+}
+
+.step-1-base .button {
+	width: 300px;
+	border-color: #D6170D;
+}
+
+	/*@-moz-document url-prefix() {
+		.step-1-base {
+			background-color: #07070b;
+		}
+	}*/
+
+	@media(max-width: 1040px) {
+		.step-1-base {
+			/*background-color: #07070b;*/
+			padding-top: 350px;
+		}
+	}
+
+	@media(max-width: 640px) {
+		.step-1-base {
+			padding-top: 250px;
+			background-image: url('../../media/images_mobile/tabletops/commute.jpg?v=1.1');
+		}
+	}
+
+	@media(max-width: 400px) {
+		.step-1-base {
+			padding-top: 190px;
+		}
+	}
+
+	.step-1-base .h4-text small {
+		color: #999999;
+	}
+
+
+/* - 2 - */
+
+
+.step-2-highlight {
+	color: #000000;
+	background-color: #EF9E00;
+}
+
+.step-2-base {
+	color: #ffffff;
+	background-color: #1E1A17;
+	background-image: url('../../media/images/tabletops/party.jpg?v=1.1');
+
+	padding-top: 370px;
+}
+
+	@-moz-document url-prefix() {
+		/*.step-2-base {
+			background-color: #1E1A17;
+		}*/
+	}
+
+	@media(max-width: 1040px) {
+		.step-2-base {
+			/*background-color: #1E1A17;*/
+			padding-top: 250px;
+		}
+	}
+
+	@media(max-width: 640px) {
+		.step-2-base {
+			padding-top: 250px;
+			background-image: url('../../media/images_mobile/tabletops/party.jpg?v=1.1');
+		}
+	}
+
+	@media(max-width: 400px) {
+		.step-2-base {
+			padding-top: 190px;
+		}
+	}
+
+	.step-2-base .h4-text small {
+		color: #999999;
+	}
+
+
+/* - 3 - */
+
+
+.step-3-highlight {
+	color: #ffffff;
+	background-color: #0094D2;
+}
+
+.step-3-base {
+	color: #000000;
+	background-color: #BCC8C2;
+	background-image: url('../../media/images/tabletops/design.jpg?v=1.1');
+
+	padding-top: 540px;
+}
+
+	/*@-moz-document url-prefix() {
+		.step-3-base {
+			background-color: #BCC8C2;
+		}
+	}*/
+
+	@media(max-width: 1040px) {
+		.step-3-base {
+			/*background-color: #BCC5C2;*/
+			padding-top: 350px;
+		}
+	}
+
+	@media(max-width: 640px) {
+		.step-3-base {
+			padding-top: 250px;
+			background-image: url('../../media/images_mobile/tabletops/design.jpg?v=1.1');
+		}
+	}
+
+	@media(max-width: 400px) {
+		.step-3-base {
+			padding-top: 190px;
+		}
+	}
+
+	.step-3-base .h3-text small,
+	.step-3-base .h4-text small {
+		color: #555555;
+	}
+
+
+		/* Masterplan Section */
+		.masterplan-section {
+			position: relative;
+			width: 100%;
+			max-width: 1380px;
+			margin: 0 auto;
+			font-size: 0;
+			background-color: #BCC8C2;
+		}
+
+		/*@-moz-document url-prefix() {
+			.masterplan-section {
+				background-color: #bCC8C2;
+			}
+		}*/
+
+		@media(max-width: 1040px) {
+			/*.masterplan-section {
+				background-color: #BCC5C2;
+			}*/
+		}
+
+
+/* - 4 - */
+
+
+.step-4-highlight {
+	color: #ffffff;
+	background-color: #7A1A34;
+}
+
+.step-4-base {
+	color: #000000;
+	background-color: #CBBA87;
+
+	background-image: url('../../media/images/tabletops/kids.jpg?v=1.1');
+
+	padding-top: 470px;
+}
+
+	/*@-moz-document url-prefix() {
+		.step-4-base {
+			background-color: #CBBA87;
+		}
+	}*/
+
+	@media(max-width: 1040px) {
+		.step-4-base {
+			background-color: #C4B48D;
+			padding-top: 310px;
+		}
+	}
+
+	@media(max-width: 640px) {
+		.step-4-base {
+			padding-top: 250px;
+			background-image: url('../../media/images_mobile/tabletops/kids.jpg?v=1.1');
+		}
+	}
+
+	@media(max-width: 400px) {
+		.step-4-base {
+			padding-top: 190px;
+		}
+	}
+
+	.step-4-base .h4-text small {
+		color: #555555;
+	}
+
+
+/* - 5 - */
+
+
+.step-5-highlight {
+	color: #000000;
+	background-color: #86A502;
+}
+
+.step-5-base {
+	color: #ffffff;
+	background-color: #1A1414;
+	background-image: url('../../media/images/tabletops/fitness.jpg?v=1.1');
+
+	padding-top: 450px;
+}
+
+	/*@-moz-document url-prefix() {
+		.step-5-base {
+			background-color: #1A1414;
+		}
+	}*/
+
+	@media(max-width: 1040px) {
+		.step-5-base {
+			/*background-color: #1A1414;*/
+			padding-top: 320px;
+		}
+	}
+
+	@media(max-width: 640px) {
+		.step-5-base {
+			padding-top: 250px;
+			background-image: url('../../media/images_mobile/tabletops/fitness.jpg?v=1.1');
+		}
+	}
+
+	@media(max-width: 400px) {
+		.step-5-base {
+			padding-top: 190px;
+		}
+	}
+
+	.step-5-base .h4-text small {
+		color: #999999;
+	}
+
+
+/* - 6 - */
+
+
+.step-6-highlight {
+	color: #ffffff;
+	background-color: #05523F;
+}
+
+.step-6-base {
+	color: #ffffff;
+	background-color: #19BA94;
+}
+
+	@media(max-width: 1040px) {
+	}
+
+	@media(max-width: 640px) {
+		.step-6-base {
+			padding-top: 170px;
+		}
+	}
+
+	@media(max-width: 400px) {
+	}
+
+
+	.step-6-base .h4-text small {
+		color: #555555;
+	}
+
+
+/* - 7 - */
+
+
+.step-7-highlight {
+	color: #000000;
+	background-color: #FFE200;
+}
+
+.step-7-base {
+	color: #ffffff;
+	background-color: #5f6867;
+	background-image: url('../../media/images/tabletops/maintenance.jpg?v=1.1');
+
+	padding-top: 320px;
+}
+
+	/*@-moz-document url-prefix() {
+		.step-7-base {
+			background-color: #5f6867;
+		}
+	}*/
+
+	@media(max-width: 1040px) {
+		.step-7-base {
+			/*background-color: #5F6666;*/
+			padding-top: 300px;
+		}
+	}
+
+	@media(max-width: 640px) {
+		.step-7-base {
+			padding-top: 210px;
+			background-image: url('../../media/images_mobile/tabletops/maintenance.jpg?v=1.1');
+		}
+	}
+
+	@media(max-width: 400px) {
+		.step-7-base {
+			padding-top: 170px;
+		}
+	}
+
+	.step-7-base .h4-text small {
+		color: #bbbbbb;
+	}
+
+
+/* - x - */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Light and Dark Modes */
+
+.step-link.light {
+	color: #ffffff;
+}
+
+.step-link.light .right-triangle-bg {
+	border-bottom: 200px solid rgba(250,250,250,0.15);
+}
+
+.step-link.dark {
+	color: #000000;
+}
+
+.step-link.dark .right-triangle-bg {
+	border-bottom: 200px solid rgba(0,0,0,0.15);
+}

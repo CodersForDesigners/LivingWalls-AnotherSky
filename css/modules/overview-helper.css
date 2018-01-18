@@ -1,0 +1,140 @@
+/**
+ * Align text
+ */
+
+.alignright {
+    text-align: right;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.alignjustify {
+    text-align: justify;
+}
+
+/**
+ * Text Transformation
+ */
+
+.allcaps {
+    text-transform: uppercase;
+}
+
+/**
+ * Float container
+ */
+
+.fl-right {
+    float: right;
+}
+
+.fl-left {
+    float: left;
+}
+
+
+/**
+ * Display block
+ */
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+/**
+ * Display inline
+ */
+
+.inline {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.inline-top {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inline-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inline-bottom {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+/**
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/**
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/**
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/* No Point Pointer events */
+.pointer {
+    pointer-events: initial;
+}
+
+.no-pointer {
+    pointer-events: none;
+}
+
+
+img.precache {
+    display: visible;
+    margin: 0;
+    padding: 0;
+    width: 0 !important;
+    height: 0 !important;
+    border: none;
+}

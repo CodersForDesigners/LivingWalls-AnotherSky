@@ -1,0 +1,276 @@
+/* -- Addresses -- */
+
+.addresses-section {
+	color: #D5D5D5;
+	font-weight: 300;
+	font-size: 0;
+}
+
+.address-content {
+	font-size: 16px;
+}
+
+.address-logo {
+	width: 130px;
+	margin: 0 90px;
+}
+
+.address-logo svg {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.address-1,
+.address-2 {
+	width: 200px;
+}
+
+.address-1 a.call,
+.address-2 a.call {
+	position: relative;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 20px;
+	color: #FF5640;
+	text-decoration: none;
+}
+
+.address-1 a.call:before,
+.address-2 a.call:before {
+	content: '';
+	display: block;
+	position: absolute;
+	/*background-color: red;*/
+	bottom: 3px;
+	left: -20px;
+	height: 15px;
+	width: 15px;
+	background-image: url('../../media/images/call-small-icon.svg?v=2.6');
+}
+
+.address-1 .h4-text,
+.address-2 .h4-text {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.address-1 {
+	margin-right: 50px;
+}
+
+.mailus {
+	margin-top: 20px;
+	text-transform: none;
+	font-size: 12px;
+}
+
+.mailus a {
+	text-decoration: none;
+	color: #FF5640;
+}
+
+.copyright {
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+
+@media(max-width: 1040px) {
+	.address-logo {
+		width: 100px;
+		margin-right: 50px;
+		margin-left: 0;
+	}
+
+	.address-1 {
+		margin-right: 30px;
+	}
+}
+
+@media(max-width: 640px) {
+	.address-logo {
+		width: 60px;
+		margin-right: 20px;
+	}
+
+	.address-content {
+		max-width: 200px;
+	}
+
+	.address-1,
+	.address-2 {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.copyright {
+		margin-top: 10px;
+	}
+}
+
+@media(max-width: 400px) {
+	.address-logo {
+		display: none;
+	}
+}
+
+
+
+/* -- About -- */
+.about-section {
+	color: #A2A2A2;
+	background-color: #f7f7f7;
+	padding-bottom: 400px;
+	background-repeat: no-repeat;
+	background-size: 1380px auto;
+	background-position: center bottom;
+	background-image: url('../../media/images/about.jpg?v=2.1');
+}
+
+.about-section .h3-text {
+	color: #303233;
+	margin-bottom: 40px;
+}
+
+@media(max-width: 1040px) {
+	.about-section {
+		padding-bottom: 300px;
+		background-size: 1040px auto;
+	}
+
+	.about-section .h3-text {
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 640px) {
+	.about-section {
+		padding-bottom: 150px;
+		background-size: 640px auto;
+		background-image: url('../../media/images_mobile/about.jpg?v=2.1');
+	}
+
+	.about-section .h3-text {
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 400px) {
+	.about-section {
+		padding-bottom: 120px;
+		background-size: 400px auto;
+	}
+}
+
+
+
+/* -- Other Projects -- */
+
+.other-projects-section {
+	color: #000000;
+	background-color: #565656;
+	font-size: 0;
+}
+
+.other-projects-section .h4-text {
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+.other-project {
+	width: 150px;
+	margin-right: 50px;
+}
+
+.other-project:last-child {
+	margin-right: 0;
+}
+
+.other-project .project {
+	cursor: pointer;
+}
+
+.other-project img {
+	position: relative;
+	margin-bottom: 10px;
+	max-width: 160px;
+	height: auto;
+}
+
+.other-project img + span{
+	font-size: 16px;
+}
+
+.other-project img + span strong {
+	display: block;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+@media(max-width: 1040px) {
+	.other-projects-section .h4-text {
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 640px) {
+	.other-projects-section .h4-text {
+		margin-bottom: 20px;
+	}
+
+	.other-project {
+		width: 90px;
+		margin-right: 5px;
+	}
+
+	.other-project img + span{
+		font-size: 13px;
+	}
+}
+
+@media(max-width: 400px) {
+}
+
+
+
+/* -- Lazaro -- */
+
+.lazaro { font-size: 0; padding: 0 }
+
+.lazaro a {
+	text-align: right;
+	/*background-color: #E0494E;*/
+	background-color: #ffffff;
+	color: #E30F13;
+	padding: 8px 16px;
+	font-size: 16px;
+	line-height: 1.75;
+	font-weight: 300;
+}
+
+.lazaro a img {
+	width: 28px;
+	height: 28px;
+	opacity: 0.8;
+}
+
+.lazaro a strong { font-weight: 700; }
+
+@media(max-width: 640px) {
+	.lazaro a {
+		font-size: 14px;
+		line-height: 1.25;
+	}
+
+	.lazaro a img {
+		width: 35px;
+		height: 35px;
+		opacity: 0.8;
+	}
+}

@@ -1,0 +1,173 @@
+.landing-section {
+	position: relative;
+	padding: 0;
+	font-size: 0;
+}
+
+.logo {
+	display: none;
+	position: absolute;
+	top: 60px;
+}
+
+.logo a img {
+	position: relative;
+	width: 120px;
+	height: auto;
+}
+
+
+
+.header-nav {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	/*min-height: 100px;*/
+	background-color: rgba(0,0,0,0.5);
+}
+
+.header-nav .logo-landscape {
+	width: 50%;
+	padding: 25px;
+}
+
+.header-nav .logo-landscape a {
+	display: block;
+	width: 260px;
+}
+
+.header-nav .phone-number {
+	width: 50%;
+	padding: 10px;
+	text-align: right;
+}
+
+.header-nav .phone-number a.call {
+	position: relative;
+	margin-right: 35px;
+	color: #d8d8d8;
+	font-size: 17px;
+}
+
+.header-nav .phone-number a.call:before {
+	content: '';
+	display: block;
+	position: absolute;
+	/*background-color: red;*/
+	bottom: 3px;
+	left: -20px;
+	height: 15px;
+	width: 15px;
+	background-image: url('../../media/images/call-small-icon.svg?v=2.6');
+}
+
+
+
+.landing-content {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	/*background-color: rgba(0,200,200,0.5);*/
+}
+
+.landing-content .title {
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 200px;
+	padding: 20px;
+	padding-bottom: 50px;
+	max-width: 900px;
+	text-align: right;
+	/*background-color: rgba(200,0,200,0.5);*/
+}
+
+.landing-content .title p span {
+	-webkit-transform: translateX(-200px);
+	-ms-transform: translateX(-200px);
+	transform: translateX(-200px);
+	-webkit-transition: all 0.750s;
+	transition: all 0.750s;
+	opacity: 0;
+}
+
+.landing-content .title p span:nth-child(1) {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.landing-content .title p span:nth-child(2) {
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.landing-content .title p span:nth-child(3) {
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+.landing-content .title p:nth-child(2) span {
+	-webkit-transition-delay: 1.75s;
+	transition-delay: 1.75s;
+}
+
+.landing-content .title.animate p span {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+}
+
+@media(max-width: 1040px) {
+	.logo a img {
+		width: 100px;
+	}
+
+	.header-nav .logo-landscape a {
+		display: block;
+		width: 180px;
+	}
+
+	.landing-content .title {
+		max-width: 640px;
+		margin-bottom: 100px;
+	}
+}
+
+@media(max-width: 640px) {
+	.logo {
+		display: block;
+		top: 30px;
+	}
+
+	.logo a img {
+		width: 80px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.landing-content .title {
+		max-width: 320px;
+		margin-bottom: 80px;
+		text-align: center;
+	}
+}
+
+@media(max-width: 400px) {
+	.logo {
+		top: 20px;
+	}
+
+	.logo a img {
+		width: 60px;
+	}
+
+
+	.landing-content .title {
+		margin-bottom: 0;
+	}
+}

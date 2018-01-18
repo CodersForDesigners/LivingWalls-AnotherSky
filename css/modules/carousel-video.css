@@ -1,0 +1,103 @@
+/* -- Ads -- */
+.ads-section {
+	background-color: #565656;
+}
+
+.ads-section .h3-text {
+	margin-bottom: 40px;
+}
+
+.ads {
+	font-size: 0;
+	white-space: nowrap;
+    overflow: hidden;
+}
+
+.ads .inner {
+	display: inline-block;
+	/*margin-left: -200px;*/
+	-webkit-transition: margin-left 1s;
+	-mos-transition: margin-left 1s;
+	transition: margin-left 1s;
+}
+
+.ad {
+	padding: 10px;
+	vertical-align: top;
+}
+
+.ad img {
+	cursor: pointer;
+	height: 180px;
+	width: 300px;
+}
+
+.ad .play-button + .caption {
+	display: block;
+	padding: 12px 4px;
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.ad.video {
+	position: relative;
+}
+
+.ad.video .play-button {
+	position: relative;
+}
+
+.ad.video .play-button:after {
+	content: '';
+	background-image: url('../../media/images/icon-play-video.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	opacity: .7;
+}
+
+.ad.video:hover .play-button:after{
+	opacity: .9;
+}
+
+.ads .dots {
+	font-size: 0;
+}
+
+.ads .dot {
+	display: inline-block;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: #303233;
+	margin: 5px;
+}
+
+.ads .dot.active {
+	background-color: #ffffff;
+}
+
+@media(max-width: 1040px) {
+	.ads-section .h3-text {
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 640px) {
+	.ads-section .h3-text {
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 400px) {
+}

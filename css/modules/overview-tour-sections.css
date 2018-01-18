@@ -1,0 +1,27 @@
+.tour-section {
+	font-size: 0;
+	padding: 0;
+}
+
+.tour-section a {
+	width: 100%;
+	cursor: pointer;
+	color: #303233;
+	line-height: 70px;
+	background-color: #BBC1CC;
+}
+
+@media(max-width: 1040px) {
+	.tour-section a {
+		line-height: 50px;
+	}
+}
+
+@media(max-width: 640px) {
+	.tour-section a {
+		line-height: 40px;
+	}
+}
+
+@media(max-width: 400px) {
+}
