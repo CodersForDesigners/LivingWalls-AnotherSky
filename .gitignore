@@ -5,3 +5,4 @@ enquiries
 enquiries/
 
 # vendor/
+.DS_Store
