@@ -19,7 +19,7 @@
 			Excepteur sint occaecat cupidatat non proident.">
 	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
 	<meta name="author" content="Lazaro Advertising">
-	<link rel="canonical" href="http://livingwalls.in/manual-form">
+	<link rel="canonical" href="http://livingwalls.in/another-sky/paperless">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -32,8 +32,8 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/1_standardize.css">
-	<link rel="stylesheet" type="text/css" href="/css/pages/manual-form.css">
+	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/manual-form.css">
 
 </head>
 
@@ -126,8 +126,8 @@
 <!-- utility functions -->
 <!-- <script type="text/javascript" src="/js/modules/util.js"></script> -->
 <!-- jQuery -->
-<script type="text/javascript" src="/js/jquery-min.js"></script>
-<script type="text/javascript" src="/js/paperless/manual-form.js"></script>
+<script type="text/javascript" src="js/jquery-min.js"></script>
+<script type="text/javascript" src="js/paperless/manual-form.js"></script>
 <!-- endbuild -->
 
 </body>

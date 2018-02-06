@@ -8,9 +8,14 @@ body {
 
 .h1-text {
 	font-size: 64px;
-	font-weight: 700;
+	font-weight: 300;
 	line-height: 1;
 	text-transform: uppercase;
+}
+
+.h1-text strong {
+	/*font-weight: 900;*/
+	font-weight: 700;
 }
 
 
@@ -993,3 +998,55 @@ input[type="submit"].done:focus {
 
 }
 
+
+
+
+
+
+
+
+/*
+
+	*
+	* Timelapse Section
+	*
+
+*/
+
+.timelapse-section {
+	position: relative;
+	width: 100%;
+	max-width: 1380px;
+	margin: 0 auto;
+	font-size: 0;
+	line-height: 0;
+	overflow-x: hidden;
+}
+
+.video-timelapse {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.container-video {
+	position: relative;
+	overflow-y: hidden;
+}
+
+.timelapse-fallback-image {
+	position: relative;
+	z-index: 1;
+}
+
+.container-video .timelapse-fallback-image.js_fade_out {
+	opacity: 0;
+	transition: 0.5s opacity ease-in;
+}

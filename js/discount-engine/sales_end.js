@@ -5,7 +5,7 @@ $( document ).one( "ready" , function ( ) {
 
 // retrieve data
 $.ajax( {
-	url: "/server/availability.php",
+	url: "server/availability.php",
 	dataType: "JSON",
 	beforeSend: function () {
 		console.log( "initializing data....." );
@@ -89,7 +89,7 @@ function main ( e , DATA_STORE ) {
 		};
 
 		$.ajax( {
-			url: "/server/discounter.php",
+			url: "server/discounter.php",
 			method: "POST",
 			data: shipment,
 			beforeSend: function () {

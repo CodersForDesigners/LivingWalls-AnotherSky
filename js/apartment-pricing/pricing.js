@@ -283,7 +283,7 @@ $(document).ready( function() {
 		{ P1 }
 	 ----- */
 	$.ajax({
-		    url: "/server/availability.php",
+		    url: "server/availability.php",
 		    dataType: "JSON",
 		    success: function(json_obj) {
 		    		var json_string = JSON.stringify(json_obj);
@@ -678,7 +678,7 @@ $(document).ready( function() {
 											car_parking: car_parking_val,
 											apt_type: temp_apt['apt_type'],
 										},
-					    url: "../server/details.php",
+					    url: "server/details.php",
 					    dataType: "JSON",
 					    success: function(json_obj_2) {
 					    		var json_string_2 = JSON.stringify(json_obj_2);
@@ -743,7 +743,7 @@ $("#car_parking_selector").on("change", function() {
 									car_parking: car_parking_selected_value,
 									apt_type: 1, // passing random number to avoid -1 condition
 								},
-			    url: "../server/details.php",
+			    url: "server/details.php",
 			    dataType: "JSON",
 			    success: function(json_obj_2) {
 			    		var json_string_2 = JSON.stringify(json_obj_2);
@@ -1173,7 +1173,7 @@ $.fn.filterByData = function(prop, val) {
 	    	$(e.target).find("input[type='submit']").attr("value", "Sending...").addClass('loading');
 
 	      // Customer Email
-	      $.post('../server/pricing_contact_smtp_customer.php', {
+	      $.post('server/pricing_contact_smtp_customer.php', {
 			  name: $("#name").val(),
 	          email: $("#email").val(),
 	          parking_string: parking_string,
@@ -1185,7 +1185,7 @@ $.fn.filterByData = function(prop, val) {
 	      });
 
 		// mail to builder about general
-	      $.post('../server/pricing_contact_smtp_builder.php', {
+	      $.post('server/pricing_contact_smtp_builder.php', {
 	          name: $("#name").val(),
 	          mobile: $("#mobile").val(),
 	          email: $("#email").val(),
@@ -1216,7 +1216,7 @@ $.fn.filterByData = function(prop, val) {
 		// discoverySource = discoverySource.slice( "Web-P - ".length );
 		var discoverySource = $( "#finding_us :selected" ).text();
 		$.ajax( {
-			url: "/server/create-lead.php",
+			url: "server/create-lead.php",
 			method: "POST",
 			data: {
 				lead_source: "Pricing",

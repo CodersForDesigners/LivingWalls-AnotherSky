@@ -18,13 +18,13 @@
 
 	<!-- Page Meta -->
 	<meta charset="utf-8">
-	<title>LivingWalls | Obscenely Awesome Apartments on the Outer Ring Road</title>
+	<title>LivingWalls | Another Sky | Obscenely Awesome Apartments on the Outer Ring Road</title>
 	<meta name="description"
 		content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 			Excepteur sint occaecat cupidatat non proident.">
 	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
 	<meta name="author" content="Lazaro Advertising">
-	<link rel="canonical" href="http://livingwalls.in/another-sky">
+	<link rel="canonical" href="http://livingwalls.in/another-sky/">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -102,7 +102,13 @@
 
 	<!-- Landing -->
 	<div class="section-row landing-section clearfix">
-		<div class="figcap before bottom-left rera-artistic"><img src="media/images/landing-image.jpg?v=2.6" srcset="media/images_mobile/landing-image.jpg?v=2.6 640w, media/images/landing-image.jpg?v=2.6 1380w" sizes="100%"></div>
+		<div class="container-video">
+			<video class="video-timelapse" autoplay loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/eve_night_01.mp4?v=2.3" data-l-src="media/images/timelapse/eve_night_01.mp4?v=2.3"></video>
+			<picture class="timelapse-fallback-image">
+				<source srcset="media/images/timelapse/eve_night_01.jpg?v=2.3" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/eve_night_01.jpg?v=2.3">
+			</picture>
+		</div>
 		<div class="logo block aligncenter">
 			<a href="/"><img src="media/images/logo.svg?v=3"></a>
 		</div>
@@ -117,9 +123,9 @@
 		<div class="landing-content">
 			<div class="title">
 				<p class="h1-text block">
-					<span class="block">Obscenely</span>
-					<span class="block">Awesome</span>
-					<span class="block">Apartments</span>
+					<span class="block"><strong>Obscenely</strong></span>
+					<span class="block"><strong>Awesome</strong></span>
+					<span class="block"><strong>Apartments</strong></span>
 				</p>
 				<p class="h4-text block"><span>On the <strong>Outer Ring Road</strong>, Bangalore.</span></p>
 			</div>
@@ -251,7 +257,17 @@
 		</div>
 	</div>
 
-
+	<!-- Timelapse Section -->
+	<div class="timelapse-section">
+		<div class="container-video">
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_01.mp4?v=2.3" data-l-src="media/images/timelapse/night_day_01.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<picture class="timelapse-fallback-image">
+				<source srcset="media/images/timelapse/night_day_01.jpg?v=2.3" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/night_day_01.jpg?v=2.3">
+			</picture>
+		</div>
+	</div>
+	<!-- END : Timelapse Section -->
 
 	<!-- Step - 2 -->
 	<div id="ga_step_1" class="section-row step-2-base figcap before top-left rera-generic clearfix">
@@ -279,87 +295,17 @@
 		</div>
 	</div>
 
-
-
-	<!-- Image Carousel : Interiors -->
-	<div class="carousel-section js-carousel" data-carousel-map="something-unique">
-		<!-- El Picturs-o -->
-		<div class="strip js-strip" data-bridge="js-pictur--active">
-			<div class="pictur js-pictur js-pictur--active">
-				<img src="media/images/carousel/interior/carousel_1.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_1.jpg?v=270717 640w, media/images/carousel/interior/carousel_1.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_2.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_2.jpg?v=270717 640w, media/images/carousel/interior/carousel_2.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_3.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_3.jpg?v=270717 640w, media/images/carousel/interior/carousel_3.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-generic">
-				<img src="media/images/carousel/interior/carousel_4.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_4.jpg?v=270717 640w, media/images/carousel/interior/carousel_4.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_5.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_5.jpg?v=270717 640w, media/images/carousel/interior/carousel_5.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_6.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_6.jpg?v=270717 640w, media/images/carousel/interior/carousel_6.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_7.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_7.jpg?v=270717 640w, media/images/carousel/interior/carousel_7.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_8.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_8.jpg?v=270717 640w, media/images/carousel/interior/carousel_8.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_9.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_9.jpg?v=270717 640w, media/images/carousel/interior/carousel_9.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-generic">
-				<img src="media/images/carousel/interior/carousel_10.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_10.jpg?v=270717 640w, media/images/carousel/interior/carousel_10.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_11.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_11.jpg?v=270717 640w, media/images/carousel/interior/carousel_11.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_12.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_12.jpg?v=270717 640w, media/images/carousel/interior/carousel_12.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_13.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_13.jpg?v=270717 640w, media/images/carousel/interior/carousel_13.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_14.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_14.jpg?v=270717 640w, media/images/carousel/interior/carousel_14.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_15.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_15.jpg?v=270717 640w, media/images/carousel/interior/carousel_15.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_16.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_16.jpg?v=270717 640w, media/images/carousel/interior/carousel_16.jpg?v=270717 1380w" sizes="100%">
-			</div>
-		</div>
-		<!-- El Dots-o -->
-		<div class="controls js-controls">
-			<ul class="dot-list js-dot-list" data-bridge="js-control--active">
-				<li class="dot js-dot js-control js-control--active" data-slide="1"></li>
-				<li class="dot js-dot js-control" data-slide="2"></li>
-				<li class="dot js-dot js-control" data-slide="3"></li>
-				<li class="dot js-dot js-control" data-slide="4"></li>
-				<li class="dot js-dot js-control" data-slide="5"></li>
-				<li class="dot js-dot js-control" data-slide="6"></li>
-				<li class="dot js-dot js-control" data-slide="7"></li>
-				<li class="dot js-dot js-control" data-slide="8"></li>
-				<li class="dot js-dot js-control" data-slide="9"></li>
-				<li class="dot js-dot js-control" data-slide="10"></li>
-				<li class="dot js-dot js-control" data-slide="11"></li>
-				<li class="dot js-dot js-control" data-slide="12"></li>
-				<li class="dot js-dot js-control" data-slide="13"></li>
-				<li class="dot js-dot js-control" data-slide="14"></li>
-				<li class="dot js-dot js-control" data-slide="15"></li>
-				<li class="dot js-dot js-control" data-slide="16"></li>
-				<span class="control prev js-control" data-slide="-"></span>
-				<span class="control next js-control" data-slide="+"></span>
-			</ul>
+	<!-- Timelapse Section -->
+	<div class="timelapse-section">
+		<div class="container-video">
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/balcony_01.mp4?v=2.3" data-l-src="media/images/timelapse/balcony_01.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<picture class="timelapse-fallback-image">
+				<source srcset="media/images/timelapse/balcony_01.jpg?v=2.3" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/balcony_01.jpg?v=2.3">
+			</picture>
 		</div>
 	</div>
-
-
+	<!-- END : Timelapse Section -->
 
 	<!-- Step - 3 -->
 	<div id="ga_step_2" class="section-row step-3-base figcap before top-left rera-generic clearfix">
@@ -495,30 +441,57 @@
 
 
 
-	<!-- Image Carousel : Exteriors -->
+	<!-- Image Carousel : Interiors -->
 	<div class="carousel-section js-carousel" data-carousel-map="something-unique">
 		<!-- El Picturs-o -->
 		<div class="strip js-strip" data-bridge="js-pictur--active">
-			<div class="pictur js-pictur figcap before bottom-right rera-artistic js-pictur--active">
-				<img src="media/images/carousel/exterior/carousel_1.jpg?v=2.6" srcset="media/images_mobile/carousel/exterior/carousel_1.jpg?v=2.6 640, media/images/carousel/exterior/carousel_1.jpg?v=2.6 1380w" sizes="100%">
+			<div class="pictur js-pictur js-pictur--active">
+				<img src="media/images/carousel/interior/carousel_1.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_1.jpg?v=270717 640w, media/images/carousel/interior/carousel_1.jpg?v=270717 1380w" sizes="100%">
 			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-artistic">
-				<img src="media/images/carousel/exterior/carousel_2.jpg?v=2.6" srcset="media/images_mobile/carousel/exterior/carousel_2.jpg?v=2.6 640, media/images/carousel/exterior/carousel_2.jpg?v=2.6 1380w" sizes="100%">
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_2.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_2.jpg?v=270717 640w, media/images/carousel/interior/carousel_2.jpg?v=270717 1380w" sizes="100%">
 			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-artistic">
-				<img src="media/images/carousel/exterior/carousel_3.jpg?v=2.6" srcset="media/images_mobile/carousel/exterior/carousel_3.jpg?v=2.6 640, media/images/carousel/exterior/carousel_3.jpg?v=2.6 1380w" sizes="100%">
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_3.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_3.jpg?v=270717 640w, media/images/carousel/interior/carousel_3.jpg?v=270717 1380w" sizes="100%">
 			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-artistic">
-				<img src="media/images/carousel/exterior/carousel_4.jpg?v=2.6" srcset="media/images_mobile/carousel/exterior/carousel_4.jpg?v=2.6 640, media/images/carousel/exterior/carousel_4.jpg?v=2.6 1380w" sizes="100%">
+			<div class="pictur js-pictur figcap before bottom-right rera-generic">
+				<img src="media/images/carousel/interior/carousel_4.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_4.jpg?v=270717 640w, media/images/carousel/interior/carousel_4.jpg?v=270717 1380w" sizes="100%">
 			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-artistic">
-				<img src="media/images/carousel/exterior/carousel_5.jpg?v=2.6" srcset="media/images_mobile/carousel/exterior/carousel_5.jpg?v=2.6 640, media/images/carousel/exterior/carousel_5.jpg?v=2.6 1380w" sizes="100%">
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_5.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_5.jpg?v=270717 640w, media/images/carousel/interior/carousel_5.jpg?v=270717 1380w" sizes="100%">
 			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-artistic">
-				<img src="media/images/carousel/exterior/carousel_6.jpg?v=2.6" srcset="media/images_mobile/carousel/exterior/carousel_6.jpg?v=2.6 640, media/images/carousel/exterior/carousel_6.jpg?v=2.6 1380w" sizes="100%">
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_6.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_6.jpg?v=270717 640w, media/images/carousel/interior/carousel_6.jpg?v=270717 1380w" sizes="100%">
 			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-artistic">
-				<img src="media/images/carousel/exterior/carousel_7.jpg?v=2.6" srcset="media/images_mobile/carousel/exterior/carousel_7.jpg?v=2.6 640, media/images/carousel/exterior/carousel_7.jpg?v=2.6 1380w" sizes="100%">
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_7.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_7.jpg?v=270717 640w, media/images/carousel/interior/carousel_7.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_8.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_8.jpg?v=270717 640w, media/images/carousel/interior/carousel_8.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_9.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_9.jpg?v=270717 640w, media/images/carousel/interior/carousel_9.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur figcap before bottom-right rera-generic">
+				<img src="media/images/carousel/interior/carousel_10.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_10.jpg?v=270717 640w, media/images/carousel/interior/carousel_10.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_11.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_11.jpg?v=270717 640w, media/images/carousel/interior/carousel_11.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_12.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_12.jpg?v=270717 640w, media/images/carousel/interior/carousel_12.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_13.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_13.jpg?v=270717 640w, media/images/carousel/interior/carousel_13.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_14.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_14.jpg?v=270717 640w, media/images/carousel/interior/carousel_14.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_15.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_15.jpg?v=270717 640w, media/images/carousel/interior/carousel_15.jpg?v=270717 1380w" sizes="100%">
+			</div>
+			<div class="pictur js-pictur">
+				<img src="media/images/carousel/interior/carousel_16.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_16.jpg?v=270717 640w, media/images/carousel/interior/carousel_16.jpg?v=270717 1380w" sizes="100%">
 			</div>
 		</div>
 		<!-- El Dots-o -->
@@ -531,11 +504,21 @@
 				<li class="dot js-dot js-control" data-slide="5"></li>
 				<li class="dot js-dot js-control" data-slide="6"></li>
 				<li class="dot js-dot js-control" data-slide="7"></li>
+				<li class="dot js-dot js-control" data-slide="8"></li>
+				<li class="dot js-dot js-control" data-slide="9"></li>
+				<li class="dot js-dot js-control" data-slide="10"></li>
+				<li class="dot js-dot js-control" data-slide="11"></li>
+				<li class="dot js-dot js-control" data-slide="12"></li>
+				<li class="dot js-dot js-control" data-slide="13"></li>
+				<li class="dot js-dot js-control" data-slide="14"></li>
+				<li class="dot js-dot js-control" data-slide="15"></li>
+				<li class="dot js-dot js-control" data-slide="16"></li>
 				<span class="control prev js-control" data-slide="-"></span>
 				<span class="control next js-control" data-slide="+"></span>
 			</ul>
 		</div>
 	</div>
+
 
 
 
@@ -566,6 +549,18 @@
 		</div>
 	</div>
 
+
+	<!-- Timelapse Section -->
+	<div class="timelapse-section">
+		<div class="container-video">
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_02.mp4?v=2.3" data-l-src="media/images/timelapse/night_day_02.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<picture class="timelapse-fallback-image">
+				<source srcset="media/images/timelapse/night_day_02.jpg?v=2.3" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/night_day_02.jpg?v=2.3">
+			</picture>
+		</div>
+	</div>
+	<!-- END : Timelapse Section -->
 
 
 	<!-- Construction Report -->
@@ -641,28 +636,9 @@
 		</div>
 		<div class="construction-content clearfix">
 			<a name="construction"></a>
-			<div class="text">
-				<p class="h3-text">Construction Status<br><strong>July 2017</strong></p>
-				<p class="h4-text"><strong>Structure :</strong> <small>Block A, Block B &amp; Block C - Completed</small></p>
-				<p class="h4-text"><strong>Masonry :</strong> <small>Block A, Block B &amp; Block C - Completed</small></p>
-
-				<p class="h4-text"><small>Video door phone installation works in progress.</small></p>
-				<p class="h4-text"><small>Solar panel installation completed.</small></p>
-				<p class="h4-text"><small>Main gates fabrication works in progress.</small></p>
-				<p class="h4-text"><small>Block C side compound wall and gate works in progress.</small></p>
-				<p class="h4-text"><small>Fire Noc applied and in progress.</small></p>
-				<p class="h4-text"><small>Clubhouse finishing works in progress.</small></p>
-				<p class="h4-text"><small>Basement HVAC works completed and handed over.</small></p>
-				<p class="h4-text"><small>Irrigation works for vertical garden in progress.</small></p>
-				<p class="h4-text"><small>Bescom permission for permenent electricity applied &amp; in progress.</small></p>
-				<p class="h4-text"><small>Swimming pool structural works Completed.</small></p>
-				<p class="h4-text"><small>BWSSB permenent water line connection in progress.</small></p>
-				<p class="h4-text"><small>TATA Sky DTH works completed.</small></p>
-				<p class="h4-text"><strong>42 homes handed over to residents.</strong></p>
-				<p class="h4-text"><strong>39 units ready for hand over.</strong></p>
-				<p class="h2-text">Possession has <strong>begun</strong></p>
+			<div class="message">
+				<p class="h1-text">Ready to <strong style="color: #FF5640;">Occupy</strong></p>
 			</div>
-			<div class="hero"></div>
 		</div>
 
 		<!-- Call For Action -->
@@ -686,6 +662,18 @@
 		</div> -->
 	</div>
 
+
+	<!-- Timelapse Section -->
+	<div class="timelapse-section">
+		<div class="container-video">
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_11.mp4?v=2.3" data-l-src="media/images/timelapse/angle_11.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<picture class="timelapse-fallback-image">
+				<source srcset="media/images/timelapse/angle_11.jpg?v=2.3" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/angle_11.jpg?v=2.3">
+			</picture>
+		</div>
+	</div>
+	<!-- END : Timelapse Section -->
 
 
 	<!-- Step - 5 -->
@@ -717,6 +705,18 @@
 	</div>
 
 
+	<!-- Timelapse Section -->
+	<div class="timelapse-section">
+		<div class="container-video">
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_12.mp4?v=2.3" data-l-src="media/images/timelapse/angle_12.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<picture class="timelapse-fallback-image">
+				<source srcset="media/images/timelapse/angle_12.jpg?v=2.3" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/angle_12.jpg?v=2.3">
+			</picture>
+		</div>
+	</div>
+	<!-- END : Timelapse Section -->
+
 
 	<!-- Step - 6 -->
 	<div id="ga_step_5" class="section-row step-6-base clearfix">
@@ -739,6 +739,18 @@
 		</div>
 	</div>
 
+
+	<!-- Timelapse Section -->
+	<div class="timelapse-section">
+		<div class="container-video">
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_09.mp4?v=2.3" data-l-src="media/images/timelapse/angle_09.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<picture class="timelapse-fallback-image">
+				<source srcset="media/images/timelapse/angle_09.jpg?v=2.3" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/angle_09.jpg?v=2.3">
+			</picture>
+		</div>
+	</div>
+	<!-- END : Timelapse Section -->
 
 
 	<!-- Step - 7 -->
@@ -1373,6 +1385,9 @@
 
 <!-- Animation JS -->
 <script type="text/javascript" src="js/overview/animation.js"></script>
+
+<!-- TimeLapse JS -->
+<script type="text/javascript" src="js/overview/timelapse.js"></script>
 
 <!-- Tracking -->
 <!-- <script type="text/javascript" src="js/overview/tracking.js"></script> -->

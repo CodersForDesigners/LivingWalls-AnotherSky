@@ -142,6 +142,8 @@ input {
 	cursor: pointer;
 */
 
+	width: 95% !important;
+
 	border: none;
 	background-color: white;
 	color: #222222;
@@ -151,6 +153,7 @@ input {
 	.input--text:focus {
 		outline: none;
 	}
+
 
 .input--select {
 

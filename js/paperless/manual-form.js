@@ -21,7 +21,7 @@ $(document).ready(function(){
 			first_name = names.join( " " );
 		}
 		$.ajax( {
-			url: "/server/create-lead.php",
+			url: "server/create-lead.php",
 			method: "POST",
 			data: {
 				lead_source: "Paperless",
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		} )
 
 		// Get CID resource
-		$.post( "/server/get_cid_resource.php", {
+		$.post( "server/get_cid_resource.php", {
 		    name: 'name',
 		} )
 			.always( function(d) {
@@ -49,7 +49,7 @@ $(document).ready(function(){
 			    $(e.target).attr('data_cid_resource', d);
 
 		        // Builder Email
-		        $.post( "/server/overview_contact_smtp_builder.php", {
+		        $.post( "server/overview_contact_smtp_builder.php", {
 		            name: $("#customer_name").val(),
 		            mobile: $("#customer_number").val(),
 		            email: $("#customer_email").val(),
@@ -62,7 +62,7 @@ $(document).ready(function(){
 			            console.log(d+" - General");
 
 				    	if ( $("#customer_email").val() || $("#customer_budget").val() || $("#customer_source").val() ) {
-				    		$.post( "/server/overview_contact_smtp_builder.php", {
+				    		$.post( "server/overview_contact_smtp_builder.php", {
 				    		    name: $("#customer_name").val(),
 				    		    mobile: $("#customer_number").val(),
 				    		    email: $("#customer_email").val(),

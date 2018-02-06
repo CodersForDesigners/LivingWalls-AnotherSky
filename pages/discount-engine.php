@@ -15,13 +15,13 @@
 
 	<!-- Page Meta -->
 	<meta charset="utf-8">
-	<title>LivingWalls | Discount Engine</title>
+	<title>LivingWalls | Another Sky | Discount Engine</title>
 	<meta name="description"
 		content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 			Excepteur sint occaecat cupidatat non proident.">
 	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
 	<meta name="author" content="Lazaro Advertising">
-	<link rel="canonical" href="http://livingwalls.in/discount-engine">
+	<link rel="canonical" href="http://livingwalls.in/another-sky/discount-engine">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -82,8 +82,8 @@
 	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="/css/1_standardize.css">
-	<link rel="stylesheet" type="text/css" href="/css/pages/discount-engine.css">
+	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/discount-engine.css">
 
 </head>
 
@@ -276,8 +276,8 @@
 <!-- utility functions -->
 <!-- <script type="text/javascript" src="/js/modules/util.js"></script> -->
 <!-- jQuery -->
-<script type="text/javascript" src="/js/jquery-min.js"></script>
-<script type="text/javascript" src="/js/discount-engine/sales_end.js"></script>
+<script type="text/javascript" src="js/jquery-min.js"></script>
+<script type="text/javascript" src="js/discount-engine/sales_end.js"></script>
 <!-- endbuild -->
 
 <!-- templates -->

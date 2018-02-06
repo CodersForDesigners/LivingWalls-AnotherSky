@@ -24,7 +24,7 @@
 			Excepteur sint occaecat cupidatat non proident.">
 	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
 	<meta name="author" content="Lazaro Advertising">
-	<link rel="canonical" href="http://livingwalls.in/apartment-pricing">
+	<link rel="canonical" href="http://livingwalls.in/another-sky/apartment-pricing">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -82,9 +82,9 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<!-- Stylesheets -->
-	<!-- <link rel="stylesheet" type="text/css" href="/style.css"> -->
-	<link rel="stylesheet" type="text/css" href="/css/1_standardize.css">
-	<link rel="stylesheet" type="text/css" href="/css/pages/pricing.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/pricing.css">
 
 	<!-- Analytics -->
 	<!-- redo the Google Analytics, Facebook Pixel, HotJar code -->
@@ -548,17 +548,17 @@
 
 
 <!-- jQuery -->
-<script type="text/javascript" src="/js/jquery-min.js"></script>
+<script type="text/javascript" src="js/jquery-min.js"></script>
 
-<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/js/jquery.visible.min.js"></script>
-<script type="text/javascript" src="/js/modules/scrollSmooth.js"></script>
-<script type="text/javascript" src="/js/ion.rangeSlider.min.js"></script>
-<script type="text/javascript" src="/js/apartment-pricing/pricing.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.visible.min.js"></script>
+<script type="text/javascript" src="js/modules/scrollSmooth.js"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/apartment-pricing/pricing.js"></script>
 <!-- Sticky Pricing JS -->
-<!-- <script type="text/javascript" src="/js/modules/sticky-pricing.js"></script> -->
+<!-- <script type="text/javascript" src="js/modules/sticky-pricing.js"></script> -->
 <!-- Modal Window JS -->
-<script type="text/javascript" src="/js/modules/modal.js"></script>
+<script type="text/javascript" src="js/modules/modal.js"></script>
 
 
 <!-- Start of Google Remarketing -->

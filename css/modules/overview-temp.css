@@ -1,3 +1,4 @@
+
 .step-link {
 	width: 200px;
 	height: 200px;
@@ -315,6 +316,12 @@
 	background-repeat: no-repeat;
 }
 
+.construction-content .message {
+	padding: 120px 0;
+	text-align: center;
+}
+
+
 
 @media(max-width: 1040px) {
 	.construction-section {
@@ -335,6 +342,11 @@
 	}
 	.construction-content .h2-text {
 		padding-top: 15px;
+	}
+
+	.construction-content .message {
+		padding: 70px 0;
+		text-align: center;
 	}
 
 }
@@ -369,6 +381,10 @@
 		padding-top: 15px;
 	}
 
+	.construction-content .message {
+		padding: 35px 0;
+		text-align: center;
+	}
 }
 
 @media(max-width: 400px) {

@@ -3,26 +3,24 @@
 
 RewriteEngine On
 
-# if the URI maps to an existing file on the server, just return it
-RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" -f
-RewriteRule .? "-" [QSA,L]
-
 ## If the URL does not map to an existing file on the file-system,
 ## it could be a page other than the home page; those are in the "pages" folder
 ## a little hackery follows to make this work
 ## on the live server and local environment setup
-# If the URL don't map to an existing file
-RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" !-f
 # this is for live server environment
+	# If the URL don't map to an existing file
+RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" !-f
 RewriteCond "%{REQUEST_URI}" ^/([^/]+)/([^/]+.*)
 RewriteCond "%{DOCUMENT_ROOT}/%1/pages/%2\.php" -f
 RewriteRule . /%1/pages/%2.php [L]
 # this is for local dev environment
+	# If the URL don't map to an existing file
+RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" !-f
 RewriteCond "%{DOCUMENT_ROOT}/pages%{REQUEST_URI}\.php" -f
 RewriteRule . /pages%{REQUEST_URI}.php [L]
 
 # the catch-all "else" block
 # forward the request to index.php; it will do the heavy-lifting
-RewriteRule .? index.php [QSA,L]
+# RewriteRule .? index.php [QSA,L]
 
 </IfModule>
