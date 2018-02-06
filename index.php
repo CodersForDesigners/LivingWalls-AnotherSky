@@ -89,6 +89,18 @@
 	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
 	<link rel="stylesheet" type="text/css" href="css/pages/overview.css">
 
+	<!-- `picture` element polyfill -->
+	<script type="text/javascript">
+		(function () {
+			if ( ! ( 'HTMLPictureElement' in window ) ) {
+				var script = document.createElement( "script" );
+				script.type = "text/javascript";
+				script.src = "js/picturefill.min.js";
+				document.head.appendChild( script );
+			}
+		}())
+	</script>
+
 	<!-- Analytics -->
 	<!-- redo the Google Analytics, Facebook Pixel, HotJar code -->
 
