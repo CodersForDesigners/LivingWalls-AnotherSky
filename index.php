@@ -88,6 +88,13 @@
 	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
 	<link rel="stylesheet" type="text/css" href="css/pages/overview.css">
 
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-min.js"></script>
+
 	<!-- `picture` element polyfill -->
 	<script type="text/javascript">
 		(function () {
@@ -452,84 +459,124 @@
 
 
 
-	<!-- Image Carousel : Interiors -->
-	<div class="carousel-section js-carousel" data-carousel-map="something-unique">
-		<!-- El Picturs-o -->
-		<div class="strip js-strip" data-bridge="js-pictur--active">
-			<div class="pictur js-pictur js-pictur--active">
-				<img src="media/images/carousel/interior/carousel_1.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_1.jpg?v=270717 640w, media/images/carousel/interior/carousel_1.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_2.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_2.jpg?v=270717 640w, media/images/carousel/interior/carousel_2.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_3.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_3.jpg?v=270717 640w, media/images/carousel/interior/carousel_3.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-generic">
-				<img src="media/images/carousel/interior/carousel_4.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_4.jpg?v=270717 640w, media/images/carousel/interior/carousel_4.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_5.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_5.jpg?v=270717 640w, media/images/carousel/interior/carousel_5.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_6.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_6.jpg?v=270717 640w, media/images/carousel/interior/carousel_6.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_7.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_7.jpg?v=270717 640w, media/images/carousel/interior/carousel_7.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_8.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_8.jpg?v=270717 640w, media/images/carousel/interior/carousel_8.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_9.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_9.jpg?v=270717 640w, media/images/carousel/interior/carousel_9.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur figcap before bottom-right rera-generic">
-				<img src="media/images/carousel/interior/carousel_10.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_10.jpg?v=270717 640w, media/images/carousel/interior/carousel_10.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_11.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_11.jpg?v=270717 640w, media/images/carousel/interior/carousel_11.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_12.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_12.jpg?v=270717 640w, media/images/carousel/interior/carousel_12.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_13.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_13.jpg?v=270717 640w, media/images/carousel/interior/carousel_13.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_14.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_14.jpg?v=270717 640w, media/images/carousel/interior/carousel_14.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_15.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_15.jpg?v=270717 640w, media/images/carousel/interior/carousel_15.jpg?v=270717 1380w" sizes="100%">
-			</div>
-			<div class="pictur js-pictur">
-				<img src="media/images/carousel/interior/carousel_16.jpg?v=270717" srcset="media/images_mobile/carousel/interior/carousel_16.jpg?v=270717 640w, media/images/carousel/interior/carousel_16.jpg?v=270717 1380w" sizes="100%">
-			</div>
-		</div>
-		<!-- El Dots-o -->
-		<div class="controls js-controls">
-			<ul class="dot-list js-dot-list" data-bridge="js-control--active">
-				<li class="dot js-dot js-control js-control--active" data-slide="1"></li>
-				<li class="dot js-dot js-control" data-slide="2"></li>
-				<li class="dot js-dot js-control" data-slide="3"></li>
-				<li class="dot js-dot js-control" data-slide="4"></li>
-				<li class="dot js-dot js-control" data-slide="5"></li>
-				<li class="dot js-dot js-control" data-slide="6"></li>
-				<li class="dot js-dot js-control" data-slide="7"></li>
-				<li class="dot js-dot js-control" data-slide="8"></li>
-				<li class="dot js-dot js-control" data-slide="9"></li>
-				<li class="dot js-dot js-control" data-slide="10"></li>
-				<li class="dot js-dot js-control" data-slide="11"></li>
-				<li class="dot js-dot js-control" data-slide="12"></li>
-				<li class="dot js-dot js-control" data-slide="13"></li>
-				<li class="dot js-dot js-control" data-slide="14"></li>
-				<li class="dot js-dot js-control" data-slide="15"></li>
-				<li class="dot js-dot js-control" data-slide="16"></li>
-				<span class="control prev js-control" data-slide="-"></span>
-				<span class="control next js-control" data-slide="+"></span>
-			</ul>
-		</div>
-	</div>
+	<!-- slick — Image Carousel : Interiors -->
+	<section class="carousel-section">
+		<div class="slick-carousel">
 
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_1.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_1.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_2.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_2.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_3.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_3.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide figcap before bottom-right rera-generic">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_4.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_4.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_5.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_5.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_6.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_6.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_7.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_7.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_8.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_8.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_9.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_9.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide figcap before bottom-right rera-generic">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_10.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_10.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_11.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_11.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_12.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_12.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_13.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_13.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_14.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_14.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_15.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_15.jpg?v=270717">
+				</picture>
+			</div>
+
+			<div class="slide">
+				<picture class="image">
+					<source srcset="media/images/carousel/interior/carousel_16.jpg?v=270717" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_16.jpg?v=270717">
+				</picture>
+			</div>
+
+		</div> <!-- END : slick -->
+	</section> <!-- END : Image Carousel -->
 
 
 
@@ -576,75 +623,113 @@
 
 	<!-- Construction Report -->
 	<div class="section-row construction-section clearfix">
-		<!-- Image Carousel : Construction -->
-		<div class="carousel-section js-carousel" data-carousel-map="something-unique">
-			<!-- El Picturs-o -->
-			<div class="strip js-strip" data-bridge="js-pictur--active">
-				<div class="pictur js-pictur js-pictur--active">
-					<img src="media/images/carousel/construction/carousel_1.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_1.jpg?v=270717 640w, media/images/carousel/construction/carousel_1.jpg?v=270717 1380w" sizes="100%">
+
+		<!-- slick — Image Carousel : Construction -->
+		<div class="carousel-section">
+			<div class="slick-carousel">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_1.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_1.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_2.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_2.jpg?v=270717 640w, media/images/carousel/construction/carousel_2.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_2.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_2.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_3.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_3.jpg?v=270717 640w, media/images/carousel/construction/carousel_3.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_3.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_3.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_4.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_4.jpg?v=270717 640w, media/images/carousel/construction/carousel_4.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide figcap before bottom-right rera-generic">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_4.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_4.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_5.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_5.jpg?v=270717 640w, media/images/carousel/construction/carousel_5.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_5.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_5.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_6.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_6.jpg?v=270717 640w, media/images/carousel/construction/carousel_6.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_6.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_6.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_7.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_7.jpg?v=270717 640w, media/images/carousel/construction/carousel_7.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_7.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_7.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_8.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_8.jpg?v=270717 640w, media/images/carousel/construction/carousel_8.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_8.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_8.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_9.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_9.jpg?v=270717 640w, media/images/carousel/construction/carousel_9.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_9.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_9.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_10.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_10.jpg?v=270717 640w, media/images/carousel/construction/carousel_10.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide figcap before bottom-right rera-generic">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_10.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_10.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_11.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_11.jpg?v=270717 640w, media/images/carousel/construction/carousel_11.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_11.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_11.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_12.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_12.jpg?v=270717 640w, media/images/carousel/construction/carousel_12.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_12.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_12.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_13.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_13.jpg?v=270717 640w, media/images/carousel/construction/carousel_13.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_13.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_13.jpg?v=270717">
+					</picture>
 				</div>
-				<div class="pictur js-pictur">
-					<img src="media/images/carousel/construction/carousel_14.jpg?v=270717" srcset="media/images_mobile/carousel/construction/carousel_14.jpg?v=270717 640w, media/images/carousel/construction/carousel_14.jpg?v=270717 1380w" sizes="100%">
+
+				<div class="slide">
+					<picture class="image">
+						<source srcset="media/images/carousel/construction/carousel_14.jpg?v=270717" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_14.jpg?v=270717">
+					</picture>
 				</div>
-			</div>
-			<!-- El Dots-o -->
-			<div class="controls js-controls">
-				<ul class="dot-list js-dot-list" data-bridge="js-control--active">
-					<li class="dot js-dot js-control js-control--active" data-slide="1"></li>
-					<li class="dot js-dot js-control" data-slide="2"></li>
-					<li class="dot js-dot js-control" data-slide="3"></li>
-					<li class="dot js-dot js-control" data-slide="4"></li>
-					<li class="dot js-dot js-control" data-slide="5"></li>
-					<li class="dot js-dot js-control" data-slide="6"></li>
-					<li class="dot js-dot js-control" data-slide="7"></li>
-					<li class="dot js-dot js-control" data-slide="8"></li>
-					<li class="dot js-dot js-control" data-slide="9"></li>
-					<li class="dot js-dot js-control" data-slide="10"></li>
-					<li class="dot js-dot js-control" data-slide="11"></li>
-					<li class="dot js-dot js-control" data-slide="12"></li>
-					<li class="dot js-dot js-control" data-slide="13"></li>
-					<li class="dot js-dot js-control" data-slide="14"></li>
-					<span class="control prev js-control" data-slide="-"></span>
-					<span class="control next js-control" data-slide="+"></span>
-				</ul>
-			</div>
-		</div>
+
+			</div> <!-- END : slick -->
+		</div> <!-- END : Image Carousel -->
+
+
 		<div class="construction-content clearfix">
 			<a name="construction"></a>
 			<div class="message">
@@ -1359,7 +1444,34 @@
 <script type="text/javascript" src="/js/modules/form.js"></script>
 <script type="text/javascript" src="/js/modules/disclaimer.js"></script>
  -->
+ <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
 
+
+<script type="text/javascript">
+
+ // JAVASCRIPT GOES HERE
+ $(document).ready(function(){
+	$('.slick-carousel').slick({
+		autoplay: true,
+		arrows: true,
+		dots: true,
+		infinite: true,
+		speed: 800,
+		autoplaySpeed: 3000,
+		slidesToShow: 1,
+		responsive: [
+			{
+				breakpoint: 639,
+				settings: {
+					arrows: false
+				}
+			}
+		],
+		adaptiveHeight: true,
+	});
+ });
+
+</script>
 
 <!-- build:js /scripts/overview.v2.7.js -->
 <!-- utility functions -->
@@ -1367,9 +1479,6 @@
 
 <!-- Script for Firefox srcset Fix -->
 <script type="text/javascript" src="js/overview/browser_specific.js"></script>
-
-<!-- jQuery -->
-<script type="text/javascript" src="js/jquery-min.js"></script>
 
 <!-- jQuery Plugins -->
 <script type="text/javascript" src="js/jquery.visible.min.js"></script>

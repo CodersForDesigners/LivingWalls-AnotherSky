@@ -229,52 +229,89 @@
 .slick-slide:focus { outline: none; }
 
 
-.slick_calculator.slick-dotted.slick-slider { margin-bottom: 0; }
-.slick_calculator .slick-dots { bottom: 8px; }
+.slick-carousel.slick-dotted.slick-slider { margin-bottom: 0; }
 
-.slick_calculator .slick-prev,
-.slick_calculator .slick-next {
+.slick-carousel .slick-prev,
+.slick-carousel .slick-next {
     /*width: 100px;*/
     /*height: 80px;*/
     /*top: 0px;*/
-    width: 50px;
-    height: 50px;
-    top: 30px;
+    width: 60px;
+    /*height: 50px;*/
+    top: 50%;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%;
+    background-size: 100%;
+    border-radius: 0;
+    opacity: 0.4;
 }
 
-.slick_calculator .slick-prev {
-    left: 0px;
-    background-image: url(../../img/icon-prev.svg);
+.slick-carousel .slick-prev:hover,
+.slick-carousel .slick-prev:focus,
+.slick-carousel .slick-next:hover,
+.slick-carousel .slick-next:focus {
+    opacity: 0.8;
 }
-.slick_calculator .slick-next {
+
+.slick-carousel .slick-prev {
+    left: 0px;
+    background-image: url('../../media/images/icon-controls/prev.svg');
+}
+.slick-carousel .slick-next {
     right: 0px;
-    background-image: url(../../img/icon-next.svg);
+    background-image: url('../../media/images/icon-controls/next.svg');
+}
+
+
+.slick-carousel .slick-dots { 
+    bottom: 15px; 
+}
+.slick-carousel .slick-dots li {
+    width: 12px;
+}
+.slick-carousel .slick-dots li button {
+    width: 12px;
+}
+.slick-carousel .slick-dots li button:before {
+    font-size: 8px;
+    opacity: 0.4;
+    color: #000000;
+}
+.slick-carousel .slick-dots li.slick-active button:before {
+    opacity: 0.8;
+    color: #FFFFFF;
 }
 
 @media( min-width: 640px ){
-    .slick_calculator .slick-prev,
-    .slick_calculator .slick-next {
-        width: 100px;
+    .slick-carousel .slick-prev,
+    .slick-carousel .slick-next {
+        /*width: 100px;
         height: 80px;
-        top: 0px;
+        top: 0px;*/
     }
-    .slick_calculator .slick-dots { bottom: 15px; }
-    .slick_calculator .slick-dots li button::before {
-        font-size: 8px;
+    
+    .slick-carousel .slick-dots { 
+        bottom: 40px; 
     }
-}
-
-@media( min-width: 1040px ){
-    .slick_calculator .slick-dots { bottom: 12px; }
-    .slick_calculator .slick-dots li button::before {
+    .slick-carousel .slick-dots li {
+        width: 18px;
+    }
+    .slick-carousel .slick-dots li button {
+        width: 18px;
+    }
+    .slick-carousel .slick-dots li button:before {
         font-size: 10px;
     }
 }
 
+@media( min-width: 1040px ){
+    /*.slick-carousel .slick-dots { bottom: 12px; }
+    .slick-carousel .slick-dots li button::before {
+        font-size: 10px;
+    }*/
+}
+
 @media( min-width: 1380px ){
-    .slick_calculator .slick-dots { bottom: 15px; }
+    /*.slick-carousel .slick-dots { bottom: 15px; }*/
 }
