@@ -19,6 +19,49 @@ RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" !-f
 RewriteCond "%{DOCUMENT_ROOT}/pages%{REQUEST_URI}\.php" -f
 RewriteRule . /pages%{REQUEST_URI}.php [L]
 
+## Social campaign redirects
+RewriteRule ^balconies-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-LargeBalconies [R=301,L]
+RewriteRule /balconies-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-LargeBalconies [R=301,L]
+
+RewriteRule ^balconiesv-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Balconies-Video [R=301,L]
+RewriteRule /balconiesv-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Balconies-Video [R=301,L]
+
+RewriteRule ^balconytimelapse-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Feb2018-balcony-timelapse [R=301,L]
+RewriteRule /balconytimelapse-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Feb2018-balcony-timelapse [R=301,L]
+
+RewriteRule ^bedrooms-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-SpaciousBedrooms [R=301,L]
+RewriteRule /bedrooms-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-SpaciousBedrooms [R=301,L]
+
+RewriteRule ^design-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-apartmentdesign [R=301,L]
+RewriteRule /design-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-apartmentdesign [R=301,L]
+
+RewriteRule ^detailsv-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Details-Video [R=301,L]
+RewriteRule /detailsv-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Details-Video [R=301,L]
+
+RewriteRule ^homeofficev-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Home-Office-Video [R=301,L]
+RewriteRule /homeofficev-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Home-Office-Video [R=301,L]
+
+RewriteRule ^orr-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-ORR [R=301,L]
+RewriteRule /orr-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-ORR [R=301,L]
+
+RewriteRule ^orrtimelapse-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Feb2018-ORR-timelapse [R=301,L]
+RewriteRule /orrtimelapse-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Feb2018-ORR-timelapse [R=301,L]
+
+RewriteRule ^orrv-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-ORR-Video [R=301,L]
+RewriteRule /orrv-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-ORR-Video [R=301,L]
+
+RewriteRule ^partyspacev-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Party-Video [R=301,L]
+RewriteRule /partyspacev-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Party-Video [R=301,L]
+
+RewriteRule ^videob-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Main-B-Video [R=301,L]
+RewriteRule /videob-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-B-Oct23-Main-B-Video [R=301,L]
+
+RewriteRule ^winddirection-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-Wind-Direction [R=301,L]
+RewriteRule /winddirection-fb$ http://livingwalls.in/?utm_source=facebook&utm_medium=cpc&utm_campaign=LZ-FB-Post-Oct23-Wind-Direction [R=301,L]
+
+## END: Social campaign redirects
+
+
 # the catch-all "else" block
 # forward the request to index.php; it will do the heavy-lifting
 # RewriteRule .? index.php [QSA,L]
