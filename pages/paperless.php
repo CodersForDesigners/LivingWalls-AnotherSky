@@ -33,7 +33,7 @@
 
 	<!-- Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
-	<link rel="stylesheet" type="text/css" href="css/pages/manual-form.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/paperless.css">
 
 </head>
 
@@ -127,7 +127,7 @@
 <!-- <script type="text/javascript" src="/js/modules/util.js"></script> -->
 <!-- jQuery -->
 <script type="text/javascript" src="js/jquery-min.js"></script>
-<script type="text/javascript" src="js/paperless/manual-form.js"></script>
+<script type="text/javascript" src="js/paperless/paperless.js"></script>
 <!-- endbuild -->
 
 </body>

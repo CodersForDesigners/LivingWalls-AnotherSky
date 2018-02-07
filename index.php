@@ -109,7 +109,7 @@
 
 <!--  ★  MARKUP GOES HERE  ★  -->
 
-<div id="wrapper"><!-- Page Wrapper -->
+<div id="wrapper" class="wrapper"><!-- Page Wrapper -->
 
 	<!-- Landing -->
 	<div class="section-row landing-section clearfix">
