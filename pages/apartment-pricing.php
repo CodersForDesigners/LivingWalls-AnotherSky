@@ -87,7 +87,7 @@
 	<link rel="stylesheet" type="text/css" href="css/pages/pricing.css">
 
 	<!-- Analytics -->
-	<!-- redo the Google Analytics, Facebook Pixel, HotJar code -->
+	<!-- redo the Google Analytics, Facebook Pixel code -->
 
 </head>
 
@@ -585,9 +585,6 @@
 		// Google Conversion Code
 		var img = new Image();  //Creates an image using JS to make the request
 		img.src = "//www.googleadservices.com/pagead/conversion/941040085/?label=HaJSCIbF32AQ1cPcwAM&script=0";
-
-		// Triggering hotjar form submission
-		hj('formSubmitSuccessful');
 
 		// Trigger iframe page load
 		// $('#js_form_submission_a_tag').on( "click" , function() {} );

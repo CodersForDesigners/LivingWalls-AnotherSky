@@ -158,9 +158,6 @@ $(document).ready(function(){
 			// Triggering event for ga tracking of form submit
 			$(this).trigger("overview_contact_form_one_validated");
 
-			// Triggering hotjar form submission
-			// hj('formSubmitSuccessful');
-
 		} // end of mail_check else statement
 	});
 
@@ -236,9 +233,6 @@ $(document).ready(function(){
 
 	        // Triggering event for ga tracking of form submit
 	        $(this).trigger("overview_contact_form_two_validated");
-
-	        // Triggering hotjar form submission
-	        // hj('formSubmitSuccessful');
 
 	    } // end of mail_check else statement
 	 });

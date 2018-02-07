@@ -1243,8 +1243,6 @@ $.fn.filterByData = function(prop, val) {
 		    // Trigger iframe for apartment-pricing-form-submit-thank-you.php
 		    $("#iframe_for_a").attr("src","apartment-pricing-form-submit-thank-you.php");
 
-		    // Triggering hotjar form submission
-		    // hj('formSubmitSuccessful');
 		} // mail_check else statement
   });
 
