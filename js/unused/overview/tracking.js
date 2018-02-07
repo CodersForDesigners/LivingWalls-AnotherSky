@@ -30,15 +30,11 @@ $(document).ready(function() {
 	});
 
 	$(".contact_form_overview_part_one").on('overview_contact_form_one_validated', function(){
-	    // Triggering hotjar form submission
-	    hj('formSubmitSuccessful');
 
 		ga('send', 'event','Overview', 'Contact Form One Submitted' ,'Click');
 	});
 
 	$(".contact_form_overview_part_two").on('overview_contact_form_two_validated', function(){
-	    // Triggering hotjar form submission
-	    hj('formSubmitSuccessful');
 
 		ga('send', 'event','Overview', 'Contact Form Two Submitted' ,'Click');
 	});

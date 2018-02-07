@@ -108,7 +108,7 @@
 	</script>
 
 	<!-- Analytics -->
-	<!-- redo the Google Analytics, Facebook Pixel, HotJar code -->
+	<!-- redo the Google Analytics, Facebook Pixel code -->
 
 </head>
 
