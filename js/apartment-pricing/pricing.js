@@ -1240,8 +1240,8 @@ $.fn.filterByData = function(prop, val) {
 		    // Triggering event for ga tracking of form submit
 		    $(this).trigger("pricing_contact_form_validated");
 
-		    // Trigger iframe for thankyou.html
-		    $("#iframe_for_a").attr("src","thankyou.html");
+		    // Trigger iframe for apartment-pricing-form-submit-thank-you.php
+		    $("#iframe_for_a").attr("src","apartment-pricing-form-submit-thank-you.php");
 
 		    // Triggering hotjar form submission
 		    // hj('formSubmitSuccessful');
