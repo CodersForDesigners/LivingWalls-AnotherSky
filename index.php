@@ -1291,9 +1291,6 @@
 <!-- utility functions -->
 <script type="text/javascript" src="js/modules/util.js"></script>
 
-<!-- Script for Firefox srcset Fix -->
-<script type="text/javascript" src="js/overview/browser_specific.js"></script>
-
 <!-- jQuery Plugins -->
 <script type="text/javascript" src="js/jquery.visible.min.js"></script>
 <script type="text/javascript" src="js/modules/scrollSmooth.js"></script>
