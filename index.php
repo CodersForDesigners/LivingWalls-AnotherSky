@@ -24,7 +24,8 @@
 			Excepteur sint occaecat cupidatat non proident.">
 	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
 	<meta name="author" content="Lazaro Advertising">
-	<link rel="canonical" href="http://livingwalls.in/another-sky/">
+	<link rel="canonical" href="http://livingwalls.in/">
+	<!-- <link rel="canonical" href="http://livingwalls.in/another-sky/"> -->
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -163,7 +164,6 @@
 			</div>
 
 			<div class="inline-middle pricing-action">
-				<!-- <a class="button black block js_modal_trigger ga_general_button" data-modal-trigger="content-text" data-modal-form="contact">Get a Quote</a> -->
 				<div class="form alignleft">
 					<form class="contact_form_overview_part_one">
 						<p class="h4-text block aligncenter">Get a Quote</p>
@@ -226,7 +226,6 @@
 			</div>
 
 			<div class="pricing-missed-call inline-middle aligncenter">
-<!-- 					<span class="h2-text block">To Schedule a Site visit </br>just give us a missed call</span> -->
 				<span class="h2-text block">To Schedule a Site visit</span>
 				<a href="tel:+918039511773" class="button block ga_general_button aligncenter">Call 080 3951 1773</a>
 			</div>
@@ -234,14 +233,7 @@
 	</div>
 
 
-
-
-	<!-- Tour  -->
-	<!-- <div id="js_for_sticky_section_visibility" class="section-row tour-section clearfix">
-		<a href="#start-tour" class="h4-text inline aligncenter">Take our <strong>7 Step</strong> Tour</a>
-	</div> -->
 	<span id="breakdance"></span>
-
 
 
 	<!-- Step - 1 -->
@@ -737,25 +729,6 @@
 			</div>
 		</div>
 
-		<!-- Call For Action -->
-		<!-- <div class="call-for-action">
-			<div class="call-action">
-				<span class="h3-text block">Schedule A Site Visit</span>
-				<a class="call-button clearfix" href="tel:08039511624">
-					<span class="call-icon fl-left"></span>
-					<span class="h2-text">080 3951 1624</span>
-				</a>
-			</div>
-			<div class="vertical-or-separator"><span>Or</span></div>
-			<div class="chat-action">
-				<div class="inline">
-					<div class="h4-text block"><small>Chat with us on Facebook</small></div>
-					<div class="container-iframe">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLiving-Walls-1636151606643873&tabs=messages&width=280&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="360" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</div>
 
 
@@ -1221,12 +1194,6 @@
 
 </div><!-- END : Page Wrapper -->
 
-<!-- Sticky Footer -->
-<?php // sticky_pricing(); ?>
-
-<?php // overview_modal(); ?>
-
-
 
 
 
@@ -1238,150 +1205,6 @@
 <!-- ⬇ All Modals below this point ⬇ -->
 
 <div class="modal"><!-- Modal Wrapper -->
-	<!-- Start : Overview Contact Form -->
-	<div id="content-text" class="content form">
-		<div class="content-text">
-			<div class="former visuallyhidden contact" tabindex="-1">
-
-				<!-- Instant Call Form -->
-				<!-- <form id="instant_call_back_form">
-					<p class="h4-text block aligncenter">In A Hurry?</p>
-					<p class="form-row">
-						<small class="block aligncenter allcaps description">Share your number for an Instant Callback</small>
-						<div class="input-button-combo">
-							<i>+91</i>
-							<input id="instant_mobile" class="input-field" type="text" placeholder="India only">
-							<input class="button ga_call_now" type="submit" value="Call Now">
-						</div>
-					</p>
-				</form> -->
-
-				<div class="aligncenter">
-					<p class="h4-text block aligncenter allcaps">Call us now</p>
-					<a class="h2-text block" href="tel:+918049405726">080 4940 5726</a>
-				</div>
-
-				<div class="or-separator aligncenter"><span><small>or</small></span></div>
-
-				<!--<span class="line-separator"><i style="background-color:#BDBDBD"></i></span>-->
-
-				<!-- Start : Get in Touch Form : Restored Back -->
-				<form id="contact_form_overview" class="ga_contact_form_overview">
-					<!-- <p class="h4-text block aligncenter">Get A Quote</p> -->
-					<p class="h4-text block aligncenter">Get a Quote</p>
-					<p class="form-row">
-						<label>Name...</label>
-						<input id="name" class="input-field block" type="text">
-					</p>
-					<p class="form-row">
-						<label>Email...</label>
-						<input id="email" class="input-field block" type="text">
-					</p>
-					<p class="form-row">
-						<label>Mobile...</label>
-						<input id="mobile" class="input-field block" type="text">
-					</p>
-					<p class="form-row">
-						<label>Budget</label>
-						<select id="my_budget" class="input-field block">
-							<option selected="true" disabled="true">Pick One</option>
-							<option>1.9cr to 2.0cr</option>
-							<option>2.1cr to 2.4cr</option>
-							<option>2.5cr to 2.9cr</option>
-						</select>
-					</p>
-					<p class="form-row">
-						<label>How did you find us?</label>
-						<select id="find_us" class="input-field block">
-							<option selected="true" disabled="true">Pick One</option>
-							<option value="Web-O - YouTube">YouTube</option>
-							<option value="Web-O - Radio">Radio</option>
-							<option value="Web-O - Cinema">Cinema - PVR / INOX</option>
-							<option value="Web-O - Google Search">Google Search</option>
-							<option value="Web-O - Facebook">Facebook</option>
-							<option value="Web-O - Friend">A friend told me</option>
-							<option value="Web-O - Hoarding">Saw a hoarding</option>
-							<option value="Web-O - Ad Words">Online Image Ad</option>
-							<option value="Web-O - LinkedIn">LinkedIn</option>
-							<option value="Web-O - Newspaper Ad">Newspaper Ad</option>
-							<option value="Web-O - Site Visit">Site Visit</option>
-							<option value="Web-O - Others">Others</option>
-						</select>
-					</p>
-					<br>
-					<p class="form-row submit-button-section">
-						<input class="button block" type="submit" value="Submit">
-						<div class="loading block aligncenter"><img src="media/images/loadingbar.gif"></div>
-					</p>
-				</form>
-				<!-- End : Get in Touch Form : Restored Back -->
-
-			</div>
-
-			<!-- Start : Split up Quote Form -->
-			<!-- Get in Touch Form -->
-			<div class="former visuallyhidden quote">
-				<form id="contact_form_overview" class="ga_contact_form_overview">
-					<p class="h4-text block aligncenter">Get A Quote</p>
-					<p class="form-row">
-						<label>Name...</label>
-						<input id="name" class="input-field block" type="text">
-					</p>
-					<p class="form-row">
-						<label>Email...</label>
-						<input id="email" class="input-field block" type="text">
-					</p>
-					<p class="form-row">
-						<label>Mobile...</label>
-						<input id="mobile" class="input-field block" type="text">
-					</p>
-					<p class="form-row">
-						<label>Budget</label>
-						<select id="my_budget" class="input-field block">
-							<option selected="true" disabled="true">Pick One</option>
-							<option>1.9cr to 2.0cr</option>
-							<option>2.1cr to 2.4cr</option>
-							<option>2.5cr to 2.9cr</option>
-						</select>
-					</p>
-					<p class="form-row">
-						<label>How did you find us?</label>
-						<select id="find_us" class="input-field block">
-							<option selected="true" disabled="true">Pick One</option>
-							<option value="Web-O - YouTube">YouTube</option>
-							<option value="Web-O - Radio">Radio</option>
-							<option value="Web-O - Cinema">Cinema - PVR / INOX</option>
-							<option value="Web-O - Google Search">Google Search</option>
-							<option value="Web-O - Facebook">Facebook</option>
-							<option value="Web-O - Friend">A friend told me</option>
-							<option value="Web-O - Hoarding">Saw a hoarding</option>
-							<option value="Web-O - Ad Words">Online Image Ad</option>
-							<option value="Web-O - LinkedIn">LinkedIn</option>
-							<option value="Web-O - Newspaper Ad">Newspaper Ad</option>
-							<option value="Web-O - Site Visit">Site Visit</option>
-							<option value="Web-O - Others">Others</option>
-						</select>
-					</p>
-					<br>
-					<p class="form-row submit-button-section">
-						<input class="button block" type="submit" value="Submit">
-						<div class="loading block aligncenter"><img src="media/images/loadingbar.gif"></div>
-					</p>
-				</form>
-
-				<div class="or-separator aligncenter"><span><small>or</small></span></div>
-
-				<a  href="apartment-pricing" target="_blank" class="button block aligncenter outline ga_general_button">Apartment Pricing</a>
-				<!-- <div>
-					<p class="h4-text block aligncenter">Or Call us : <a href="tel:+918049405726">080 4940 5726</a></p>
-				</div> -->
-			</div>
-			<!-- End : Split up Quote Form -->
-
-			<span class="close">&times;</span>
-		</div>
-	</div>
-	<!-- End : Overview Contact Form -->
 	<!-- Start : Overview Other Projects -->
 	<div id="content-projects" class="content">
 		<div class="content-projects">
@@ -1413,14 +1236,14 @@
 		</div>
 	</div>
 	<!-- End : Overview Other Projects -->
-	<!-- Start : Overview Contact Form -->
+	<!-- Start : Video Modal -->
 	<div id="content-video" class="content">
 		<div class="video">
 			<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen=""></iframe>
 		</div>
 		<span class="close">&times;</span>
 	</div>
-	<!-- End : Overview Contact Form -->
+	<!-- End : Video Modal -->
 </div><!-- END : Modal Wrapper -->
 
 <!--  ☠  MARKUP ENDS HERE  ☠  -->
@@ -1436,15 +1259,7 @@
 
 
 <!-- JS Modules -->
-<!--
-<script type="text/javascript" src="/js/modules/pageless.js"></script>
-<script type="text/javascript" src="/js/modules/video_embed.js"></script>
-<script type="text/javascript" src="/js/modules/modal_box.js"></script>
-<script type="text/javascript" src="/js/modules/smoothscroll.js"></script>
-<script type="text/javascript" src="/js/modules/form.js"></script>
-<script type="text/javascript" src="/js/modules/disclaimer.js"></script>
- -->
- <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+<script type="text/javascript" src="plugins/slick/slick.min.js"></script>
 
 
 <script type="text/javascript">
@@ -1473,7 +1288,6 @@
 
 </script>
 
-<!-- build:js /scripts/overview.v2.7.js -->
 <!-- utility functions -->
 <script type="text/javascript" src="js/modules/util.js"></script>
 

@@ -304,21 +304,10 @@
 
 					<!-- Description -->
 					<span class="title h3-text block">My <img src="media/images/pricing/heart-on.svg?v=2.1"> Wishlist</span>
-					<!-- <p class="description">Add apartments to your wishlist. They will appear below. <strong>You can compare, add or remove apartments in this wishlist.</strong> Fill the form below, we can then get in touch and assist you with your purchase.</p> -->
 					<p class="description">Add apartments to your wishlist. They will appear below. You can compare, add or remove apartments in this wishlist. Fill the form, we will E-mail you <strong>PDFs with a detailed Cost Breakup &amp; a Floorplan,</strong> only for the apartments in this list. We can then get in touch and assist you with your purchase.</p>
 					<!-- Bubbles -->
 					<ul id="js_wishlist" class="wishlist">
-						<!-- <li class="wish">
-							<span class="view inline-middle">
-								<img class="inline-middle" src="media/images/pricing/heart-small.svg?v=2.1">
-								<span class="w-number inline-middle">A106</span>
-								<span class="inline-middle">
-									<span class="w-type block">3BHK+</span>
-									<span class="w-price block">₹ 2.34cr</span>
-								</span>
-							</span>
-							<span class="remove inline-middle">&times;</span>
-						</li> -->
+						<!-- Wish Goes Here -->
 					</ul>
 
 				</div>
@@ -365,7 +354,7 @@
 				</div>
 
 				<!-- Thank you iFrame -->
-				<iframe id="iframe_for_a" name="iframe_for_a"></iframe>
+				<iframe id="iframe_for_a" name="iframe_for_a" style="height: 0;"></iframe>
 			</div>
 		</div>
 
@@ -494,7 +483,6 @@
 					</span> <span id="car_parking" class="fl-right">₹ 00,000,00</span></div>
 					<div class="breakup block clearfix"><span>Floor Rise</span> <span id="floor_rise" class="fl-right">₹ 00,000,00</span></div>
 					<div class="breakup block clearfix"><span>Club Membership</span> <span id="clubhouse" class="fl-right">₹ 00,000,00</span></div>
-					<!-- <div class="breakup block clearfix">* <small>Additional Car Parking options are available, like an Open Surface Car Park at Rs. 2,50,000/- or a set of 2 Linked Basement Car Park at Rs.6,00,000/-</small></div> -->
 				</div>
 				<!-- <hr>
 				<div class="breakup-section block">
@@ -555,8 +543,7 @@
 <script type="text/javascript" src="js/modules/scrollSmooth.js"></script>
 <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
 <script type="text/javascript" src="js/apartment-pricing/pricing.js"></script>
-<!-- Sticky Pricing JS -->
-<!-- <script type="text/javascript" src="js/modules/sticky-pricing.js"></script> -->
+
 <!-- Modal Window JS -->
 <script type="text/javascript" src="js/modules/modal.js"></script>
 
