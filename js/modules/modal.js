@@ -4,7 +4,12 @@ $("body").on("click", ".js_modal_trigger", function() {
 	var modId = $( this ).attr( "data-modal-trigger" );
 	$( "#" + modId ).addClass( "show" );
 
-	if ( modId == "content-video" ) {
+	if ( modId == "content-text" ) {
+		var modForm = $( this ).attr( "data-modal-form" );
+		$( ".content-text .former." + modForm ).removeClass("visuallyhidden");
+	}
+
+	else if ( modId == "content-video" ) {
 		var modSrc = $( this ).attr( "data-modal-video" );
 		$( ".content .video iframe" ).attr( "src", modSrc );
 	}
