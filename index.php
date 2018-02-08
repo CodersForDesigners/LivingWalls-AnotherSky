@@ -1299,9 +1299,6 @@
 <!-- Design Tabs JS -->
 <script type="text/javascript" src="js/modules/tabs.js"></script>
 
-<!-- Sticky Pricing JS -->
-<script type="text/javascript" src="js/modules/sticky-pricing.js"></script>
-
 <!-- Modal Window JS -->
 <script type="text/javascript" src="js/modules/modal.js"></script>
 
