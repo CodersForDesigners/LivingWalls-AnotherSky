@@ -227,7 +227,7 @@
 
 			<div class="pricing-missed-call inline-middle aligncenter">
 				<span class="h2-text block">To Schedule a Site visit</span>
-				<a href="tel:+918039511773" class="button block ga_general_button aligncenter">Call 080 3951 1773</a>
+				<a href="tel:+918039511773" class="button outline block ga_general_button aligncenter">Call 080 3951 1773</a>
 			</div>
 		</div>
 	</div>
@@ -859,96 +859,83 @@
 				<p class="h3-text"><strong>Don't</strong> watch these Ads</p>
 			</div>
 		</div>
-		<div id="video_carousel" class="aligncenter block ads">
-			<div class="inner">
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="1" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FXrR1kVwgb8?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_1.jpg?v=2.6">
-					</div>
-					<small class="caption">Ginormous Balconies</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="2" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Y30Zrx_s97M?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_8.jpg?v=2.6">
-					</div>
-					<small class="caption">Outer Ring Road</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="3" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/BPD-28GjVZc?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_2.jpg?v=2.6">
-					</div>
-					<small class="caption">Fire Suppression</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="4" class="active js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/zcyEX5Q5t9w?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_4.jpg?v=2.6">
-					</div>
-					<small class="caption">Living Walls TVC</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="5" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Vh7EBSVFl8A?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_3.jpg?v=2.6">
-					</div>
-					<small class="caption">Party Space</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="6" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Kuk0apPwokw?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_5.jpg?v=2.6">
-					</div>
-					<small class="caption">Sheltered Balconies</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="7" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/o1SxWYyxExY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_6.jpg?v=2.6">
-					</div>
-					<small class="caption">Outer Ring Road</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="8" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Ucco_7Z5zLY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_7.jpg?v=2.6">
-					</div>
-					<small class="caption">Vertical Garden</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="9" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FAGCdkgD0TI?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_9.jpg?v=2.6">
-					</div>
-					<small class="caption">Small Details</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="10"class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/HTSHOAgayRs?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_10.jpg?v=2.6">
-					</div>
-					<small class="caption">Home Office</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="11"class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/8Xnh-Ify4DU?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_11.jpg?v=2.6">
-					</div>
-					<small class="caption">Owner's Manual</small>
-				</span>
-				<span class="video inline-middle ad">
-					<div class="play-button">
-						<img data-video-index="12"class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/RHuWXq1KH_E?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_12.jpg?v=2.6">
-					</div>
-					<small class="caption">Home Office</small>
-				</span>
-			</div>
-			<div class="dots">
-				<span data-dot-index="1" class="dot"></span>
-				<span data-dot-index="2" class="dot"></span>
-				<span data-dot-index="3" class="dot"></span>
-				<span data-dot-index="4" class="dot active"></span>
-				<span data-dot-index="5" class="dot"></span>
-				<span data-dot-index="6" class="dot"></span>
-				<span data-dot-index="7" class="dot"></span>
-				<span data-dot-index="8" class="dot"></span>
-				<span data-dot-index="9" class="dot"></span>
-				<span data-dot-index="10" class="dot"></span>
-				<span data-dot-index="11" class="dot"></span>
-				<span data-dot-index="12" class="dot"></span>
-			</div>
-		</div>
+
+		<div class="video-carousel" id="video_carousel">
+
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="1" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FXrR1kVwgb8?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_1.jpg?v=2.6">
+				</div>
+				<small class="caption">Ginormous Balconies</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="2" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Y30Zrx_s97M?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_8.jpg?v=2.6">
+				</div>
+				<small class="caption">Outer Ring Road</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="3" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/BPD-28GjVZc?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_2.jpg?v=2.6">
+				</div>
+				<small class="caption">Fire Suppression</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="4" class="active js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/zcyEX5Q5t9w?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_4.jpg?v=2.6">
+				</div>
+				<small class="caption">Living Walls TVC</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="5" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Vh7EBSVFl8A?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_3.jpg?v=2.6">
+				</div>
+				<small class="caption">Party Space</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="6" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Kuk0apPwokw?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_5.jpg?v=2.6">
+				</div>
+				<small class="caption">Sheltered Balconies</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="7" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/o1SxWYyxExY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_6.jpg?v=2.6">
+				</div>
+				<small class="caption">Outer Ring Road</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="8" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Ucco_7Z5zLY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_7.jpg?v=2.6">
+				</div>
+				<small class="caption">Vertical Garden</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="9" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FAGCdkgD0TI?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_9.jpg?v=2.6">
+				</div>
+				<small class="caption">Small Details</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="10" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/HTSHOAgayRs?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_10.jpg?v=2.6">
+				</div>
+				<small class="caption">Home Office</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="11" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/8Xnh-Ify4DU?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_11.jpg?v=2.6">
+				</div>
+				<small class="caption">Owner's Manual</small>
+			</span>
+			<span class="video-slide inline-middle aligncenter">
+				<div class="play-button">
+					<img data-video-index="12" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/RHuWXq1KH_E?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_12.jpg?v=2.6">
+				</div>
+				<small class="caption">Home Office</small>
+			</span>
+
+		</div> <!-- END : slick -->
 	</div>
 
 
@@ -1266,6 +1253,8 @@
 
  // JAVASCRIPT GOES HERE
  $(document).ready(function(){
+
+	/* -- Carousel Section -- */
 	$('.slick-carousel').slick({
 		autoplay: true,
 		arrows: true,
@@ -1284,6 +1273,31 @@
 		],
 		adaptiveHeight: true,
 	});
+
+
+	/* -- Video Carousel -- */
+	$('.video-carousel').slick({
+		autoplay: true,
+		arrows: true,
+		dots: true,
+		infinite: true,
+		speed: 800,
+		autoplaySpeed: 3000,
+		slidesToShow: 1,
+		centerMode: true,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 639,
+				settings: {
+					arrows: false
+				}
+			}
+		],
+		adaptiveHeight: true,
+	});
+
+
  });
 
 </script>

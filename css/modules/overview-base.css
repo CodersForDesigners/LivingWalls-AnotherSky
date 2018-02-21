@@ -407,6 +407,10 @@ input[type="submit"].done:focus {
 	}
 }
 @media(max-width: 640px) {
+	.or-separator + .phone-number {
+		display: none;
+	}
+
 	.line-separator {
 		padding: 15px 0;
 	}
@@ -454,7 +458,6 @@ input[type="submit"].done:focus {
 
 .pricing-missed-call span {
 	margin-bottom: 15px;
-	margin-top: 50px;
 	color: #FFFFFF;
 	font-size: 16px;
 	font-weight: 700;
@@ -804,9 +807,9 @@ input[type="submit"].done:focus {
 
 	}
 
-	.pricing-title .button.pricing-page {
+	/*.pricing-title .button.pricing-page {
 		display: none;
-	}
+	}*/
 
 	.pricing-missed-call {
 		display: block;
@@ -815,6 +818,8 @@ input[type="submit"].done:focus {
 	.pricing-section .pricing-action {
 		width: 100%;
 		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 
 	.pricing-action .form .h4-text {

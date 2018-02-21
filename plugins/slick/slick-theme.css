@@ -230,15 +230,24 @@
 
 
 .slick-carousel.slick-dotted.slick-slider { margin-bottom: 0; }
+.video-carousel.slick-dotted.slick-slider { margin-bottom: 0; }
 
 .slick-carousel .slick-prev,
 .slick-carousel .slick-next {
-    /*width: 100px;*/
-    /*height: 80px;*/
-    /*top: 0px;*/
     width: 60px;
-    /*height: 50px;*/
     top: 50%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 0;
+    opacity: 0.4;
+}
+
+.video-carousel .slick-prev,
+.video-carousel .slick-next {
+    width: 60px;
+    top: 45.6%;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -254,11 +263,27 @@
     opacity: 0.8;
 }
 
+.video-carousel .slick-prev:hover,
+.video-carousel .slick-prev:focus,
+.video-carousel .slick-next:hover,
+.video-carousel .slick-next:focus {
+    opacity: 0.8;
+}
+
 .slick-carousel .slick-prev {
     left: 0px;
     background-image: url('../../media/images/icon-controls/prev.svg');
 }
 .slick-carousel .slick-next {
+    right: 0px;
+    background-image: url('../../media/images/icon-controls/next.svg');
+}
+
+.video-carousel .slick-prev {
+    left: 0px;
+    background-image: url('../../media/images/icon-controls/prev.svg');
+}
+.video-carousel .slick-next {
     right: 0px;
     background-image: url('../../media/images/icon-controls/next.svg');
 }
@@ -283,6 +308,27 @@
     color: #FFFFFF;
 }
 
+
+
+.video-carousel .slick-dots { 
+    bottom: -30px; 
+}
+.video-carousel .slick-dots li {
+    width: 12px;
+}
+.video-carousel .slick-dots li button {
+    width: 12px;
+}
+.video-carousel .slick-dots li button:before {
+    font-size: 8px;
+    opacity: 0.4;
+    color: #000000;
+}
+.video-carousel .slick-dots li.slick-active button:before {
+    opacity: 0.8;
+    color: #FFFFFF;
+}
+
 @media( min-width: 640px ){
     .slick-carousel .slick-prev,
     .slick-carousel .slick-next {
@@ -301,6 +347,21 @@
         width: 18px;
     }
     .slick-carousel .slick-dots li button:before {
+        font-size: 10px;
+    }
+
+
+
+    .video-carousel .slick-dots { 
+        bottom: -40px; 
+    }
+    .video-carousel .slick-dots li {
+        width: 18px;
+    }
+    .video-carousel .slick-dots li button {
+        width: 18px;
+    }
+    .video-carousel .slick-dots li button:before {
         font-size: 10px;
     }
 }

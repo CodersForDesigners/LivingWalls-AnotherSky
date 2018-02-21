@@ -267,7 +267,11 @@
 			<!-- OR separator before -->
 			<div id="call_section_before">
 				<div class="or-separator aligncenter" style="padding: 32px 0;"><span><small style="background-color: #303233;">or</small></span></div>
-				<div><p style="color: #999999;" class="h4-text block aligncenter">Call us : <a style="color: #ffffff;" href="tel:+918049405726">080 4940 5726</a></p></div>
+				<div class="phone-number"><p style="color: #999999;" class="h4-text block aligncenter">Call us : <a style="color: #ffffff;" href="tel:+918049405726">080 4940 5726</a></p></div>
+				<div class="pricing-missed-call inline-middle aligncenter">
+					<span class="h2-text block">To Schedule a Site visit</span>
+					<a href="tel:+918039511773" class="button outline block ga_general_button aligncenter">Call 080 3951 1773</a>
+				</div>
 			</div>
 
 		</div>
