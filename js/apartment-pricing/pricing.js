@@ -1241,7 +1241,7 @@ $.fn.filterByData = function(prop, val) {
 		    $(this).trigger("pricing_contact_form_validated");
 
 		    // Trigger iframe for apartment-pricing-form-submit-thank-you.php
-		    $("#iframe_for_a").attr("src","apartment-pricing-form-submit-thank-you.php");
+		    // $("#iframe_for_a").attr("src","apartment-pricing-form-submit-thank-you");
 
 		} // mail_check else statement
   });
