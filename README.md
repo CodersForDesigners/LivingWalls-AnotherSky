@@ -14,8 +14,6 @@ privacy-policy
 	/privacy-policy => /pages/privacy-policy.php
 
 # to-do
-- [ ] Remove the 'smtp connect' log statements from the mailing libraries.
-
 ## /
 - [ ] remove all PDF Generator code except the API Request Form
 - [ ] Delete Composer

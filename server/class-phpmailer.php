@@ -410,7 +410,7 @@ class PHPMailer
      *   string  $subject       the subject
      *   string  $body          the email body
      *   string  $from          email address of sender
-     * 
+     *
      * @type string
      */
     public $action_function = '';
@@ -1020,7 +1020,6 @@ class PHPMailer
                     return $this->mailSend($this->MIMEHeader, $this->MIMEBody);
             }
         } catch (phpmailerException $e) {
-            echo "error in postsend";
             $this->setError($e->getMessage());
             if ($this->exceptions) {
                 throw $e;
@@ -1208,7 +1207,6 @@ class PHPMailer
             $this->smtp->quit();
             $this->smtp->close();
         }
-        echo "here";
         return true;
     }
 
@@ -1223,14 +1221,12 @@ class PHPMailer
      */
     public function smtpConnect($options = array())
     {
-        echo "smtp connect";
         if (is_null($this->smtp)) {
             $this->smtp = $this->getSMTPInstance();
         }
 
         //Already connected?
         if ($this->smtp->connected()) {
-            echo "smtp connected";
             return true;
         }
 
