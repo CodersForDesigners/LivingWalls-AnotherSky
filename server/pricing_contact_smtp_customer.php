@@ -97,11 +97,12 @@ foreach ($parking_array as $parking_pdf_with_parking) {
 
 	// flush the pee-dee-eff to disk
 	// $path = "build/".$apartment['apt_number'].".pdf";
-	$path = 'enquiries/customer/' . $apartment[ 'apt_number' ]. '.pdf';
+	$path = '../enquiries/customer/' . $apartment[ 'apt_number' ]. '.pdf';
 	file_put_contents( $path , $dompdf->output() );
 	$attachments[ ] = [
 		'name' => $apartment[ 'apt_number' ] . '.pdf',
-		'url' => 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/enquiries/customer/' . $apartment[ 'apt_number' ] . '.pdf'
+		'url' => '../enquiries/customer/' . $apartment[ 'apt_number' ] . '.pdf'
+		// 'url' => 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/enquiries/customer/' . $apartment[ 'apt_number' ] . '.pdf'
 		// 'url' => 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/server/build/' . $apartment[ 'apt_number' ] . '.pdf'
 	];
 
