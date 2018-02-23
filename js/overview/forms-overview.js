@@ -103,26 +103,27 @@ $(document).ready(function(){
 			//     console.log(d);
 			// });
 
+			// `cid` nomo being used
 			// Get CID resource
-			$.post('../server/get_cid_resource.php', {
-			    name: $(e.target).find(".js_name").val(),
-			} )
-				.always( function(d) { // After obtaining CID, send mail to builder
+			// $.post('../server/get_cid_resource.php', {
+			    // name: $(e.target).find(".js_name").val(),
+			// } )
+				// .always( function(d) { // After obtaining CID, send mail to builder
 				    // console.log(d);
-				    $(e.target).attr('data_cid_resource', d);
+				    // $(e.target).attr('data_cid_resource', d);
 
 			        // Builder Email
 			        $.post('../server/overview_contact_smtp_builder.php', {
 			            name: $(e.target).find(".js_name").val(),
 			            mobile: $(e.target).find(".js_phone").val(),
-			            cid_resource: $(e.target).attr('data_cid_resource'),
+			            // cid_resource: $(e.target).attr('data_cid_resource'),
 			            source: 'one',
 			        }, function(d){
 			            console.log(d);
 			            $(e.target).addClass('visuallyhidden');
 			            $(e.target).next(".contact_form_overview_part_two").removeClass('visuallyhidden');
 			        });
-				});
+				// });
 
 
 			/*

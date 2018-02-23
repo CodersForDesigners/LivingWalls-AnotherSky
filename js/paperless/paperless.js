@@ -40,13 +40,14 @@ $(document).ready(function(){
 			console.log( response );
 		} )
 
+		// `cid` nomo being used
 		// Get CID resource
-		$.post( "server/get_cid_resource.php", {
-		    name: 'name',
-		} )
-			.always( function(d) {
+		// $.post( "server/get_cid_resource.php", {
+		    // name: 'name',
+		// } )
+			// .always( function(d) {
 			    // console.log(d);
-			    $(e.target).attr('data_cid_resource', d);
+			    // $(e.target).attr('data_cid_resource', d);
 
 		        // Builder Email
 		        $.post( "server/overview_contact_smtp_builder.php", {
@@ -80,6 +81,6 @@ $(document).ready(function(){
 							$( "#form-submission-status" ).text( "Form Submission Done Successfully." );
 				    	}
 		        	});
-			});
+			// });
 	} ); // #the_form submission
 });

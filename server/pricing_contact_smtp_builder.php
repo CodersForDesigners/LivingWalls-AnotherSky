@@ -3,7 +3,8 @@
  * This example shows settings to use when sending via Google's Gmail servers.
  */
 
-require ("cid/get-new-cid.php");
+// `cid` nomo used
+// require ("cid/get-new-cid.php");
 
 //pulling from the webpage
 $name = ucwords($_POST['name']);
@@ -13,7 +14,8 @@ $selected_apts = $_POST['selected_apts'];
 $fav_apts = $_POST['fav_apts'];
 $finding_us = $_POST['finding_us'];
 
-$cid = get_cid();
+// `cid` nomo used
+// $cid = get_cid();
 // Pushing to Google Sheets
 
 //General Fills

@@ -7,7 +7,8 @@ $customer_email = $_POST['email'];
 $budget = $_POST['my_budget'];
 $find_us = $_POST['find_us'];
 $source = $_POST['source'];
-$cid_resource = $_POST['cid_resource'];
+// `cid` nomo being used
+// $cid_resource = $_POST['cid_resource'];
 
 // if (!is_null($_POST['find_us'])) {
 //   $find_us = ' / '.$_POST['find_us'];
