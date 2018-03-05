@@ -132,6 +132,9 @@
 			<a href="/"><img src="media/images/logo.svg?v=3"></a>
 		</div>
 		<div class="header-nav">
+			<div class="hamburger inline-middle">
+				<a class="js_modal_trigger" href="#" data-modal-trigger="content-navigation"><img src="media/images/select-arrow.svg"></a>
+			</div>
 			<div class="logo-landscape inline-middle">
 				<a href="/"><img src="media/images/logo-landscape.svg?v=3"></a>
 			</div>
@@ -1682,6 +1685,9 @@
 
 <!-- utility functions -->
 <script type="text/javascript" src="js/modules/util.js"></script>
+
+<!-- Navigation Menu -->
+<script type="text/javascript" src="js/modules/navigation.js"></script>
 
 <!-- jQuery Plugins -->
 <script type="text/javascript" src="js/jquery.visible.min.js"></script>

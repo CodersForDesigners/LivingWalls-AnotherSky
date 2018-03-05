@@ -1,10 +1,17 @@
 /* Open Modal Window */
-$("body").on("click", ".js_modal_trigger", function() {
+$("body").on("click", ".js_modal_trigger", function ( event ) {
+
+	event.preventDefault();
 
 	var modId = $( this ).attr( "data-modal-trigger" );
 	$( "#" + modId ).addClass( "show" );
 
-	if ( modId == "content-text" ) {
+	if ( modId == "content-navigation" ) {
+		var modProj = $( this ).attr( "data-modal-navigation" );
+		$( ".content-navigation" ).removeClass("visuallyhidden");
+	}
+
+	else if ( modId == "content-text" ) {
 		var modForm = $( this ).attr( "data-modal-form" );
 		$( ".content-text .former." + modForm ).removeClass("visuallyhidden");
 	}
