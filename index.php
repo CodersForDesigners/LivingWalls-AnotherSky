@@ -732,6 +732,294 @@
 	</div>
 
 
+
+	<!-- Pricing Engine section -->
+	<div class="section-row pricing-section">
+		<!-- Apartment Selector -->
+		<div class="apartment-selector clearfix">
+			<div class="section-content clearfix">
+
+				<!-- Select Apartment Size -->
+				<div class="block apt-sizes-title aligncenter">
+					<p class="h3-text">Select an Apartment Size</p>
+				</div>
+
+				<!-- Apartment Sizes -->
+				<div class="block apt-sizes aligncenter js_apt_type_selector_main">
+					<span  class="3BHK inline-top size js_apt_type_selector" data-apt-type="3BHK">
+						<div class="title">
+							<span class="h3-text block"><strong>3BHK</strong></span>
+							<span class="h4-text block">2261 - 2532 sft</span>
+						</div>
+						<div class="features">
+							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/3BHK.jpg?v=2.1"></div>
+							<ul>
+								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Home Office</span></li>
+								<li class="block alignleft clearfix"><span>Entrance Foyer</span></li>
+								<li class="block alignleft clearfix"><span>Garden (G-Floor)</span></li>
+								<li class="block alignleft clearfix"><span>Family Area</span></li>
+								<li class="block alignleft clearfix"><span>Powder Room</span></li>
+							</ul>
+							<div class="pad20">
+								<span class="block button green-outline">Select</span>
+							</div>
+						</div>
+					</span>
+
+					<span class="3BHKP inline-top size selected js_apt_type_selector" data-apt-type="3BHKP">
+						<div class="title">
+							<span class="h3-text block"><strong>3BHK+</strong></span>
+							<span class="h4-text block">2553 - 3008 sft</span>
+						</div>
+						<div class="features">
+							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/3BHKP.jpg?v=2.1"></div>
+							<ul>
+								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Home Office</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Entrance Foyer</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Garden (G-Floor)</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Family Area</span></li>
+								<li class="block alignleft clearfix"><span>Powder Room</span></li>
+							</ul>
+							<div class="pad20">
+								<span class="block button green-outline">Select</span>
+							</div>
+						</div>
+					</span>
+
+					<span class="4BHK inline-top size js_apt_type_selector" data-apt-type="4BHK">
+						<div class="title">
+							<span class="h3-text block"><strong>4BHK</strong></span>
+							<span class="h4-text block">3178 - 3354 sft</span>
+						</div>
+						<div class="features">
+							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/4BHK.jpg?v=2.1"></div>
+							<ul>
+								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Home Office</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Entrance Foyer</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Garden (G-Floor)</span></li>
+								<li class="block alignleft clearfix"><span>Family Area</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Powder Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+							</ul>
+							<div class="pad20">
+								<span class="block button green-outline">Select</span>
+							</div>
+						</div>
+					</span>
+				</div>
+
+
+				<!-- Apartment Sizes Small -->
+				<div class="block apt-sizes-small aligncenter js_apt_type_selector_main">
+					<span class="features inline-top size">
+						<small class="block alignleft clearfix header">&nbsp;</small>
+						<small class="block alignleft clearfix">Wet Kitchen</small>
+						<small class="block alignleft clearfix">Maid's Room</small>
+						<small class="block alignleft clearfix">Vertical Garden</small>
+						<small class="block alignleft clearfix">Home Office</small>
+						<small class="block alignleft clearfix">Entrance Foyer</small>
+						<small class="block alignleft clearfix">Garden *</small>
+						<small class="block alignleft clearfix">Family Area</small>
+						<small class="block alignleft clearfix">Powder Room</small>
+						<small class="block alignleft clearfix footer">&nbsp;</small>
+					</span>
+					<span class="3BHK inline-top size js_apt_type_selector" data-apt-type="3BHK">
+						<small class="block alignleft clearfix header">3BHK</small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix footer"><span class="block button green-outline">Pick</span></small>
+					</span>
+					<span class="3BHKP inline-top size selected js_apt_type_selector" data-apt-type="3BHKP">
+						<small class="block alignleft clearfix header">3BHK+</small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix footer"><span class="block button green-outline">Pick</span></small>
+					</span>
+					<span class="4BHK inline-top size js_apt_type_selector" data-apt-type="4BHK">
+						<small class="block alignleft clearfix header">4BHK</small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix">&nbsp;</small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix footer"><span class="block button green-outline">Pick</span></small>
+					</span>
+				</div>
+				<div class="garden-disclaimer block aligncenter"><br>* Gardens only on the Ground Floor</div>
+
+				<!-- Set Budget -->
+				<a class="bud_trigger" href="#bud"></a>
+				<a name="bud"></a>
+				<div class="block apt-budget-title aligncenter hidden">
+					<p class="h3-text">Refine your Budget</p>
+				</div>
+
+				<div class="block apt-budget visuallyhidden">
+					<input type="text" id="range_slider" name="" value="" />
+				</div>
+
+				<!-- Find Apartment -->
+				<div class="block apt-find aligncenter hidden">
+					<a href="#info" id="js_find_apartments" class="button block">Find Apartments</a>
+				</div>
+
+				<!-- OR separator before -->
+				<div id="call_section_before">
+					<div class="or-separator aligncenter" style="padding: 32px 0;"><span><small style="background-color: #303233;">or</small></span></div>
+					<div class="phone-number"><p style="color: #999999;" class="h4-text block aligncenter">Call us : <a style="color: #ffffff;" href="tel:+918049405726">080 4940 5726</a></p></div>
+					<div class="pricing-missed-call inline-middle aligncenter">
+						<span class="h2-text block">To Schedule a Site visit</span>
+						<a href="tel:+918039511773" class="button outline block ga_general_button aligncenter">Call 080 3951 1773</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!-- Breakdance -->
+		<span id="breakdance"></span>
+
+		<!-- One More Wrapper -->
+		<div class="one-more-wrapper visuallyhidden">
+		<a name="info"></a>
+			<!-- Availability List -->
+			<div class="section-row apartment-list clearfix">
+				<div class="section-content clearfix">
+					<!-- Sorting -->
+					<span class="apt-quant h3-text"><span id="js_apartment_sold_count"></span> Sold, <span id="js_apartment_count">5</span> Available <span id="js_apartment_type" class="apt-quant-type">3BHK+</span></span>
+					<span class="apt-sort fl-right">
+						<span id="price_sort" class="inline button grey-outline grey">Price ↑↓</span>
+						<span id="floor_sort" class="inline button grey-outline grey">Floor ↑↓</span>
+					</span>
+					<!-- List -->
+					<div id="listing" class="apt-listing"></div>
+					<!-- More Details Modal Window -->
+					<dialog id="myDialog"></dialog>
+				</div>
+			</div>
+
+			<!-- Wishlist -->
+			<div class="section-row apartment-wishlist clearfix">
+				<div class="section-content clearfix">
+
+					<div class="apt-wishlist">
+
+						<!-- Description -->
+						<span class="title h3-text block">My <img src="media/images/pricing/heart-on.svg?v=2.1"> Wishlist</span>
+						<p class="description">Add apartments to your wishlist. They will appear below. You can compare, add or remove apartments in this wishlist. Fill the form, we will E-mail you <strong>PDFs with a detailed Cost Breakup &amp; a Floorplan,</strong> only for the apartments in this list. We can then get in touch and assist you with your purchase.</p>
+						<!-- Bubbles -->
+						<ul id="js_wishlist" class="wishlist">
+							<!-- Wish Goes Here -->
+						</ul>
+
+					</div>
+
+					<!-- Form -->
+					<form id="contact_form_pricing">
+						<p class="form-row">
+							<input id="name" class="input-field block" type="text" placeholder="Name...">
+						</p>
+						<p class="form-row">
+							<input id="email" class="input-field block" type="text" placeholder="Email...">
+						</p>
+						<p class="form-row">
+							<input id="mobile" class="input-field block" type="text" placeholder="Mobile...">
+						</p>
+						<p class="form-row">
+							<select id="finding_us" class="input-field block">
+								<option selected="true" disabled="true">How did you find us?</option>
+								<option value="Web-P - YouTube">YouTube</option>
+								<option value="Web-P - Radio">Radio</option>
+								<option value="Web-P - Cinema">Cinema - PVR / INOX</option>
+								<option value="Web-P - Google Search">Google Search</option>
+								<option value="Web-P - Facebook">Facebook</option>
+								<option value="Web-P - Friend">A friend told me</option>
+								<option value="Web-P - Hoarding">Saw a hoarding</option>
+								<option value="Web-P - Ad Words">Online Image Ad</option>
+								<option value="Web-P - LinkedIn">LinkedIn</option>
+								<option value="Web-P - Newspaper Ad">Newspaper Ad</option>
+								<option value="Web-P - Site Visit">Site Visit</option>
+								<option value="Web-P - Others">Others</option>
+							</select>
+						</p>
+						<p class="form-row js_submit_button_section">
+							<!-- <input type="submit" class="block button ga_contact_me_pricing" value="Get in touch"> -->
+							<input type="submit" class="block button ga_contact_me_pricing" value="Submit">
+						</p>
+
+						<p class="form-row">
+							<a href="media/images/specifications.pdf" target="_blank" class="block button aligncenter outline">Get Specifications PDF</a>
+						</p>
+					</form>
+
+					<!-- OR separator before -->
+					<div id="call_section_after">
+					</div>
+
+					<!-- Thank you iFrame -->
+					<iframe id="iframe_for_a" name="iframe_for_a" style="height: 0;"></iframe>
+				</div>
+			</div>
+
+		</div><!-- End of One More Wrapper -->
+
+		<!-- Sticky Selector -->
+		<div class="sticky-selector js_sticky_section_visibility">
+			<div class="section-row clearfix">
+			<div class="sticky-type inline-middle">
+				<span class="button grey">3bhk</span>
+				<span class="button green">3bhk+</span>
+				<span class="button grey">4bhk</span>
+			</div>
+			<div class="fl-right">
+				<div class="sticky-budget inline-middle">
+					<span class="label">Budget :</span>
+					<select class="input-field">
+						<option selected="true" disabled="true">Select</option>
+						<option>₹ 1.9cr</option>
+					</select>
+					<span class="label">to</span>
+					<select class="input-field">
+						<option selected="true" disabled="true">Select</option>
+						<option>₹ 2.1cr</option>
+					</select>
+				</div>
+				<div class="sticky-find inline-middle">
+					<span class="find button">Find</span>
+					<span class="help button yellow">?</span>
+				</div>
+			</div>
+			</div>
+		</div><!-- End Sticky Selector -->
+
+	</div>
+
+
+
 	<!-- Timelapse Section -->
 	<div class="timelapse-section">
 		<div class="container-video">
@@ -1231,6 +1519,96 @@
 		<span class="close">&times;</span>
 	</div>
 	<!-- End : Video Modal -->
+	<!-- Start : Apartment Details Modal -->
+	<div id="content-text" class="content">
+		<div class="content-text apt-single">
+			<div class="header breakup-section block aligncenter">
+				<span id="modal_header_apt_number" class="h2-text block">A106</span>
+				<span class="block"><strong id="modal_header_apt_size" >3BHK+</strong> on the <strong><span id="modal_header_apt_floor">7th</span> Floor</strong> <span>in Block <strong id="modal_header_apt_block">A</strong></span></span>
+				<span class="block">Super Built-up Area - <strong id="modal_header_apt_area">2512 sft</strong></span>
+				<!-- <span class="block">Rate per sft - <strong>₹ 7,950</strong></span> -->
+			</div>
+			<div class="unit-plan block">
+				<img src="media/images/pricing/unit-plans/type_10.jpg?v=2.1">
+			</div>
+			<hr>
+			<div class="emi-unwrapper">
+				<div class="breakup-section block">
+					<div class="breakup block clearfix"><strong>Basic Cost</strong> <strong id="basic_cost" class="fl-right">₹ 00,000,00</strong></div>
+					<div class="breakup block clearfix"><span>Exclusive Car Park Rights For :</span></div>
+					<div class="breakup block clearfix" style="padding-top: 0;"><span>
+						<select id="car_parking_selector" class="input-field inline">
+							<option value="1" selected="true">Covered Parking</option>
+							<option value="2">Open Surface Parking</option>
+							<!-- <option value="3">2 Linked Basement Parking</option> -->
+							<option value="4">2 Covered Parking</option>
+							<option value="5">1 Covered + 1 Open Surface Parking</option>
+							<option value="6">2 Open Surface Parking</option>
+						</select>
+					</span> <span id="car_parking" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>Floor Rise</span> <span id="floor_rise" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>Club Membership</span> <span id="clubhouse" class="fl-right">₹ 00,000,00</span></div>
+				</div>
+				<!-- <hr>
+				<div class="breakup-section block">
+					<div class="breakup block clearfix"><span>V.A.T</span> <span id="vat" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>Service Tax</span> <span id="service_tax" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>G.S.T</span> <span id="gst" class="fl-right">₹ 00,000,00</span></div>
+				</div> -->
+				<hr>
+				<div class="breakup-section block">
+					<div class="breakup block clearfix"><span>Infrastructure Charges</span> <span id="infrastructure" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>Corpus Deposit</span> <span id="corpus_deposit" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>Maintenance Fee (1 Year)</span> <span id="maintenance" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>Legal Charges</span> <span id="legal" class="fl-right">₹ 00,000,00</span></div>
+				</div>
+				<hr>
+			</div>
+			<div class="breakup-section">
+				<div class="breakup block clearfix"><strong class="h4-text">Total Cost</strong> <strong id="your_price" class="h4-text fl-right">₹ 00,000,00</strong></div>
+				<div class="emi-unwrapper breakup block clearfix"><span>Approx. Registration Charges</span> <span id="registration" class="fl-right">₹ 00,000,00</span></div>
+			</div>
+			<div class="breakup-section block">
+				<span class="emi block button blue-outline aligncenter js_calculate_emi" data-price-int="">Calculate Your EMI</span>
+			</div>
+			<div class="emi-wrapper">
+				<div class="breakup-section block">
+					<div class="breakup block clearfix"><span class="mobile-center" >Down Payment (In ₹)</span> <span class="mobile-center fl-right"><div class="container-i-field"><input id="down_payment" class="input-field alignright format-currency js_format_currency" type="text"><span class="input-field view-formatted js_view_formatted"></span></div></span></div>
+					<div class="breakup block clearfix"><span class="mobile-center" >Tenure (In Months)</span> <span class="mobile-center fl-right"><input id="tenure" class="input-field alignright" type="text"></span></div>
+					<div class="breakup block clearfix"><span class="mobile-center" >Interest Rate (% per Annum)</span> <span class="mobile-center fl-right"><input id="interest_pa" class="input-field alignright" type="text"></span></div>
+					<br>
+					<div class="breakup block clearfix"><span>Loan Amount</span> <span id="loan_amount" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><span>Interest Amount</span> <span id="interest_amount" class="fl-right">₹ 00,000,00</span></div>
+					<div class="breakup block clearfix"><strong>Total Amount Payable</strong> <strong id="total_price" class="fl-right">₹ 00,000,00</strong></div>
+				</div>
+				<hr>
+				<div class="breakup-section">
+					<div class="breakup block clearfix"><strong class="h4-text">Your EMI</strong> <strong id="your_emi" class="h4-text fl-right">₹ 00,000,00</strong></div>
+				</div>
+			</div><!-- END EMI Wrapper -->
+			<div class="breakup-section block clearfix">
+				<span class="addwish inline button grey aligncenter js_add_to_fav" data-view-details=""><img src="media/images/pricing/heart-small.svg?v=2.1"><span id="addwish_button_text"> Wishlist</span></span>
+				<span class="modal-close inline button black aligncenter fl-right">Close</span>
+			</div>
+			<div class="close">&times;</div>
+		</div>
+	</div>
+	<!-- End : Apartment Details Modal -->
+	<!-- Start : Navigation Modal -->
+	<div id="content-navigation" class="content">
+		<div class="navigation">
+			<a class="menu-item js_menu_item" href="#ga_step_0">1. A location that ‘just works’</a>
+			<a class="menu-item js_menu_item" href="#ga_step_1">Step 2</a>
+			<a class="menu-item js_menu_item" href="#ga_step_2">Step 3</a>
+			<a class="menu-item js_menu_item" href="#ga_step_3">Step 4</a>
+			<a class="menu-item js_menu_item" href="#ga_step_4">Step 5</a>
+			<a class="menu-item js_menu_item" href="#ga_step_5">Step 6</a>
+			<a class="menu-item js_menu_item" href="#ga_step_6">Step 7</a>
+		</div>
+		<span class="close">&times;</span>
+	</div>
+	<!-- End : Navigation Modal -->
+
 </div><!-- END : Modal Wrapper -->
 
 <!--  ☠  MARKUP ENDS HERE  ☠  -->
@@ -1330,6 +1708,11 @@
 
 <!-- TimeLapse JS -->
 <script type="text/javascript" src="js/overview/timelapse.js"></script>
+
+<!-- Pricing Component -->
+<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/apartment-pricing/pricing.js"></script>
+
 
 <!-- Tracking -->
 <!-- <script type="text/javascript" src="js/overview/tracking.js"></script> -->

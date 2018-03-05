@@ -115,43 +115,47 @@ get_apt_from_fav_array
 	finds and returns an apartment object given an apartment number from the favorite array
 
 F14.
+get_apartment_list
+	Gets the list of apartments based on the "Apartment type" and "Price range" selected
+
+F15.
 get_detailed_description
 	shows a modal with all the information relating to an apartment
 
-F15.
+F16.
 get_parking_value
 	returns the cost of a car parking type
 
-F16.
+F17.
 fav_array_car_parking_dropdown_populator
 	saves the car parking option for a favorited apartment
 
-F17.
+F18.
 pricing_close_lightbox
 	resets things on the modal
 	closes the modal
 
-F18.
+F19.
 slider_reset
 	set the price range to reflect the selected apartment size
 
-F19.
+F20.
 fav_list_populator
 	adds an apartment balloon to the wishlist
 
-F20.
+F21.
 $.fn.filterByData
 	extension of the jQuery object
 	filters a jQuery selection by a data attribute
 
-F21.
+F22.
 formatNumberToCurrency
 
-F22.
+F23.
 removeNonDigitCharacters
 	given a string, removes characters that aren't digits or dots ( decimal points )
 
-F23.
+F24.
 emi_calculator_func
 	calculates and sets the values relating to EMI
 
@@ -273,6 +277,7 @@ $(document).ready( function() {
 
 	var json_string, json_array, json_string_2, json_array_2;
 	var four_bhk_array, three_bhk_plus_array, three_bhk_array;
+	var four_bhk_num = 16, three_bhk_plus_num = 50, three_bhk_num = 44;
 	var cost_sort_order, floor_sort_order; // 0 - ascending, 1 - descending
 	var current_apt_type, concerned_array, fav_array = [];
 	var lower_limit_range_filter = 20000000, higher_limit_range_filter = 25000000; // 3BHKP default
@@ -316,6 +321,12 @@ $(document).ready( function() {
 		        // $("#js_apartment_type").text('3BHK+');
 		        // print_list();
 		        // $(".one-more-wrapper").removeClass("visuallyhidden").removeClass("inactive");
+
+		        /*
+		         * Default behaviour
+		         */
+		        // Populate the apartment list
+		        get_apartment_list()
 
         }
 	});
@@ -474,8 +485,8 @@ $(document).ready( function() {
 	$(".js_apt_type_selector").on('click', function() {
 
 		//scroll to budget
-		$('.bud_trigger').on( "click" , function() {} );
-		$('.bud_trigger').trigger("click");
+		// $('.bud_trigger').on( "click" , function() {} );
+		// $('.bud_trigger').trigger("click");
 
 
 		// Setting class on type selector for mobile and desktop
@@ -506,6 +517,7 @@ $(document).ready( function() {
 		}
 		slider_reset();
 		// print_list();
+		$( "#js_find_apartments" ).trigger( "click" );
 	});
 
 	/* -----
@@ -548,11 +560,11 @@ $(document).ready( function() {
 		print_list();
 	});
 
+
 	/* -----
-		{ E4 }
+		{ F14 }
 	 ----- */
-	// Sorting the array by range
-	$("#js_find_apartments").on('click', function() {
+	function get_apartment_list () {
 		// The concerned array is always re-populated from the base arrays. It hence is dependent on the current apartment type
 		empty_list();
 
@@ -560,15 +572,28 @@ $(document).ready( function() {
 		$(".one-more-wrapper").removeClass("visuallyhidden").removeClass("inactive");
 
 		switch (current_apt_type) {
-			case '3BHK': concerned_array = three_bhk_array; break;
-			case '3BHKP': concerned_array = three_bhk_plus_array; break;
-			case '4BHK': concerned_array = four_bhk_array; break;
+			case '3BHK': {
+				concerned_array = three_bhk_array;
+				number_of_apts_sold = three_bhk_num - concerned_array.length;
+				break;
+			}
+			case '3BHKP': {
+				concerned_array = three_bhk_plus_array;
+				number_of_apts_sold = three_bhk_plus_num - concerned_array.length;
+				break;
+			}
+			case '4BHK': {
+				concerned_array = four_bhk_array;
+				number_of_apts_sold = four_bhk_num - concerned_array.length;
+				break;
+			}
 		}
 		concerned_array = concerned_array.filter(associative_array_cost_range_filter);
 		var temp_type = current_apt_type;
 		if (temp_type == "3BHKP") {
 			temp_type = "3BHK+";
 		}
+		$("#js_apartment_sold_count").text( number_of_apts_sold );
 		$("#js_apartment_count").text(concerned_array.length);
 		$("#js_apartment_type").text(temp_type);
 		print_list();
@@ -589,7 +614,14 @@ $(document).ready( function() {
 			} , 100 );
 
 		}
-	});
+	}
+
+
+	/* -----
+		{ E4 }
+	 ----- */
+	// Sorting the array by range
+	$("#js_find_apartments").on('click', get_apartment_list );
 
 	/* -----
 		{ E5 }
@@ -617,7 +649,7 @@ $(document).ready( function() {
 	});
 
 	/* -----
-		{ F14 }
+		{ F15 }
 	 ----- */
 	// Details Fetch from Server
 	// populate modal with apartment details from the concerned array as well as more info from the server (images and such)
@@ -712,7 +744,7 @@ $(document).ready( function() {
 	}
 
 /* -----
-	{ F15 }
+	{ F16 }
  ----- */
 function get_parking_value ( input ) {
 	switch ( input ) {
@@ -769,7 +801,7 @@ $("#car_parking_selector").on("change", function() {
 });
 
 /* -----
-	{ F16 }
+	{ F17 }
  ----- */
 // when an apartment is favorited, remember the parking option chosen and select that by default the next time the modal for the apartment is opened
 function fav_array_car_parking_dropdown_populator( car_parking_selected_value,  temp_apt_number ) {
@@ -805,7 +837,7 @@ $(window).on("js_pricing_close_lightbox", function() {
 });
 
 /* -----
-	{ F17 }
+	{ F18 }
  ----- */
 function pricing_close_lightbox() {
 	// Clearing add to wishlist button classes
@@ -859,7 +891,7 @@ range.on("change", function () {
 var slider = range.data("ionRangeSlider");
 
 /* -----
-	{ F18 }
+	{ F19 }
  ----- */
 function slider_reset() {
 	slider.update({
@@ -903,7 +935,7 @@ $(".modal .addwish").on("click", function() {
 });
 
 /* -----
-	{ F19 }
+	{ F20 }
  ----- */
 // the balloons under the "My Wishlist" section
 function fav_list_populator( apt_number ) {
@@ -941,7 +973,7 @@ $("#js_wishlist").on("click", ".wish .remove", function() {
 });
 
 /* -----
-	{ F20 }
+	{ F21 }
  ----- */
 $.fn.filterByData = function(prop, val) {
     return this.filter(
@@ -950,7 +982,7 @@ $.fn.filterByData = function(prop, val) {
 }
 
 /* -----
-	{ F21 }
+	{ F22 }
  ----- */
 	function formatNumberToCurrency ( number ) {
 
@@ -990,7 +1022,7 @@ $.fn.filterByData = function(prop, val) {
 	}
 
 /* -----
-	{ F22 }
+	{ F23 }
  ----- */
 	// given a string, removes characters that aren't digits or dots (decimal points)
 	function removeNonDigitCharacters ( currency ) {
@@ -1075,7 +1107,7 @@ $.fn.filterByData = function(prop, val) {
 		} )
 
 /* -----
-	{ F23 }
+	{ F24 }
  ----- */
 	function emi_calculator_func( dp, tenure, interest_pa) {
 		var your_price = parseInt($(".js_calculate_emi").data('priceInt'), 10);

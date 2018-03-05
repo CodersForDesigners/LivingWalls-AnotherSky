@@ -84,10 +84,10 @@
 
 
 /* -- Apartment Selector -- */
-.apartment-selector {
+/*.apartment-selector {
 	padding: 0;
 	padding-top: 60px;
-}
+}*/
 
 .p-logo img {
 	display: none;
@@ -108,10 +108,10 @@
 }
 
 @media(max-width: 640px)  {
-	.apartment-selector {
+	/*.apartment-selector {
 		padding: 0;
 		padding-top: 30px;
-	}
+	}*/
 
 	.header-nav {
 		display: none;
@@ -149,7 +149,7 @@
 
 /* -- Select Apartment Size -- */
 .apt-sizes-title {
-	padding-top: 120px;
+	/*padding-top: 120px;*/
 	padding-bottom: 60px;
 	/*color: #FF5640;*/
 }
@@ -232,7 +232,7 @@
 
 @media(max-width: 1040px) {
 	.apt-sizes-title {
-		padding-top: 60px;
+		/*padding-top: 60px;*/
 		padding-bottom: 40px;
 	}
 
@@ -252,7 +252,7 @@
 
 @media(max-width: 640px) {
 	.apt-sizes-title {
-		padding-top: 20px;
+		/*padding-top: 20px;*/
 		padding-bottom: 20px;
 	}
 
@@ -605,8 +605,9 @@
 }
 
 .apt-wishlist .description {
-	color: #A5A5A5;
 	margin-bottom: 40px;
+	font-size: 1rem;
+	color: #A5A5A5;
 }
 
 .apt-wishlist .description strong {

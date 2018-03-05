@@ -1,4 +1,5 @@
 
+@import url( "../../css/modules/navigation.css" );
 @import url( "../../css/modules/overview-helper.css" );
 @import url( "../../css/modules/overview-base.css" );
 @import url( "../../css/modules/overview-step.css" );
@@ -15,3 +16,13 @@
 @import url( "../../css/modules/carousel-video.css" );
 @import url( "../../css/modules/animation.css" );
 @import url( "../../css/modules/overview-bobblehead.css" );
+
+/*
+ * Pricing component
+ */
+/*@import url( "../modules/overview-lighbox.css" );*/
+@import url( "../modules/ion.rangeSlider.css" );
+@import url( "../modules/ion.rangeSlider.skinNice.css" );
+@import url( "../modules/pricing-page.css" );
+/*@import url( "../modules/pricing-modal.css" );*/
+@import url( "../modules/pricing-sticky.css" );
