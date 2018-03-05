@@ -1704,7 +1704,7 @@
 <script type="text/javascript" src="js/overview/carousel-image.js"></script>
 
 <!-- Video Carousel JS -->
-<script type="text/javascript" src="js/overview/carousel-video.js"></script>
+<!-- <script type="text/javascript" src="js/overview/carousel-video.js"></script> -->
 
 <!-- Overview Forms JS -->
 <script type="text/javascript" src="js/overview/forms-overview.js"></script>
