@@ -915,6 +915,7 @@ $("#listing").on("click", ".js_add_to_fav", function() {
 	$(this).attr('src', 'media/images/pricing/heart-on.svg?v=2.1').addClass('no-pointer');
 	var apt_number = $(this).data('viewDetails');
 	fav_list_populator(apt_number);
+	$( document ).trigger( "wishlist::change" );
 });
 
 /* -----
@@ -928,6 +929,7 @@ $(".modal .addwish").on("click", function() {
 	var apt_number = $(this).attr('data-view-details');
 	$("#listing .item img").filterByData('viewDetails', apt_number).attr('src', 'media/images/pricing/heart-on.svg?v=2.1').addClass('no-pointer');
 	fav_list_populator(apt_number);
+	$( document ).trigger( "wishlist::change" );
 
 	// Updating parking dropdown
 	var car_parking_selected_value = $("#car_parking_selector").find(":selected").val();
@@ -957,6 +959,8 @@ function fav_list_populator( apt_number ) {
 	// setting default parking type to 350000 which is type 1 in the backend
 	temp_apt['parking_dropdown'] = 1;
 	fav_array.push(temp_apt);
+
+	// return fav_array;
 }
 
 /* -----
@@ -970,6 +974,7 @@ $("#js_wishlist").on("click", ".wish .remove", function() {
 
 	// Delete from fav_array
 	fav_array = fav_array.filter( fav_array_delete_filter , temp_apt_number );
+	$( document ).trigger( "wishlist::change" );
 });
 
 /* -----
@@ -1248,7 +1253,7 @@ $.fn.filterByData = function(prop, val) {
 		// discoverySource = discoverySource.slice( "Web-P - ".length );
 		var discoverySource = $( "#finding_us :selected" ).text();
 		$.ajax( {
-			url: "server/create-lead.php",
+			url: "server/createlead.php",
 			method: "POST",
 			data: {
 				lead_source: "Pricing",
@@ -1277,5 +1282,32 @@ $.fn.filterByData = function(prop, val) {
 
 		} // mail_check else statement
   });
+
+
+/* -----
+	{ E17 }
+ ----- */
+/*
+ * When the wishlist changes
+ *
+ * Change the text on the submit button contextually
+ */
+$( document ).on( "wishlist::change", function ( event ) {
+
+	var $submitButton = $( ".js_submit_button_section input" );
+	var buttonText;
+
+	if ( fav_array.length ) {
+		buttonText = "Email PDFs & Get in touch";
+	}
+	else {
+		buttonText = "Submit";
+	}
+
+	$submitButton.val( buttonText );
+
+} );
+
+
 
 }); // End of file
