@@ -127,22 +127,22 @@ window.addEventListener(
 		var timeoutId = null;
 
 		// \/ optimization
-		// leveraging both a throttle/debounce and an animation frame
+		// leveraging both a throttle and an animation frame
 		return function ( event ) {
 
-			if ( timeoutId ) {
-				window.clearTimeout( timeoutId );
-				timeoutId = null;
+			if ( ! timeoutId ) {
+				timeoutId = window.setTimeout( function () {
+
+					if ( animationFrameId ) {
+						window.cancelAnimationFrame( animationFrameId );
+						animationFrameId = null;
+					}
+					animationFrameId = window.requestAnimationFrame( runViewportScrollHandlers );
+					window.clearTimeout( timeoutId );
+					timeoutId = null;
+
+				}, 51 );
 			}
-			timeoutId = window.setTimeout( function () {
-
-				if ( animationFrameId ) {
-					window.cancelAnimationFrame( animationFrameId );
-					animationFrameId = null;
-				}
-				animationFrameId = window.requestAnimationFrame( runViewportScrollHandlers );
-
-			}, 51 );
 		};
 
 	}(),

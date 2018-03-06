@@ -1,5 +1,6 @@
 #content-video { max-width: 900px; }
 #content-text { max-width: 900px; }
+#content-navigation { max-width: 900px; }
 
 
 /* Add ".freeze" to body tag */
@@ -36,7 +37,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background:rgba(0,0,0,0.7);
+	background:rgba(0,0,0,0.85);
 	text-align: center;
 	-webkit-overflow-scrolling: touch;
 	overflow: auto;
@@ -115,6 +116,24 @@
 .modal .go-back::before,
 .modal .go-back::after {
 	z-index: -1;
+}
+
+
+.modal .content .navigation + .close {
+	display: inline-block;
+	width: 30px;
+	color: #BABABA;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 300;
+	cursor: pointer;
+	font-size: 45px;
+	position: absolute;
+	top: -40px;
+	right: 0;
+	overflow: hidden;
+	/*background-color: red;*/
+	pointer-events: none;
 }
 
 

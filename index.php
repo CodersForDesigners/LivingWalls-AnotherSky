@@ -86,8 +86,8 @@
 
 	<!-- Stylesheet -->
 	<!-- <link rel="stylesheet" type="text/css" href="/style.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
-	<link rel="stylesheet" type="text/css" href="css/pages/overview.css">
+	<link rel="stylesheet" type="text/css" href="css/1_standardize.css?v=5.2">
+	<link rel="stylesheet" type="text/css" href="css/pages/overview.css?v=5.2">
 
 	<!-- Slick Carousel -->
 	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
@@ -119,8 +119,16 @@
 
 <div id="wrapper" class="wrapper"><!-- Page Wrapper -->
 
+	<!-- Sticky Hamburger Menu -->
+	<div class="menu js_nav_menu">
+		<div class="section-row clearfix">
+			<a class="hamburger button black inline js_modal_trigger" href="#" data-modal-trigger="content-navigation">Menu<!-- <img src="media/images/select-arrow.svg"> -->
+			</a>
+		</div>
+	</div>
+
 	<!-- Landing -->
-	<div class="section-row landing-section clearfix">
+	<div id="landing" class="section-row landing-section clearfix js_landing_section">
 		<div class="container-video">
 			<video class="video-timelapse" autoplay loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/eve_night_01.mp4?v=2.3" data-l-src="media/images/timelapse/eve_night_01.mp4?v=2.3"></video>
 			<picture class="timelapse-fallback-image">
@@ -132,15 +140,12 @@
 			<a href="/"><img src="media/images/logo.svg?v=3"></a>
 		</div>
 		<div class="header-nav">
-			<div class="hamburger inline-middle">
-				<a class="js_modal_trigger" href="#" data-modal-trigger="content-navigation"><img src="media/images/select-arrow.svg"></a>
-			</div>
 			<div class="logo-landscape inline-middle">
 				<a href="/"><img src="media/images/logo-landscape.svg?v=3"></a>
 			</div>
-			<div class="phone-number inline-middle">
+			<!-- <div class="phone-number inline-middle">
 				<a href="tel:+918049405726" class="call h3-text">080 4940 5726</a>
-			</div>
+			</div> -->
 		</div>
 		<div class="landing-content">
 			<div class="title">
@@ -157,13 +162,13 @@
 
 
 	<!-- Pricing Section -->
-	<div class="section-row pricing-section clearfix">
+	<div id="getaquote" class="section-row pricing-section clearfix">
 		<div class="section-content clearfix">
 			<div class="inline-middle pricing-title">
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong><br>
 				Apartments</span>
 				<span class="h4-text block">₹ 1.9cr TO 2.9cr</span>
-				<a href="apartment-pricing" target="_blank" class="button block pricing-page ga_general_button aligncenter">Choose Your Apartment</a>
+				<a href="#apartment_pricing" target="_blank" class="button block pricing-page ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
 			<div class="inline-middle pricing-action">
@@ -230,7 +235,7 @@
 
 			<div class="pricing-missed-call inline-middle aligncenter">
 				<span class="h2-text block">To Schedule a Site visit</span>
-				<a href="tel:+918039511773" class="button outline block ga_general_button aligncenter">Call 080 3951 1773</a>
+				<a href="tel:+918049405726" class="button outline block ga_general_button aligncenter">Call 080 4940 5726</a>
 			</div>
 		</div>
 	</div>
@@ -241,7 +246,7 @@
 
 	<!-- Step - 1 -->
 	<a name="start-tour"></a>
-	<div id="ga_step_0" class="section-row step-1-base figcap before top-left rera-generic clearfix">
+	<div id="1_location" class="section-row step-1-base figcap before top-left rera-generic clearfix">
 		<div id="video_commute" class="video-player">
 			<video>
 				<source src="media/images/tabletops/commute.mp4?v=2.3" type="video/mp4">
@@ -283,7 +288,7 @@
 	<!-- END : Timelapse Section -->
 
 	<!-- Step - 2 -->
-	<div id="ga_step_1" class="section-row step-2-base figcap before top-left rera-generic clearfix">
+	<div id="2_party" class="section-row step-2-base figcap before top-left rera-generic clearfix">
 		<div id="video_party" class="video-player">
 			<video>
 				<source src="media/images/tabletops/party.mp4?v=2.3" type="video/mp4">
@@ -321,7 +326,7 @@
 	<!-- END : Timelapse Section -->
 
 	<!-- Step - 3 -->
-	<div id="ga_step_2" class="section-row step-3-base figcap before top-left rera-generic clearfix">
+	<div id="3_design" class="section-row step-3-base figcap before top-left rera-generic clearfix">
 		<div id="video_design" class="video-player">
 			<video>
 				<source src="media/images/tabletops/design.mp4?v=2.3" type="video/mp4">
@@ -446,7 +451,7 @@
 
 
 	<!-- Masterplan -->
-	<div class="masterplan-section clearfix">
+	<div id="masterplan" class="masterplan-section clearfix">
 		<div class="image block">
 			<img src="media/images/masterplan.svg?v=2.3" srcset="media/images_mobile/masterplan.svg?v=2.3 640w, media/images/masterplan.svg?v=2.3 1380w" sizes="100%">
 		</div>
@@ -576,7 +581,7 @@
 
 
 	<!-- Step - 4 -->
-	<div id="ga_step_3" class="section-row step-4-base figcap before top-left rera-generic clearfix">
+	<div id="4_children" class="section-row step-4-base figcap before top-left rera-generic clearfix">
 		<div id="video_kids" class="video-player">
 			<video>
 				<source src="media/images/tabletops/kids.mp4?v=2.3" type="video/mp4">
@@ -617,7 +622,7 @@
 
 
 	<!-- Construction Report -->
-	<div class="section-row construction-section clearfix">
+	<div id="construnction" class="section-row construction-section clearfix">
 
 		<!-- slick — Image Carousel : Construction -->
 		<div class="carousel-section">
@@ -736,8 +741,8 @@
 
 
 
-	<!-- Pricing Engine section -->
-	<div class="section-row pricing-section">
+	<!-- Apartment Pricing Engine section -->
+	<div id="apartment_pricing" class="section-row apartment-pricing-section">
 		<!-- Apartment Selector -->
 		<div class="apartment-selector clearfix">
 			<div class="section-content clearfix">
@@ -892,10 +897,10 @@
 				<!-- OR separator before -->
 				<div id="call_section_before">
 					<div class="or-separator aligncenter" style="padding: 32px 0;"><span><small style="background-color: #303233;">or</small></span></div>
-					<div class="phone-number"><p style="color: #999999;" class="h4-text block aligncenter">Call us : <a style="color: #ffffff;" href="tel:+918049405726">080 4940 5726</a></p></div>
+					<div class="phone-number"><p style="color: #999999;" class="h4-text block aligncenter">To Schedule a Site visit Call <a style="color: #FF5640; padding-left: 5px;" href="tel:+918049405726">080 4940 5726</a></p></div>
 					<div class="pricing-missed-call inline-middle aligncenter">
 						<span class="h2-text block">To Schedule a Site visit</span>
-						<a href="tel:+918039511773" class="button outline block ga_general_button aligncenter">Call 080 3951 1773</a>
+						<a href="tel:+918049405726" class="button outline block ga_general_button aligncenter">Call 080 4940 5726</a>
 					</div>
 				</div>
 
@@ -973,10 +978,6 @@
 							<!-- <input type="submit" class="block button ga_contact_me_pricing" value="Get in touch"> -->
 							<input type="submit" class="block button ga_contact_me_pricing" value="Submit">
 						</p>
-
-						<p class="form-row">
-							<a href="media/images/specifications.pdf" target="_blank" class="block button aligncenter outline">Get Specifications PDF</a>
-						</p>
 					</form>
 
 					<!-- OR separator before -->
@@ -1037,7 +1038,7 @@
 
 
 	<!-- Step - 5 -->
-	<div id="ga_step_4" class="section-row step-5-base figcap before top-left rera-generic clearfix">
+	<div id="5_fitness" class="section-row step-5-base figcap before top-left rera-generic clearfix">
 		<div id="video_fitness" class="video-player">
 			<video>
 				<source src="media/images/tabletops/fitness.mp4?v=2.3" type="video/mp4">
@@ -1079,7 +1080,7 @@
 
 
 	<!-- Step - 6 -->
-	<div id="ga_step_5" class="section-row step-6-base clearfix">
+	<div id="6_environment" class="section-row step-6-base clearfix">
 		<div class="section-content clearfix">
 			<div class="section-title clearfix">
 				<i class="section-index step-6-highlight">
@@ -1114,7 +1115,7 @@
 
 
 	<!-- Step - 7 -->
-	<div id="ga_step_6" class="section-row step-7-base figcap before top-left rera-generic clearfix">
+	<div id="7_maintenance" class="section-row step-7-base figcap before top-left rera-generic clearfix">
 		<div id="video_maintenance" class="video-player">
 			<video>
 				<source src="media/images/tabletops/maintenance.mp4?v=2.3" type="video/mp4">
@@ -1139,12 +1140,15 @@
 				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/stp.svg?v=2.3"></i>An STP that runs on 1/5th the power <small>The Sewage Treatment Plant we're installing is a low power consumption unit. It basically runs on 1/5th of the electricity used to run a conventional STP.</small></p>
 			</div>
 		</div>
+		<div class="block aligncenter">
+			<a class="inline button white-outline" href="media/images/specifications.pdf" target="_blank">Get Detailed Specifications</a>
+		</div>
 	</div>
 
 
 
 	<!-- Don't watch these ads -->
-	<div class="section-row ads-section clearfix">
+	<div id="ad_films" class="section-row ads-section clearfix">
 		<div class="section-content clearfix">
 			<div class="aligncenter">
 				<p class="h3-text"><strong>Don't</strong> watch these Ads</p>
@@ -1231,7 +1235,7 @@
 
 
 	<!-- Repeat Pricing Section -->
-	<div class="section-row repeat-pricing-section clearfix">
+	<div id="getaquote_2" class="section-row repeat-pricing-section clearfix">
 		<div class="section-content clearfix">
 			<div class="block aligncenter pricing-title">
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong>
@@ -1240,7 +1244,7 @@
 			</div>
 
 			<div class="inline-top pricing-apartment">
-				<a  href="apartment-pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
+				<a  href="#apartment_pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
 			<div class="inline-top pricing-action">
@@ -1310,7 +1314,7 @@
 
 
 	<!-- Who is Living Walls -->
-	<div class="section-row about-section clearfix">
+	<div id="about" class="section-row about-section clearfix">
 		<div class="section-content clearfix">
 			<div class="aligncenter">
 				<p class="h3-text">Who is <strong>Living Walls ?</strong></p>
@@ -1353,7 +1357,7 @@
 
 
 	<!-- Other Projects -->
-	<div class="section-row other-projects-section clearfix">
+	<div id="other_projects" class="section-row other-projects-section clearfix">
 		<div class="section-content clearfix">
 			<div class="aligncenter">
 				<p class="h4-text">Our Other Projects</p>
@@ -1391,7 +1395,7 @@
 
 
 	<!-- Addresses -->
-	<div class="section-row addresses-section clearfix">
+	<div id="contact" class="section-row addresses-section clearfix">
 		<div class="section-content clearfix">
 			<div class="address-logo inline-top">
 				<img class="fl-left" src="media/images/logo.svg?v=3">
@@ -1463,7 +1467,7 @@
 
 	<!-- Lazaro -->
 	<div class="section-row lazaro clearfix">
-		<a href="http://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg?v=2.3"><strong>www.lazaro.in</strong> - Customer Journey Strategy &amp; Implementation</a>
+		<a href="http://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg?v=2.3"><strong>www.lazaro.in</strong> - Marketing &amp; Advertising Partner</a>
 	</div>
 
 	<!-- Lazaro Signature -->
@@ -1600,13 +1604,23 @@
 	<!-- Start : Navigation Modal -->
 	<div id="content-navigation" class="content">
 		<div class="navigation">
-			<a class="menu-item js_menu_item" href="#ga_step_0">1. A location that ‘just works’</a>
-			<a class="menu-item js_menu_item" href="#ga_step_1">Step 2</a>
-			<a class="menu-item js_menu_item" href="#ga_step_2">Step 3</a>
-			<a class="menu-item js_menu_item" href="#ga_step_3">Step 4</a>
-			<a class="menu-item js_menu_item" href="#ga_step_4">Step 5</a>
-			<a class="menu-item js_menu_item" href="#ga_step_5">Step 6</a>
-			<a class="menu-item js_menu_item" href="#ga_step_6">Step 7</a>
+			<a class="button outline inline menu-item js_menu_item" href="#landing">Welcome</a><br>
+			<a class="button white inline menu-item call" href="tel:+918049405726">080 4940 5726</a><br>
+			<a class="button inline menu-item js_menu_item" href="#getaquote">Get a Quote</a><br>
+			<a class="button inline menu-item js_menu_item" href="#masterplan">Project Masterplan</a><br>
+			<a class="button inline menu-item js_menu_item" href="#construnction">Construction Status</a><br>
+			<a class="button white inline menu-item js_menu_item" href="#apartment_pricing">Apartment Pricing</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#1_location">1. Location</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#2_party">2. Party</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#3_design">3. Design</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#4_children">4. Children</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#5_fitness">5. Health and Fitness</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#6_environment">6. Environment Friendly</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#7_maintenance">7. Maintenance</a><br>
+			<a class="button inline menu-item js_menu_item" href="#ad_films">Ad Films</a><br>
+			<a class="button inline menu-item js_menu_item" href="#about">About Us</a><br>
+			<a class="button inline menu-item js_menu_item" href="#contact">Contact Us</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#other_projects">Other Projects</a><br>
 		</div>
 		<span class="close">&times;</span>
 	</div>
