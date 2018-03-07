@@ -54,9 +54,13 @@ $to_emails = $mail_data[ 'to_emails' ];
 if ( is_string( $to_emails ) ) {
 	$to_emails = [ $to_emails ];
 }
-$to_emails_CC = $mail_data[ 'to_emails_CC' ];
-if ( is_string( $to_emails_CC ) ) {
-	$to_emails_CC = [ $to_emails_CC ];
+
+if ( empty( $mail_data[ 'to_emails_CC' ] ) ) {
+	$to_emails_CC = [ ];
+} else {
+	if ( is_string( $to_emails_CC ) ) {
+		$to_emails_CC = [ $to_emails_CC ];
+	}
 }
 
 $subject = $mail_data[ 'subject' ];
