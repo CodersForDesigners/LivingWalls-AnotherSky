@@ -6,18 +6,19 @@ $(document).ready(function() {
 			if ( $("#"+ele).visible(true) ) {
 				// console.log(ele+" seen");
 				ga('send', 'event','Overview', ele ,'Scroll');
+				$( document ).trigger( "GA::view", ele );
 				clearInterval( interval );
 			}
 		}, 250);
 	}
 
-	scroller('ga_step_0');
-	scroller('ga_step_1');
-	scroller('ga_step_2');
-	scroller('ga_step_3');
-	scroller('ga_step_4');
-	scroller('ga_step_5');
-	scroller('ga_step_6');
+	scroller('1_location');
+	scroller('2_party');
+	scroller('3_design');
+	scroller('4_children');
+	scroller('5_fitness');
+	scroller('6_environment');
+	scroller('7_maintenance');
 	// scroller('ga_footer');
 
 	// Click based events
