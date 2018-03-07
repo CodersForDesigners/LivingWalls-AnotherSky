@@ -18,12 +18,11 @@
 
 	<!-- Page Meta -->
 	<meta charset="utf-8">
-	<title>LivingWalls | Another Sky | Obscenely Awesome Apartments on the Outer Ring Road</title>
+	<title>LivingWalls | Ready to Occupy Apartments on the Outer Ring Road</title>
 	<meta name="description"
-		content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-			Excepteur sint occaecat cupidatat non proident.">
-	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
-	<meta name="author" content="Lazaro Advertising">
+		content="We went about designing Another Sky with a focus on the resident's comfort. 3BHK and 4BHK Apartments Designed to Just Work. Obscenely Awesome Apartments on the Outer Ring Road.">
+	<meta name="keywords" content="Apartments, 3BHK, 4BHK, Bangalore, Ring Road">
+	<meta name="author" content="Lazaro Advertising Pvt. Ltd.">
 	<link rel="canonical" href="http://livingwalls.in/">
 	<!-- <link rel="canonical" href="http://livingwalls.in/another-sky/"> -->
 
