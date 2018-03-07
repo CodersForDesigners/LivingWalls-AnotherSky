@@ -40,15 +40,15 @@ date_default_timezone_set( 'Asia/Kolkata' );
 require 'class-phpmailer.php';
 
 // Pulling data from the request
-// $username_SMTP = 'noreply@livingwalls.in';
-// $password_SMTP = 'livingwalls2017';
-$username_SMTP = 'google@lazaro.in';
-$password_SMTP = 't34m,l4z4r0';
+$username_SMTP = 'noreply@livingwalls.in';
+$password_SMTP = 'livingwalls2017';
+// $username_SMTP = 'google@lazaro.in';
+// $password_SMTP = 't34m,l4z4r0';
 
-$from_email = 'google@lazaro.in';
-$from_name = 'Living Walls';
-// $from_email = 'noreply@livingwalls.in';
+// $from_email = 'google@lazaro.in';
 // $from_name = 'Living Walls';
+$from_email = 'noreply@livingwalls.in';
+$from_name = 'Living Walls';
 
 $to_emails = $mail_data[ 'to_emails' ];
 if ( is_string( $to_emails ) ) {

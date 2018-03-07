@@ -32,10 +32,10 @@ Name : $name<br>Email : $customer_email<br>Mobile : $mobile<br>Apartments Looked
 TEXT;
 
 $mail_data = [
-	// 'to_emails' => 'info@livingwalls.in',
-	// 'to_emails_CC' => 'livingwalls@lazaro.in',
-	'to_emails' => 'adityabhat@lazaro.in',
-	'to_emails_CC' => [ ],
+	'to_emails' => 'info@livingwalls.in',
+	'to_emails_CC' => 'livingwalls@lazaro.in',
+	// 'to_emails' => 'adityabhat@lazaro.in',
+	// 'to_emails_CC' => [ ],
 
 	'subject' => 'Pricing : ' . $name,
 	'message' => $builder_message,

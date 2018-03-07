@@ -16,9 +16,9 @@ $source = $_POST['source'];
 
 // Pushing to Google Sheets after checking where it comes from
 // if ( $source == "one" || $source == "one_manual") { // General Form Fills
-// 	file_get_contents('https://docs.google.com/forms/d/e/1FAIpQLSdmHTA-7AHggVuWTTGGtPBOIqu3cA_NCYz6unvg1CC46zKgbA/formResponse?ifq&entry.97776430='.urlencode($cid_resource).'&entry.250399479='.urlencode($name).'&entry.1275616423='.urlencode($mobile).'&entry.1508179934='.urlencode($customer_email).'&entry.140019121='.urlencode($budget).'&entry.217655178='.urlencode($find_us).'&submit=Submit');
+	// file_get_contents('https://docs.google.com/forms/d/e/1FAIpQLSdmHTA-7AHggVuWTTGGtPBOIqu3cA_NCYz6unvg1CC46zKgbA/formResponse?ifq&entry.97776430='.urlencode($cid_resource).'&entry.250399479='.urlencode($name).'&entry.1275616423='.urlencode($mobile).'&entry.1508179934='.urlencode($customer_email).'&entry.140019121='.urlencode($budget).'&entry.217655178='.urlencode($find_us).'&submit=Submit');
 // } else { // Premium Form Fills
-// 	file_get_contents('https://docs.google.com/forms/d/e/1FAIpQLSeKsAulnJzJU0c6q3b4UalVJZGLAVf8rXbZ_-94VC5IZ0Wvhg/formResponse?ifq&entry.790329688='.urlencode($cid_resource).'&entry.250399479='.urlencode($name).'&entry.1275616423='.urlencode($mobile).'&entry.1508179934='.urlencode($customer_email).'&entry.140019121='.urlencode($budget).'&entry.217655178='.urlencode($find_us).'&submit=Submit');
+	// file_get_contents('https://docs.google.com/forms/d/e/1FAIpQLSeKsAulnJzJU0c6q3b4UalVJZGLAVf8rXbZ_-94VC5IZ0Wvhg/formResponse?ifq&entry.790329688='.urlencode($cid_resource).'&entry.250399479='.urlencode($name).'&entry.1275616423='.urlencode($mobile).'&entry.1508179934='.urlencode($customer_email).'&entry.140019121='.urlencode($budget).'&entry.217655178='.urlencode($find_us).'&submit=Submit');
 // }
 
 // Exit for manual form entries
@@ -38,10 +38,10 @@ TEXT;
 
 
 $mail_data = [
-	// 'to_emails' => 'info@livingwalls.in',
-	// 'to_emails_CC' => 'livingwalls@lazaro.in',
-	'to_emails' => 'adityabhat@lazaro.in',
-	'to_emails_CC' => [ ],
+	'to_emails' => 'info@livingwalls.in',
+	'to_emails_CC' => 'livingwalls@lazaro.in',
+	// 'to_emails' => 'adityabhat@lazaro.in',
+	// 'to_emails_CC' => [ ],
 
 	'subject' => 'Overview : ' . $name,
 	'message' => $builder_message,

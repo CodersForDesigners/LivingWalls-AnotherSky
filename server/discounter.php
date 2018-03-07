@@ -111,10 +111,10 @@ $customer_message = "Customer Name : ".$name."<br>Customer Id : ".$customer_id;
 
 $mail_data = [
 
-	'to_email' => [ 'adityabhat@lazaro.in', /*'mark@lazaro.in'*/ ],
-	'to_emails_CC' => [ /*'google@lazaro.in', 'barbarabangalore@gmail.com'*/ ],
-	// 'to_email' => $salesperson_email,
-	// 'to_emails_CC' => [ 'info@livingwalls.in', 'livingwalls@lazaro.in' ],
+	// 'to_email' => [ 'adityabhat@lazaro.in', /*'mark@lazaro.in'*/ ],
+	// 'to_emails_CC' => [ /*'google@lazaro.in', 'barbarabangalore@gmail.com'*/ ],
+	'to_email' => $salesperson_email,
+	'to_emails_CC' => [ 'info@livingwalls.in', 'livingwalls@lazaro.in' ],
 
 	'subject' => 'Discount Engine - ' . $apartment_number,
 	'message' => $customer_message,
