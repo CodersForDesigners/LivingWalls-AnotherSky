@@ -1253,7 +1253,7 @@ $.fn.filterByData = function(prop, val) {
 		// discoverySource = discoverySource.slice( "Web-P - ".length );
 		var discoverySource = $( "#finding_us :selected" ).text();
 		$.ajax( {
-			url: "server/createlead.php",
+			url: "server/create-lead.php",
 			method: "POST",
 			data: {
 				lead_source: "Pricing",
