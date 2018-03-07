@@ -85,8 +85,8 @@
 
 	<!-- Stylesheet -->
 	<!-- <link rel="stylesheet" type="text/css" href="/style.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/1_standardize.css?v=5.2">
-	<link rel="stylesheet" type="text/css" href="css/pages/overview.css?v=5.2">
+	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/overview.css">
 
 	<!-- Slick Carousel -->
 	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
@@ -129,18 +129,18 @@
 	<!-- Landing -->
 	<div id="landing" class="section-row landing-section clearfix js_landing_section">
 		<div class="container-video">
-			<video class="video-timelapse" autoplay loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/eve_night_01.mp4?v=2.3" data-l-src="media/images/timelapse/eve_night_01.mp4?v=2.3"></video>
+			<video class="video-timelapse" autoplay loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/eve_night_01.mp4" data-l-src="media/images/timelapse/eve_night_01.mp4"></video>
 			<picture class="timelapse-fallback-image">
-				<source srcset="media/images/timelapse/eve_night_01.jpg?v=2.3" media="(min-width: 640px)">
-				<img src="media/images_mobile/timelapse/eve_night_01.jpg?v=2.3">
+				<source srcset="media/images/timelapse/eve_night_01.jpg" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/eve_night_01.jpg">
 			</picture>
 		</div>
 		<div class="logo block aligncenter">
-			<a href="/"><img src="media/images/logo.svg?v=3"></a>
+			<a href="/"><img src="media/images/logo.svg"></a>
 		</div>
 		<div class="header-nav">
 			<div class="logo-landscape inline-middle">
-				<a href="/"><img src="media/images/logo-landscape.svg?v=3"></a>
+				<a href="/"><img src="media/images/logo-landscape.svg"></a>
 			</div>
 			<!-- <div class="phone-number inline-middle">
 				<a href="tel:+918049405726" class="call h3-text">080 4940 5726</a>
@@ -248,7 +248,7 @@
 	<div id="1_location" class="section-row step-1-base figcap before top-left rera-generic clearfix">
 		<div id="video_commute" class="video-player">
 			<video>
-				<source src="media/images/tabletops/commute.mp4?v=2.3" type="video/mp4">
+				<source src="media/images/tabletops/commute.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
 			<div id="video_commute_gradient" class="video-gradient"></div>
@@ -262,11 +262,11 @@
 				<p class="h2-text">A <strong>Location</strong> that ‘Just Works’</p>
 			</div>
 			<div class="section-point clearfix">
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/car.svg?v=2.3"></i>Sensible commutes to key workspaces in Bangalore <small>For instance, Manyata Tech Park is just a 4.6 km drive away. RMZ Infinity is a 4 km drive. Bagmane Tech Park: only 4.5 km. Kirloskar Tech Park: just 9.4 km and RMZ Ecospace is a 14 km drive on the Outer Ring Road. Wait... why drive when you can just as easily cycle.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/pc.svg?v=2.3"></i>Dedicated private Home office <br><small> WFH-ing today? This dedicated room is large enough to have 3 or 4 of your team mates over.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/plane.svg?v=2.3"></i>Easy access to the Airport</p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/circus.svg?v=2.3"></i>9 km to MG Road <small>...if you even need to go there.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/tea.svg?v=2.3"></i>Restaurants, Cafes, Pubs, Shopping... not more than 3km away <small>Again, why head towards MG Road or Indiranagar, when every major restaurant, pub, electronic megastore, apparel brand, supermarket and fast food joint is now in Kammanahalli.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/car.svg"></i>Sensible commutes to key workspaces in Bangalore <small>For instance, Manyata Tech Park is just a 4.6 km drive away. RMZ Infinity is a 4 km drive. Bagmane Tech Park: only 4.5 km. Kirloskar Tech Park: just 9.4 km and RMZ Ecospace is a 14 km drive on the Outer Ring Road. Wait... why drive when you can just as easily cycle.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/pc.svg"></i>Dedicated private Home office <br><small> WFH-ing today? This dedicated room is large enough to have 3 or 4 of your team mates over.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/plane.svg"></i>Easy access to the Airport</p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/circus.svg"></i>9 km to MG Road <small>...if you even need to go there.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-1/tea.svg"></i>Restaurants, Cafes, Pubs, Shopping... not more than 3km away <small>Again, why head towards MG Road or Indiranagar, when every major restaurant, pub, electronic megastore, apparel brand, supermarket and fast food joint is now in Kammanahalli.</small></p>
 			</div>
 		</div>
 		<div class="block aligncenter">
@@ -277,10 +277,10 @@
 	<!-- Timelapse Section -->
 	<div class="timelapse-section">
 		<div class="container-video">
-			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_01.mp4?v=2.3" data-l-src="media/images/timelapse/night_day_01.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_01.mp4" data-l-src="media/images/timelapse/night_day_01.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
-				<source srcset="media/images/timelapse/night_day_01.jpg?v=2.3" media="(min-width: 640px)">
-				<img src="media/images_mobile/timelapse/night_day_01.jpg?v=2.3">
+				<source srcset="media/images/timelapse/night_day_01.jpg" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/night_day_01.jpg">
 			</picture>
 		</div>
 	</div>
@@ -290,7 +290,7 @@
 	<div id="2_party" class="section-row step-2-base figcap before top-left rera-generic clearfix">
 		<div id="video_party" class="video-player">
 			<video>
-				<source src="media/images/tabletops/party.mp4?v=2.3" type="video/mp4">
+				<source src="media/images/tabletops/party.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
 			<div id="video_party_gradient" class="video-gradient"></div>
@@ -304,10 +304,10 @@
 				<p class="h2-text">‘Just Works’ when you're <strong>Partying, Entertaining</strong> or even <strong>Dining in</strong></p>
 			</div>
 			<div class="section-point clearfix">
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/drink.svg?v=2.3"></i>650 sft of personal party space in your apartment <small>The foyer, living, dining, and balcony work as one large uninterrupted space. So, If you'd like 40 friends over for a party, they won't be packed in like a can of sardines.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/breeze.svg?v=2.3"></i>Ginormous Sheltered Balconies <small>Imagine being seated at a table for 6, it's drizzling outside, you're on your balcony with your family, enjoying a delicious breakfast. That's exactly what's possible on a 250 sft sheltered balcony.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/vine.svg?v=2.3"></i>Your Own Vertical garden <small>It grows on the side of your balcony. It looks stunning; it frees up space on your balcony and brings you all the joys of gardening, on a different dimension.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/moon.svg?v=2.3"></i>A 5000 sft Sky Lounge <small>There's no point living in a 17 storey structure if everyone can't enjoy the views from the rooftop. So we designed an exclusive sky lounge on the 16th and 17th floor, it has its own amphitheater, a bar, a barbecue area for your parties, a huge party deck that's partly open to the sky for your guests to spill over into... it can hold upto 200 people.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/drink.svg"></i>650 sft of personal party space in your apartment <small>The foyer, living, dining, and balcony work as one large uninterrupted space. So, If you'd like 40 friends over for a party, they won't be packed in like a can of sardines.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/breeze.svg"></i>Ginormous Sheltered Balconies <small>Imagine being seated at a table for 6, it's drizzling outside, you're on your balcony with your family, enjoying a delicious breakfast. That's exactly what's possible on a 250 sft sheltered balcony.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/vine.svg"></i>Your Own Vertical garden <small>It grows on the side of your balcony. It looks stunning; it frees up space on your balcony and brings you all the joys of gardening, on a different dimension.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-2/moon.svg"></i>A 5000 sft Sky Lounge <small>There's no point living in a 17 storey structure if everyone can't enjoy the views from the rooftop. So we designed an exclusive sky lounge on the 16th and 17th floor, it has its own amphitheater, a bar, a barbecue area for your parties, a huge party deck that's partly open to the sky for your guests to spill over into... it can hold upto 200 people.</small></p>
 			</div>
 		</div>
 	</div>
@@ -315,10 +315,10 @@
 	<!-- Timelapse Section -->
 	<div class="timelapse-section">
 		<div class="container-video">
-			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/balcony_01.mp4?v=2.3" data-l-src="media/images/timelapse/balcony_01.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/balcony_01.mp4" data-l-src="media/images/timelapse/balcony_01.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
-				<source srcset="media/images/timelapse/balcony_01.jpg?v=2.3" media="(min-width: 640px)">
-				<img src="media/images_mobile/timelapse/balcony_01.jpg?v=2.3">
+				<source srcset="media/images/timelapse/balcony_01.jpg" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/balcony_01.jpg">
 			</picture>
 		</div>
 	</div>
@@ -328,7 +328,7 @@
 	<div id="3_design" class="section-row step-3-base figcap before top-left rera-generic clearfix">
 		<div id="video_design" class="video-player">
 			<video>
-				<source src="media/images/tabletops/design.mp4?v=2.3" type="video/mp4">
+				<source src="media/images/tabletops/design.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
 			<div id="video_design_gradient" class="video-gradient"></div>
@@ -362,20 +362,20 @@
 				</div>
 
 				<figure class="diagram">
-					<img src="media/images/diagrams/45-rotate-offset.svg?v=2.3">
+					<img src="media/images/diagrams/45-rotate-offset.svg">
 				</figure>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Privacy/commonwall.svg?v=2.3"></i>Minimised common walls between apartments <small>The reoriented apartments are further offset from each other to dramatically reduce the length of the common wall between adjoining apartments.</small></p>
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Privacy/2apartments.svg?v=2.3"></i>Just 2 apartments per floor <small>Barring Block A, which has 3 apartments per floor, both Block B and C have only 2 apartments per floor. To top that, there are 2 lifts per block.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Privacy/commonwall.svg"></i>Minimised common walls between apartments <small>The reoriented apartments are further offset from each other to dramatically reduce the length of the common wall between adjoining apartments.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Privacy/2apartments.svg"></i>Just 2 apartments per floor <small>Barring Block A, which has 3 apartments per floor, both Block B and C have only 2 apartments per floor. To top that, there are 2 lifts per block.</small></p>
 				</div>
 
 				<figure class="diagram">
-					<img src="media/images/diagrams/common-wall.svg?v=2.3">
+					<img src="media/images/diagrams/common-wall.svg">
 				</figure>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Privacy/3sides.svg?v=2.3"></i>Truly open on 3 sides <small>If not more than 3 sides in some cases, thanks to the 45° orientation and the offset.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Privacy/3sides.svg"></i>Truly open on 3 sides <small>If not more than 3 sides in some cases, thanks to the 45° orientation and the offset.</small></p>
 				</div>
 			</div>
 
@@ -387,27 +387,27 @@
 				</div>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/doorheight.svg?v=2.3"></i>8ft Tall Doors <small>Most apartments have doors that are around 7 feet high. The average Indian is 5 feet, 5 inches, but even for a 6 footer, an 8 foot door is very imposing and airy to walk through. To give you an idea of scale, most of us would have to jump to touch the top of it and some of us may not even reach :)</small></p>
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/slabheight.svg?v=2.3"></i>10ft Floor to Floor Height <small>That’s about 4 inches more than the industry standard. Most apartments have a floor to floor height of 9 feet 8 inches.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/doorheight.svg"></i>8ft Tall Doors <small>Most apartments have doors that are around 7 feet high. The average Indian is 5 feet, 5 inches, but even for a 6 footer, an 8 foot door is very imposing and airy to walk through. To give you an idea of scale, most of us would have to jump to touch the top of it and some of us may not even reach :)</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/slabheight.svg"></i>10ft Floor to Floor Height <small>That’s about 4 inches more than the industry standard. Most apartments have a floor to floor height of 9 feet 8 inches.</small></p>
 				</div>
 
 				<figure class="diagram">
-					<img src="media/images/diagrams/door-ceiling-height.svg?v=2.3">
+					<img src="media/images/diagrams/door-ceiling-height.svg">
 				</figure>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/privatezone.svg?v=2.3"></i>Public - Private Zoning within the apartment <small>The apartment has been planned with two distinct zones that run alongside each other, the Private and the Public Zone. So even if there are guests in the living room or the dining area, you can use your bedroom and toilet without the fear of any awkward moments.</small></p>
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/maid.svg?v=2.3"></i>Maid's quarters. <small>We all know the value of good help at home. Which is why we’ve designed a dedicated bedroom for your maid, with a toilet attached to give them privacy when they need it.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/privatezone.svg"></i>Public - Private Zoning within the apartment <small>The apartment has been planned with two distinct zones that run alongside each other, the Private and the Public Zone. So even if there are guests in the living room or the dining area, you can use your bedroom and toilet without the fear of any awkward moments.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/maid.svg"></i>Maid's quarters. <small>We all know the value of good help at home. Which is why we’ve designed a dedicated bedroom for your maid, with a toilet attached to give them privacy when they need it.</small></p>
 				</div>
 
 				<figure class="diagram">
-					<img src="media/images/diagrams/public-private-zoning-v1.svg?v=2.3">
+					<img src="media/images/diagrams/public-private-zoning-v1.svg">
 				</figure>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/sound.svg?v=2.3"></i>Superior Heat &amp; Sound insulation <small>The Porotherm bricks we've used have positive acoustic properties. They can block out more sound than regular concrete blocks and bricks. They also exhibit superior heat insulation properties, this keeps the apartment cool.</small></p>
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/3towers.svg?v=2.3"></i>Only 117 Apartments across 3 towers <small>The ratio of the number of apartments to the size of the property is extremely ideal for residents. By designing large, expansive apartments and providing additional ceiling height, we have effectively ended up reducing the number of apartments that can be built as per the law. This is a direct benefit to a resident. Lesser people using more space</small></p>
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/space.svg?v=2.3"></i>70% Open Space <small>The high rise structure occupies just 30% of the land, freeing up 70% of space across the property.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/sound.svg"></i>Superior Heat &amp; Sound insulation <small>The Porotherm bricks we've used have positive acoustic properties. They can block out more sound than regular concrete blocks and bricks. They also exhibit superior heat insulation properties, this keeps the apartment cool.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/3towers.svg"></i>Only 117 Apartments across 3 towers <small>The ratio of the number of apartments to the size of the property is extremely ideal for residents. By designing large, expansive apartments and providing additional ceiling height, we have effectively ended up reducing the number of apartments that can be built as per the law. This is a direct benefit to a resident. Lesser people using more space</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Comfort/space.svg"></i>70% Open Space <small>The high rise structure occupies just 30% of the land, freeing up 70% of space across the property.</small></p>
 				</div>
 
 			</div>
@@ -420,26 +420,26 @@
 				</div>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/wind.svg?v=2.3"></i>Oriented along the natural wind direction <small>Thanks to the true orientation along the North-South Axis, the apartments line up perfectly with the natural wind direction in Bangalore which is generally from the South / South West towards North/North East. We’ve planned the windows and balconies to make use of this draft and cross ventilate the apartment, allowing winds to permeate through the apartment.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/wind.svg"></i>Oriented along the natural wind direction <small>Thanks to the true orientation along the North-South Axis, the apartments line up perfectly with the natural wind direction in Bangalore which is generally from the South / South West towards North/North East. We’ve planned the windows and balconies to make use of this draft and cross ventilate the apartment, allowing winds to permeate through the apartment.</small></p>
 				</div>
 
 				<figure class="diagram">
-					<img src="media/images/diagrams/wind-direction.svg?v=2.3">
+					<img src="media/images/diagrams/wind-direction.svg">
 					<figcaption>The 45 degree tilt has taken into account the natural S/SW to N/NW direction of wind in Bangalore city. This allows optimum ventilation &amp; wind flow throughout the house</figcaption>
 				</figure>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/shadow.svg?v=2.3"></i>Self-Shadowed Building Structure reduces heat absorption. <small>The 45º orientation of the apartments yields an unconventional structure with several extruded surfaces that cast shadows on the building across the day. This self-shadowing dramatically reduces the heat absorption of the structure during sunlit hours. Staggering the balconies between floors increases this effect even further.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/shadow.svg"></i>Self-Shadowed Building Structure reduces heat absorption. <small>The 45º orientation of the apartments yields an unconventional structure with several extruded surfaces that cast shadows on the building across the day. This self-shadowing dramatically reduces the heat absorption of the structure during sunlit hours. Staggering the balconies between floors increases this effect even further.</small></p>
 				</div>
 
 				<figure class="diagram">
-					<img src="media/images/diagrams/mutual-shading.svg?v=2.3">
+					<img src="media/images/diagrams/mutual-shading.svg">
 					<figcaption>Every 3rd floor has an extended balcony that casts shadows back on the lower floors</figcaption>
 				</figure>
 
 				<div class="section-point clearfix">
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/garden.svg?v=2.3"></i>Gardens on the Terrace. <small>Heat absorption is reduced further by terrace level gardens on the penthouses and the green cover in the double height sky lounge.</small></p>
-					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/bricks.svg?v=2.3"></i>Heat Insulating Porotherm Bricks </p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/garden.svg"></i>Gardens on the Terrace. <small>Heat absorption is reduced further by terrace level gardens on the penthouses and the green cover in the double height sky lounge.</small></p>
+					<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-3/Thermodynamics/bricks.svg"></i>Heat Insulating Porotherm Bricks </p>
 				</div>
 			</div>
 
@@ -452,7 +452,7 @@
 	<!-- Masterplan -->
 	<div id="masterplan" class="masterplan-section clearfix">
 		<div class="image block">
-			<img src="media/images/masterplan.svg?v=2.3" srcset="media/images_mobile/masterplan.svg?v=2.3 640w, media/images/masterplan.svg?v=2.3 1380w" sizes="100%">
+			<img src="media/images/masterplan.svg" srcset="media/images_mobile/masterplan.svg 640w, media/images/masterplan.svg 1380w" sizes="100%">
 		</div>
 	</div>
 
@@ -464,113 +464,113 @@
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_1.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_1.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_1.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_1.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_2.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_2.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_2.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_2.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_3.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_3.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_3.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_3.jpg">
 				</picture>
 			</div>
 
 			<div class="slide figcap before bottom-right rera-generic">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_4.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_4.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_4.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_4.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_5.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_5.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_5.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_5.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_6.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_6.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_6.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_6.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_7.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_7.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_7.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_7.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_8.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_8.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_8.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_8.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_9.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_9.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_9.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_9.jpg">
 				</picture>
 			</div>
 
 			<div class="slide figcap before bottom-right rera-generic">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_10.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_10.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_10.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_10.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_11.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_11.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_11.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_11.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_12.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_12.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_12.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_12.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_13.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_13.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_13.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_13.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_14.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_14.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_14.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_14.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_15.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_15.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_15.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_15.jpg">
 				</picture>
 			</div>
 
 			<div class="slide">
 				<picture class="image">
-					<source srcset="media/images/carousel/interior/carousel_16.jpg?v=270717" media="(min-width: 640px)">
-					<img src="media/images_mobile/carousel/interior/carousel_16.jpg?v=270717">
+					<source srcset="media/images/carousel/interior/carousel_16.jpg" media="(min-width: 640px)">
+					<img src="media/images_mobile/carousel/interior/carousel_16.jpg">
 				</picture>
 			</div>
 
@@ -583,7 +583,7 @@
 	<div id="4_children" class="section-row step-4-base figcap before top-left rera-generic clearfix">
 		<div id="video_kids" class="video-player">
 			<video>
-				<source src="media/images/tabletops/kids.mp4?v=2.3" type="video/mp4">
+				<source src="media/images/tabletops/kids.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
 			<div id="video_kids_gradient" class="video-gradient"></div>
@@ -597,11 +597,11 @@
 				<p class="h2-text"><strong>Safety</strong> &amp; your <strong>Kid's needs</strong> have been taken care of</p>
 			</div>
 			<div class="section-point clearfix">
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/cap.svg?v=2.3"></i>Schools in the Vicinity <small>As far as play schools go, Euro-Kids is half a kilometer away, that's about a 6 minute walk away. KLAY Prep School is 3 kms away, that's about a 10 minute drive and Little Elly is just 750 mts away, that's about a 10 minute walk. For the older kids, VIBGYOR High is 1.8 kms away. Maxwell High: 3.2 kms. Bangalore International School: 5.7 kms and Royal Concorde International School is just 2.7 km drive from here.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/ball.svg?v=2.3"></i>Fun and Games <small>There's a ton of indoor games, a library, a dedicated play area for the smaller ones and of course a swimming pool.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/video.svg?v=2.3"></i>CCTV Cameras <small></small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/selfie.svg?v=2.3"></i>Video doorbell <small>There are those rare occasions when we need to leave the kids home alone. A Video Doorbell will ensure that they needn't open the door to verify who's knocking.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/fire.svg?v=2.3"></i>Fire Suppression Sprinkler System in every room <small>All of us have a childhood story that involved us playing with matches. So whether a little one sets off a match out of pure mischief, or even if an electrical mishap starts a fire, there are sprinklers in every room of the house. These sprinklers start up when a local fire is detected. So if a fire erupts in the kitchen, a sprinkler in the kitchen will ideally suppress the fire before it spreads to other rooms. This localised form of fire suppression, prevents large scale incidents from occurring.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/cap.svg"></i>Schools in the Vicinity <small>As far as play schools go, Euro-Kids is half a kilometer away, that's about a 6 minute walk away. KLAY Prep School is 3 kms away, that's about a 10 minute drive and Little Elly is just 750 mts away, that's about a 10 minute walk. For the older kids, VIBGYOR High is 1.8 kms away. Maxwell High: 3.2 kms. Bangalore International School: 5.7 kms and Royal Concorde International School is just 2.7 km drive from here.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/ball.svg"></i>Fun and Games <small>There's a ton of indoor games, a library, a dedicated play area for the smaller ones and of course a swimming pool.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/video.svg"></i>CCTV Cameras <small></small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/selfie.svg"></i>Video doorbell <small>There are those rare occasions when we need to leave the kids home alone. A Video Doorbell will ensure that they needn't open the door to verify who's knocking.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-4/fire.svg"></i>Fire Suppression Sprinkler System in every room <small>All of us have a childhood story that involved us playing with matches. So whether a little one sets off a match out of pure mischief, or even if an electrical mishap starts a fire, there are sprinklers in every room of the house. These sprinklers start up when a local fire is detected. So if a fire erupts in the kitchen, a sprinkler in the kitchen will ideally suppress the fire before it spreads to other rooms. This localised form of fire suppression, prevents large scale incidents from occurring.</small></p>
 			</div>
 		</div>
 	</div>
@@ -610,10 +610,10 @@
 	<!-- Timelapse Section -->
 	<div class="timelapse-section">
 		<div class="container-video">
-			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_02.mp4?v=2.3" data-l-src="media/images/timelapse/night_day_02.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_02.mp4" data-l-src="media/images/timelapse/night_day_02.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
-				<source srcset="media/images/timelapse/night_day_02.jpg?v=2.3" media="(min-width: 640px)">
-				<img src="media/images_mobile/timelapse/night_day_02.jpg?v=2.3">
+				<source srcset="media/images/timelapse/night_day_02.jpg" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/night_day_02.jpg">
 			</picture>
 		</div>
 	</div>
@@ -629,99 +629,99 @@
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_1.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_1.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_1.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_1.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_2.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_2.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_2.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_2.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_3.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_3.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_3.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_3.jpg">
 					</picture>
 				</div>
 
 				<div class="slide figcap before bottom-right rera-generic">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_4.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_4.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_4.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_4.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_5.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_5.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_5.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_5.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_6.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_6.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_6.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_6.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_7.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_7.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_7.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_7.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_8.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_8.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_8.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_8.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_9.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_9.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_9.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_9.jpg">
 					</picture>
 				</div>
 
 				<div class="slide figcap before bottom-right rera-generic">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_10.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_10.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_10.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_10.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_11.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_11.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_11.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_11.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_12.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_12.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_12.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_12.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_13.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_13.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_13.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_13.jpg">
 					</picture>
 				</div>
 
 				<div class="slide">
 					<picture class="image">
-						<source srcset="media/images/carousel/construction/carousel_14.jpg?v=270717" media="(min-width: 640px)">
-						<img src="media/images_mobile/carousel/construction/carousel_14.jpg?v=270717">
+						<source srcset="media/images/carousel/construction/carousel_14.jpg" media="(min-width: 640px)">
+						<img src="media/images_mobile/carousel/construction/carousel_14.jpg">
 					</picture>
 				</div>
 
@@ -759,11 +759,11 @@
 							<span class="h4-text block">2261 - 2532 sft</span>
 						</div>
 						<div class="features">
-							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/3BHK.jpg?v=2.1"></div>
+							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/3BHK.jpg"></div>
 							<ul>
-								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg"></li>
 								<li class="block alignleft clearfix"><span>Home Office</span></li>
 								<li class="block alignleft clearfix"><span>Entrance Foyer</span></li>
 								<li class="block alignleft clearfix"><span>Garden (G-Floor)</span></li>
@@ -782,14 +782,14 @@
 							<span class="h4-text block">2553 - 3008 sft</span>
 						</div>
 						<div class="features">
-							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/3BHKP.jpg?v=2.1"></div>
+							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/3BHKP.jpg"></div>
 							<ul>
-								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Home Office</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Entrance Foyer</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Garden (G-Floor)</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Home Office</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Entrance Foyer</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Garden (G-Floor)</span><img src="media/images/pricing/greentick.svg"></li>
 								<li class="block alignleft clearfix"><span>Family Area</span></li>
 								<li class="block alignleft clearfix"><span>Powder Room</span></li>
 							</ul>
@@ -805,16 +805,16 @@
 							<span class="h4-text block">3178 - 3354 sft</span>
 						</div>
 						<div class="features">
-							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/4BHK.jpg?v=2.1"></div>
+							<div class="pad20"><img width="400" height="300" src="media/images/pricing/sizes/4BHK.jpg"></div>
 							<ul>
-								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Home Office</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Entrance Foyer</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Wet Kitchen</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Maid's Room</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Vertical Garden</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Home Office</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Entrance Foyer</span><img src="media/images/pricing/greentick.svg"></li>
 								<li class="block alignleft clearfix"><span>Garden (G-Floor)</span></li>
-								<li class="block alignleft clearfix"><span>Family Area</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
-								<li class="block alignleft clearfix"><span>Powder Room</span><img src="media/images/pricing/greentick.svg?v=2.1"></li>
+								<li class="block alignleft clearfix"><span>Family Area</span><img src="media/images/pricing/greentick.svg"></li>
+								<li class="block alignleft clearfix"><span>Powder Room</span><img src="media/images/pricing/greentick.svg"></li>
 							</ul>
 							<div class="pad20">
 								<span class="block button green-outline">Select</span>
@@ -840,9 +840,9 @@
 					</span>
 					<span class="3BHK inline-top size js_apt_type_selector" data-apt-type="3BHK">
 						<small class="block alignleft clearfix header">3BHK</small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
 						<small class="block alignleft clearfix">&nbsp;</small>
 						<small class="block alignleft clearfix">&nbsp;</small>
 						<small class="block alignleft clearfix">&nbsp;</small>
@@ -852,26 +852,26 @@
 					</span>
 					<span class="3BHKP inline-top size selected js_apt_type_selector" data-apt-type="3BHKP">
 						<small class="block alignleft clearfix header">3BHK+</small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
 						<small class="block alignleft clearfix">&nbsp;</small>
 						<small class="block alignleft clearfix">&nbsp;</small>
 						<small class="block alignleft clearfix footer"><span class="block button green-outline">Pick</span></small>
 					</span>
 					<span class="4BHK inline-top size js_apt_type_selector" data-apt-type="4BHK">
 						<small class="block alignleft clearfix header">4BHK</small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
 						<small class="block alignleft clearfix">&nbsp;</small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
-						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg?v=2.1"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
+						<small class="block alignleft clearfix"><img src="media/images/pricing/greentick.svg"></small>
 						<small class="block alignleft clearfix footer"><span class="block button green-outline">Pick</span></small>
 					</span>
 				</div>
@@ -936,7 +936,7 @@
 					<div class="apt-wishlist">
 
 						<!-- Description -->
-						<span class="title h3-text block">My <img src="media/images/pricing/heart-on.svg?v=2.1"> Wishlist</span>
+						<span class="title h3-text block">My <img src="media/images/pricing/heart-on.svg"> Wishlist</span>
 						<p class="description">Add apartments to your wishlist. They will appear below. You can compare, add or remove apartments in this wishlist. Fill the form, we will E-mail you <strong>PDFs with a detailed Cost Breakup &amp; a Floorplan,</strong> only for the apartments in this list. We can then get in touch and assist you with your purchase.</p>
 						<!-- Bubbles -->
 						<ul id="js_wishlist" class="wishlist">
@@ -1026,10 +1026,10 @@
 	<!-- Timelapse Section -->
 	<div class="timelapse-section">
 		<div class="container-video">
-			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_11.mp4?v=2.3" data-l-src="media/images/timelapse/angle_11.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_11.mp4" data-l-src="media/images/timelapse/angle_11.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
-				<source srcset="media/images/timelapse/angle_11.jpg?v=2.3" media="(min-width: 640px)">
-				<img src="media/images_mobile/timelapse/angle_11.jpg?v=2.3">
+				<source srcset="media/images/timelapse/angle_11.jpg" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/angle_11.jpg">
 			</picture>
 		</div>
 	</div>
@@ -1040,7 +1040,7 @@
 	<div id="5_fitness" class="section-row step-5-base figcap before top-left rera-generic clearfix">
 		<div id="video_fitness" class="video-player">
 			<video>
-				<source src="media/images/tabletops/fitness.mp4?v=2.3" type="video/mp4">
+				<source src="media/images/tabletops/fitness.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
 			<div id="video_fitness_gradient" class="video-gradient"></div>
@@ -1054,12 +1054,12 @@
 				<p class="h2-text"><strong>Fitness &amp; Health</strong> Facilities that 'Just Work'</p>
 			</div>
 			<div class="section-point clearfix">
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/clubhouse.svg?v=2.3"></i>A 10,000 sft Clubhouse <small>It's not just eye candy by the way, the clubhouse is spread over 3 floors measuring around 10000 sft in area. It possesses a curated set of daily activities to keep you fit and looking good.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/gym.svg?v=2.3"></i>Gymnasium <small></small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/squash.svg?v=2.3"></i>Squash Court</p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/spa.svg?v=2.3"></i>Two Spas <small></small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/pool.svg?v=2.3"></i>Swimming Pool</p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/hospital.svg?v=2.3"></i>Hospitals Nearby <small>Columbia Asia is a 9 km drive away. Sri Sai Eye Hospital is 1.7 kms away. Specialist Hospital: 1.9 kms and Chris Super Specialty Hospital is 2.8 kms away.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/clubhouse.svg"></i>A 10,000 sft Clubhouse <small>It's not just eye candy by the way, the clubhouse is spread over 3 floors measuring around 10000 sft in area. It possesses a curated set of daily activities to keep you fit and looking good.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/gym.svg"></i>Gymnasium <small></small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/squash.svg"></i>Squash Court</p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/spa.svg"></i>Two Spas <small></small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/pool.svg"></i>Swimming Pool</p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-5/hospital.svg"></i>Hospitals Nearby <small>Columbia Asia is a 9 km drive away. Sri Sai Eye Hospital is 1.7 kms away. Specialist Hospital: 1.9 kms and Chris Super Specialty Hospital is 2.8 kms away.</small></p>
 			</div>
 		</div>
 	</div>
@@ -1068,10 +1068,10 @@
 	<!-- Timelapse Section -->
 	<div class="timelapse-section">
 		<div class="container-video">
-			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_12.mp4?v=2.3" data-l-src="media/images/timelapse/angle_12.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_12.mp4" data-l-src="media/images/timelapse/angle_12.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
-				<source srcset="media/images/timelapse/angle_12.jpg?v=2.3" media="(min-width: 640px)">
-				<img src="media/images_mobile/timelapse/angle_12.jpg?v=2.3">
+				<source srcset="media/images/timelapse/angle_12.jpg" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/angle_12.jpg">
 			</picture>
 		</div>
 	</div>
@@ -1089,12 +1089,12 @@
 				<p class="h2-text"><strong>Environmentally</strong> Friendly</p>
 			</div>
 			<div class="section-point clearfix">
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/spade.svg?v=2.3"></i>Fly Ash used in plastering <small>Fly ash is a natural by-product of all blast furnaces. It has a positive effect on the strength of the building because of a chemical reaction with the cement used. The building gets stronger with age. It also increases the workability of the mortar mix which renders better finishes to the plastered surface.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/vile.svg?v=2.3"></i>Additional Anaerobic Process added to STP <small>In addition to the conventional Aerobic Process, the STP at Another Sky is also equipped with an Anaerobic Process that not only treats toilet and kitchen water, but also digests solid organic waste (vegetable peels,dried leaves etc.) which can be directly fed to the macerator. This not only eliminates the requirement of composting units but can produce useful bio-gas.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/drop.svg?v=2.3"></i>Dry fix used instead of Mortar <small>The Use of Wienerberger DRY FIX instead of mortar for masonry ensures a high degree of quality control and a higher bonding strength. Besides delivering a higher quality, it completely eliminates the use of copious amounts of precious fresh water for mortar mixing and curing. Oh, btw...using DRY FIX also ensures NO air pollution.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/sand.svg?v=2.3"></i>M-Sand instead of river sand <small>M-Sand is the perfect substitute to river sand and is manufactured by crushing granite rocks.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/sun.svg?v=2.3"></i>Solar powered LED lighting for all common areas <small></small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/battery.svg?v=2.3"></i>Charge your Electric Car in the Basement <small></small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/spade.svg"></i>Fly Ash used in plastering <small>Fly ash is a natural by-product of all blast furnaces. It has a positive effect on the strength of the building because of a chemical reaction with the cement used. The building gets stronger with age. It also increases the workability of the mortar mix which renders better finishes to the plastered surface.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/vile.svg"></i>Additional Anaerobic Process added to STP <small>In addition to the conventional Aerobic Process, the STP at Another Sky is also equipped with an Anaerobic Process that not only treats toilet and kitchen water, but also digests solid organic waste (vegetable peels,dried leaves etc.) which can be directly fed to the macerator. This not only eliminates the requirement of composting units but can produce useful bio-gas.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/drop.svg"></i>Dry fix used instead of Mortar <small>The Use of Wienerberger DRY FIX instead of mortar for masonry ensures a high degree of quality control and a higher bonding strength. Besides delivering a higher quality, it completely eliminates the use of copious amounts of precious fresh water for mortar mixing and curing. Oh, btw...using DRY FIX also ensures NO air pollution.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/sand.svg"></i>M-Sand instead of river sand <small>M-Sand is the perfect substitute to river sand and is manufactured by crushing granite rocks.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/sun.svg"></i>Solar powered LED lighting for all common areas <small></small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-6/battery.svg"></i>Charge your Electric Car in the Basement <small></small></p>
 			</div>
 		</div>
 	</div>
@@ -1103,10 +1103,10 @@
 	<!-- Timelapse Section -->
 	<div class="timelapse-section">
 		<div class="container-video">
-			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_09.mp4?v=2.3" data-l-src="media/images/timelapse/angle_09.mp4?v=2.3">Your browser does not support HTML5 video.</video>
+			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_09.mp4" data-l-src="media/images/timelapse/angle_09.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
-				<source srcset="media/images/timelapse/angle_09.jpg?v=2.3" media="(min-width: 640px)">
-				<img src="media/images_mobile/timelapse/angle_09.jpg?v=2.3">
+				<source srcset="media/images/timelapse/angle_09.jpg" media="(min-width: 640px)">
+				<img src="media/images_mobile/timelapse/angle_09.jpg">
 			</picture>
 		</div>
 	</div>
@@ -1117,7 +1117,7 @@
 	<div id="7_maintenance" class="section-row step-7-base figcap before top-left rera-generic clearfix">
 		<div id="video_maintenance" class="video-player">
 			<video>
-				<source src="media/images/tabletops/maintenance.mp4?v=2.3" type="video/mp4">
+				<source src="media/images/tabletops/maintenance.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
 			<div id="video_maintenance_gradient" class="video-gradient"></div>
@@ -1131,12 +1131,12 @@
 				<p class="h2-text">Optimized for <strong>Custom Interiors </strong> &amp; <strong>Low Maintenance Bills</strong></p>
 			</div>
 			<div class="section-point clearfix">
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/book.svg?v=2.3"></i>Owner's manual -  Each apartment comes with one <small>It tells you where every electrical and water line runs, when you hammer a nail in, you don't hit a live wire. It gives you dimensions of every pane of glass, if something shatters, you know exactly what to order. It has a ton of detail on your home.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/tiles.svg?v=2.3"></i>Spare Tiles <small>Tiles are purchased in batches, a specific number of tiles per batch is kept aside. The owner's manual will indicate which batch of tiles were used for that specific apartment. If a spare is needed, you just need to contact Maintenance with the batch number to access spare tiles that will match your apartment.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/cmnd.svg?v=2.3"></i>One seamless slab without beams <small>The Foyer, Living Room and Dining area have a single uninterrupted slab without any beams crossing over. This is very conducive to a false ceiling, opens up your options and doesn't restrict design.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/graph.svg?v=2.3"></i>Extra high ceilings <small>The extra slab height that we have provided as compared to industry standards enables you to liberally include false ceilings in your interior plans. Rooms will not feel smaller and you can be as creative as you want with the use of cove lighting.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/bulb.svg?v=2.3"></i>LED lighting <small>The common areas are lit with LED fixtures, the reduction in power consumption enables the use of Solar Power to run these lights, this reduces ongoing costs of electricity.</small></p>
-				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/stp.svg?v=2.3"></i>An STP that runs on 1/5th the power <small>The Sewage Treatment Plant we're installing is a low power consumption unit. It basically runs on 1/5th of the electricity used to run a conventional STP.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/book.svg"></i>Owner's manual -  Each apartment comes with one <small>It tells you where every electrical and water line runs, when you hammer a nail in, you don't hit a live wire. It gives you dimensions of every pane of glass, if something shatters, you know exactly what to order. It has a ton of detail on your home.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/tiles.svg"></i>Spare Tiles <small>Tiles are purchased in batches, a specific number of tiles per batch is kept aside. The owner's manual will indicate which batch of tiles were used for that specific apartment. If a spare is needed, you just need to contact Maintenance with the batch number to access spare tiles that will match your apartment.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/cmnd.svg"></i>One seamless slab without beams <small>The Foyer, Living Room and Dining area have a single uninterrupted slab without any beams crossing over. This is very conducive to a false ceiling, opens up your options and doesn't restrict design.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/graph.svg"></i>Extra high ceilings <small>The extra slab height that we have provided as compared to industry standards enables you to liberally include false ceilings in your interior plans. Rooms will not feel smaller and you can be as creative as you want with the use of cove lighting.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/bulb.svg"></i>LED lighting <small>The common areas are lit with LED fixtures, the reduction in power consumption enables the use of Solar Power to run these lights, this reduces ongoing costs of electricity.</small></p>
+				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/stp.svg"></i>An STP that runs on 1/5th the power <small>The Sewage Treatment Plant we're installing is a low power consumption unit. It basically runs on 1/5th of the electricity used to run a conventional STP.</small></p>
 			</div>
 		</div>
 		<div class="block aligncenter">
@@ -1166,73 +1166,73 @@
 
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="1" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FXrR1kVwgb8?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_1.jpg?v=2.6">
+					<img data-video-index="1" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FXrR1kVwgb8?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_1.jpg">
 				</div>
 				<small class="caption">Ginormous Balconies</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="2" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Y30Zrx_s97M?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_8.jpg?v=2.6">
+					<img data-video-index="2" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Y30Zrx_s97M?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_8.jpg">
 				</div>
 				<small class="caption">Outer Ring Road</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="3" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/BPD-28GjVZc?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_2.jpg?v=2.6">
+					<img data-video-index="3" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/BPD-28GjVZc?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_2.jpg">
 				</div>
 				<small class="caption">Fire Suppression</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="4" class="active js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/zcyEX5Q5t9w?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_4.jpg?v=2.6">
+					<img data-video-index="4" class="active js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/zcyEX5Q5t9w?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_4.jpg">
 				</div>
 				<small class="caption">Living Walls TVC</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="5" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Vh7EBSVFl8A?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_3.jpg?v=2.6">
+					<img data-video-index="5" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Vh7EBSVFl8A?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_3.jpg">
 				</div>
 				<small class="caption">Party Space</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="6" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Kuk0apPwokw?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_5.jpg?v=2.6">
+					<img data-video-index="6" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Kuk0apPwokw?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_5.jpg">
 				</div>
 				<small class="caption">Sheltered Balconies</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="7" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/o1SxWYyxExY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_6.jpg?v=2.6">
+					<img data-video-index="7" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/o1SxWYyxExY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_6.jpg">
 				</div>
 				<small class="caption">Outer Ring Road</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="8" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Ucco_7Z5zLY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_7.jpg?v=2.6">
+					<img data-video-index="8" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/Ucco_7Z5zLY?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_7.jpg">
 				</div>
 				<small class="caption">Vertical Garden</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="9" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FAGCdkgD0TI?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_9.jpg?v=2.6">
+					<img data-video-index="9" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/FAGCdkgD0TI?showinfo=0&rel=0&autoplay=1&theme=dark" src="media/images/video/thumbnail/thumbnail_9.jpg">
 				</div>
 				<small class="caption">Small Details</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="10" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/HTSHOAgayRs?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_10.jpg?v=2.6">
+					<img data-video-index="10" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/HTSHOAgayRs?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_10.jpg">
 				</div>
 				<small class="caption">Home Office</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="11" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/8Xnh-Ify4DU?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_11.jpg?v=2.6">
+					<img data-video-index="11" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/8Xnh-Ify4DU?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_11.jpg">
 				</div>
 				<small class="caption">Owner's Manual</small>
 			</span>
 			<span class="video-slide inline-middle aligncenter">
 				<div class="play-button">
-					<img data-video-index="12" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/RHuWXq1KH_E?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_12.jpg?v=2.6">
+					<img data-video-index="12" class="js_modal_trigger" data-modal-trigger="content-video" data-modal-video="https://www.youtube.com/embed/RHuWXq1KH_E?showinfo=0&rel=0&autoplay=1&theme=dark"  src="media/images/video/thumbnail/thumbnail_12.jpg">
 				</div>
 				<small class="caption">Home Office</small>
 			</span>
@@ -1370,7 +1370,7 @@
 				<p class="h4-text">Our Other Projects</p>
 				<div class="other-project aligncenter inline-top">
 					<span class="js_modal_trigger project" data-modal-trigger="content-projects" data-modal-project="athena">
-						<img class="block" src="media/images/other-projects/athena.jpg?v=2.6">
+						<img class="block" src="media/images/other-projects/athena.jpg">
 						<span class="block">
 						<strong>ATHENA</strong>
 						HRBR Layout<br>
@@ -1379,7 +1379,7 @@
 				</div>
 				<div class="other-project aligncenter inline-top">
 					<span class="js_modal_trigger project" data-modal-trigger="content-projects" data-modal-project="vdb_house">
-						<img class="block" src="media/images/other-projects/vdbhouse.jpg?v=2.6">
+						<img class="block" src="media/images/other-projects/vdbhouse.jpg">
 						<span class="block">
 						<strong>VDB HOUSE</strong>
 						100ft, Indiranagar<br>
@@ -1388,7 +1388,7 @@
 				</div>
 				<div class="other-project aligncenter inline-top">
 					<span class="js_modal_trigger project" data-modal-trigger="content-projects" data-modal-project="vizag_project">
-						<img class="block" src="media/images/other-projects/vizag.jpg?v=2.6">
+						<img class="block" src="media/images/other-projects/vizag.jpg">
 						<span class="block">
 						<strong>VIZAG PROJECT</strong>
 						Seethammadhara<br>
@@ -1405,7 +1405,7 @@
 	<div id="contact" class="section-row addresses-section clearfix">
 		<div class="section-content clearfix">
 			<div class="address-logo inline-top">
-				<img class="fl-left" src="media/images/logo.svg?v=3">
+				<img class="fl-left" src="media/images/logo.svg">
 			</div>
 
 			<div class="address-content inline-top">
@@ -1474,7 +1474,7 @@
 
 	<!-- Lazaro -->
 	<div class="section-row lazaro clearfix">
-		<a href="http://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg?v=2.3"><strong>www.lazaro.in</strong> - Marketing &amp; Advertising Partner</a>
+		<a href="http://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg"><strong>www.lazaro.in</strong> - Marketing &amp; Advertising Partner</a>
 	</div>
 
 	<!-- Lazaro Signature -->
@@ -1502,7 +1502,7 @@
 				<div class="description">
 					<p>A boutique apartment project, Living Walls Athena has a total saleable area of 13600 sft, consisting of only 4 duplex units in sizes of 2788, 2846, 3253 and 3275 sft. Each spacious 3 BHK unit comes with a home theatre room, and two privileged car parking spaces in the basement. The project has been approved by BBMP and is ready for occupation. </p>
 				</div>
-				<div><img src="media/images/other-projects/athena.jpg?v=2.1"></div>
+				<div><img src="media/images/other-projects/athena.jpg"></div>
 				<!-- <div><a class="contact h4-text" href="tel:+919394445333">Contact : +91 939 444 5333</a></div> -->
 			</div>
 			<div class="project visuallyhidden aligncenter vdb_house">
@@ -1510,7 +1510,7 @@
 				<div class="description">
 					<p>VDB House is a Retail/Commercial office space, strategically located on Indiranagar 100ft Road, close to the heart of Bangalore's central business district. It is situated close to CMH Road (Metro Station) and is easily accessible from MG Road, which is just 3 kms away. This development project comes with all the necessary amenities such as ample power, DG set for power backup, elevator and basement parking. </p>
 				</div>
-				<div><img src="media/images/other-projects/vdbhouse.jpg?v=2.1"></div>
+				<div><img src="media/images/other-projects/vdbhouse.jpg"></div>
 				<!-- <div><a class="contact h4-text" href="tel:+919394445333">Contact : +91 939 444 5333</a></div> -->
 			</div>
 			<div class="project visuallyhidden aligncenter vizag_project">
@@ -1518,7 +1518,7 @@
 				<div class="description">
 					<p>Exclusive residences are taking form in the affluent and desirable neighbourhood of Seethammadhara - Vizag. You can choose from a 3 bedroom duplex apartment, a sprawling penthouse or a simplex apartment. The internal courtyard or the open to sky terrace gardens add flavours to meaningful space. Homes here are between 1971 sq ft to 3139 sq ft.</p>
 				</div>
-				<div><img src="media/images/other-projects/vizag.jpg?v=2.1"></div>
+				<div><img src="media/images/other-projects/vizag.jpg"></div>
 				<div><a class="contact h4-text" href="tel:+919394445333">Contact : +91 939 444 5333</a></div>
 			</div>
 			<span class="close">&times;</span>
@@ -1543,7 +1543,7 @@
 				<!-- <span class="block">Rate per sft - <strong>₹ 7,950</strong></span> -->
 			</div>
 			<div class="unit-plan block">
-				<img src="media/images/pricing/unit-plans/type_10.jpg?v=2.1">
+				<img src="media/images/pricing/unit-plans/type_10.jpg">
 			</div>
 			<hr>
 			<div class="emi-unwrapper">
@@ -1601,7 +1601,7 @@
 				</div>
 			</div><!-- END EMI Wrapper -->
 			<div class="breakup-section block clearfix">
-				<span class="addwish inline button grey aligncenter js_add_to_fav" data-view-details=""><img src="media/images/pricing/heart-small.svg?v=2.1"><span id="addwish_button_text"> Wishlist</span></span>
+				<span class="addwish inline button grey aligncenter js_add_to_fav" data-view-details=""><img src="media/images/pricing/heart-small.svg"><span id="addwish_button_text"> Wishlist</span></span>
 				<span class="modal-close inline button black aligncenter fl-right">Close</span>
 			</div>
 			<div class="close">&times;</div>
