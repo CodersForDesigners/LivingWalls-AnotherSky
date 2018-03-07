@@ -239,4 +239,54 @@ $(document).ready(function(){
 	 });
 
 
+	$( ".js_get_detailed_specs_trigger" ).on( "click", function ( event ) {
+		$( ".js_get_detailed_specs" ).addClass( "interact" );
+		setTimeout( function () {
+			$( ".js_get_detailed_specs input" ).focus();
+		}, 500 );
+	} );
+
+	$( ".js_form_get_detailed_specs" ).on( "submit", function ( event ) {
+
+		event.preventDefault();
+
+		var $form = $( event.target );
+		var $contactNumber = $form.find( "input" );
+
+		// Validation
+		$validationErrors = $( ".js_detailed_specs_form_error" );
+		$validationErrors.addClass( 'fade-out' );
+		$contactNumber.val( $contactNumber.val().replace( /[^-–+\d\s]/g, "" ) );
+		if ( $contactNumber.val().replace( /\D/g, "" ).length != 10 ) {
+			$validationErrors.removeClass( 'fade-out' );
+			return;
+		}
+
+		var data = {
+			lead_source: "Detailed Specifications",
+			contact_number: $contactNumber.val()
+		}
+
+		// Feedback
+		$form.find( "input, button" ).prop( "disabled", true );
+		$form.find( "input" )
+			.attr( "placeholder", "Fetching the spec..." )
+			.val( null )
+
+		$.ajax( {
+			url: "/server/create-lead.php",
+			method: "POST",
+			data: data
+		} )
+		.done( function () {
+			$( ".js_get_detailed_specs > button" ).addClass( "visuallyhidden" );
+			$( ".js_get_detailed_specs a" ).removeClass( "visuallyhidden" );
+			$( ".js_get_detailed_specs" ).removeClass( "interact" );
+			// $( ".js_get_detailed_specs a" ).get( 0 ).click();
+			window.open( $( ".js_get_detailed_specs a" ).attr( "href" ), "_blank" )
+		} );
+
+	} );
+
+
 }); //End of file

@@ -1140,7 +1140,15 @@
 			</div>
 		</div>
 		<div class="block aligncenter">
-			<a class="inline button white-outline" href="media/images/specifications.pdf" target="_blank">Get Detailed Specifications</a>
+			<div class="detailed-specs-btn-form-container inline button white-outline js_get_detailed_specs">
+				<a class="visuallyhidden" href="media/images/specifications.pdf" target="_blank">Download</a>
+				<button class="js_get_detailed_specs_trigger" href="media/images/specifications.pdf" target="_blank">Get Detailed Specifications</button>
+				<form class="js_form_get_detailed_specs">
+					<input type="text" name="form_specifications_email" placeholder="Enter your phone number">
+					<button type="submit">→</button>
+				</form>
+			</div>
+			<div class="detailed-specs-form-error fade-out js_detailed_specs_form_error">Please enter a valid 10-digit phone number.</div>
 		</div>
 	</div>
 

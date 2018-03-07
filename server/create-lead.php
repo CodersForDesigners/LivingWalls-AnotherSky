@@ -17,35 +17,45 @@ function logo ( $thing ) {
 /*
  * Pulling data from the request
  */
-$form_data = [
-	'lead_source' => $_POST[ 'lead_source' ],
-	'first_name' => $_POST[ 'first_name' ],
-	'last_name' => $_POST[ 'last_name' ],
-	'contact_number' => $_POST[ 'contact_number' ],
-];
-if ( $form_data[ 'lead_source' ] == 'Pricing' ) {
-	$form_data[ 'email_address' ] = $_POST[ 'email_address' ];
-	$form_data[ 'discovery_source' ] = $_POST[ 'discovery_source' ];
-	$form_data[ 'apartments_viewed' ] = $_POST[ 'apartments_viewed' ];
-	$form_data[ 'apartments_liked' ] = $_POST[ 'apartments_liked' ];
+$lead_source = $_POST[ 'lead_source' ];
+
+if ( $lead_source == 'Home' ) {
+	$lead_data = [
+		'rep_id' => 'livingadmin',
+		'channel_id' => $lead_source,
+		'subject' => '',
+		'project' => 'Another Sky',
+		'notes' => '',
+		'f_name' => $_POST[ 'first_name' ],
+		'l_name' => $_POST[ 'last_name' ],
+		'phonefax' => $_POST[ 'contact_number' ]
+	];
 }
-
-$lead_data = [
-	'rep_id' => 'livingadmin',
-	'channel_id' => $form_data[ 'lead_source' ],
-	'subject' => '',
-	'project' => 'Another Sky',
-	'f_name' => $form_data[ 'first_name' ],
-	'l_name' => $form_data[ 'last_name' ],
-	'phonefax' => $form_data[ 'contact_number' ],
-	'notes' => ''
-];
-
-if ( $form_data[ 'lead_source' ] == 'Pricing' ) {
-	$lead_data[ 'email' ] = $form_data[ 'email_address' ];
-	$lead_data[ 'disco_1' ] = $form_data[ 'discovery_source' ];
-	$lead_data[ 'apart_1' ] = $form_data[ 'apartments_viewed' ];
-	$lead_data[ 'apart_2' ] = $form_data[ 'apartments_liked' ];
+if ( $lead_source == 'Detailed Specifications' ) {
+	$lead_data = [
+		'rep_id' => 'livingadmin',
+		'channel_id' => $lead_source,
+		'subject' => '',
+		'project' => 'Another Sky',
+		'notes' => '',
+		'phonefax' => $_POST[ 'contact_number' ]
+	];
+}
+if ( $lead_source == 'Pricing' ) {
+	$lead_data = [
+		'rep_id' => 'livingadmin',
+		'channel_id' => $lead_source,
+		'subject' => '',
+		'project' => 'Another Sky',
+		'notes' => '',
+		'f_name' => $_POST[ 'first_name' ],
+		'l_name' => $_POST[ 'last_name' ],
+		'phonefax' => $_POST[ 'contact_number' ],
+		'email' => $_POST[ 'email_address' ],
+		'disco_1' => $_POST[ 'discovery_source' ],
+		'apart_1' => $_POST[ 'apartments_viewed' ],
+		'apart_2' => $_POST[ 'apartments_liked' ]
+	];
 }
 
 /*
