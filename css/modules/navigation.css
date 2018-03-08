@@ -114,6 +114,7 @@
 .menu-item.call {
 	padding-left: 36px;
 	padding-right: 21px;
+	font-size: 1.4rem;
 }
 
 .menu-item.call:before {
