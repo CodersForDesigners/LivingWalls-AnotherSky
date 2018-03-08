@@ -86,7 +86,7 @@
 	<!-- Stylesheet -->
 	<!-- <link rel="stylesheet" type="text/css" href="/style.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
-	<link rel="stylesheet" type="text/css" href="css/pages/overview.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/overview.css?v=20180308">
 
 	<!-- Slick Carousel -->
 	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
