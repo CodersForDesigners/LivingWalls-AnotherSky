@@ -151,8 +151,15 @@ $(document).ready(function(){
 				}
 			} )
 			.done( function ( responseJSON ) {
-				var response = JSON.parse( responseJSON );
-				console.log( response );
+				var response;
+				try {
+					response = JSON.parse( responseJSON );
+					if ( response.status == "success" ) {
+						dataLayer.push( {
+							event: "form-quote-submit"
+						} );
+					}
+				} catch ( e ) {}
 			} )
 
 
@@ -278,12 +285,24 @@ $(document).ready(function(){
 			method: "POST",
 			data: data
 		} )
-		.done( function () {
+		.done( function ( responseJSON ) {
 			$( ".js_get_detailed_specs > button" ).addClass( "visuallyhidden" );
 			$( ".js_get_detailed_specs a" ).removeClass( "visuallyhidden" );
 			$( ".js_get_detailed_specs" ).removeClass( "interact" );
 			// $( ".js_get_detailed_specs a" ).get( 0 ).click();
 			window.open( $( ".js_get_detailed_specs a" ).attr( "href" ), "_blank" )
+
+			// Analytics
+			var response;
+			try {
+				response = JSON.parse( responseJSON );
+				if ( response.status == "success" ) {
+					dataLayer.push( {
+						event: "form-detailed-specs-submit"
+					} );
+				}
+			} catch ( e ) {}
+
 		} );
 
 	} );

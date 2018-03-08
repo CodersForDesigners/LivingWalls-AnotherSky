@@ -108,18 +108,13 @@
 	</script>
 
 	<!-- Analytics -->
-	<!-- Start of Google Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-57124254-5', 'auto');
-		ga('send', 'pageview');
-	</script>
-	<!-- End of Google Analytics -->
-
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M356D67');</script>
+	<!-- End Google Tag Manager -->
 	<!-- Facebook Pixel Code -->
 	<script>
 		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -132,13 +127,18 @@
 		fbq('track', "PageView");
 	</script>
 	<noscript>
-		<img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=1003566166360897&ev=PageView&noscript=1"/>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1003566166360897&ev=PageView&noscript=1"/>
 	</noscript>
 	<!-- End Facebook Pixel Code -->
 
 </head>
 
 <body id="body" class="body">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M356D67"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 <!--  ★  MARKUP GOES HERE  ★  -->
 
@@ -193,7 +193,7 @@
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong><br>
 				Apartments</span>
 				<span class="h4-text block">₹ 1.9cr TO 2.9cr</span>
-				<a href="#apartment_pricing" target="_blank" class="button block pricing-page ga_general_button aligncenter">Choose Your Apartment</a>
+				<a href="#apartment_pricing" target="_blank" class="button block pricing-page aligncenter">Choose Your Apartment</a>
 			</div>
 
 			<div class="inline-middle pricing-action">
@@ -1277,7 +1277,7 @@
 			</div>
 
 			<div class="inline-top pricing-apartment">
-				<a  href="#apartment_pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
+				<a href="#apartment_pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
 			<div class="inline-top pricing-action">
@@ -1740,9 +1740,6 @@
 <script type="text/javascript" src="js/jquery.visible.min.js"></script>
 <script type="text/javascript" src="js/modules/scrollSmooth.js"></script>
 <script type="text/javascript" src="js/hammer.js"></script>
-
-<!-- Tracking -->
-<script type="text/javascript" src="js/overview/tracking.js"></script>
 
 <!-- Design Tabs JS -->
 <script type="text/javascript" src="js/modules/tabs.js"></script>

@@ -1267,8 +1267,15 @@ $.fn.filterByData = function(prop, val) {
 			}
 		} )
 		.done( function ( responseJSON ) {
-			var response = JSON.parse( responseJSON );
-			console.log( response );
+			var response;
+			try {
+				response = JSON.parse( responseJSON );
+				if ( response.status == "success" ) {
+					dataLayer.push( {
+						event: "form-pricing-enquiry-submit"
+					} );
+				}
+			} catch ( e ) {}
 		} )
 
         	// Spreadsheet WebApp API
