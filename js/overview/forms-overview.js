@@ -119,7 +119,7 @@ $(document).ready(function(){
 			            // cid_resource: $(e.target).attr('data_cid_resource'),
 			            source: 'one',
 			        }, function(d){
-			            console.log(d);
+			            // console.log(d);
 			            $(e.target).addClass('visuallyhidden');
 			            $(e.target).next(".contact_form_overview_part_two").removeClass('visuallyhidden');
 			        });
@@ -154,7 +154,7 @@ $(document).ready(function(){
 				var response;
 				try {
 					response = JSON.parse( responseJSON );
-					if ( response.status == "success" ) {
+					if ( response.status ) {
 						dataLayer.push( {
 							event: "form-quote-submit"
 						} );
@@ -231,7 +231,7 @@ $(document).ready(function(){
 	            cid_resource: $(e.target).prev(".contact_form_overview_part_one").attr('data_cid_resource'),
 	            source: 'two',
 	        }, function(d){
-	            console.log(d);
+	            // console.log(d);
 	            // Hide the loading gif
 	            $(e.target).find("input[type='submit']").attr("value", "Thank You!").removeClass('loading').addClass('done');
 	        });
@@ -296,7 +296,7 @@ $(document).ready(function(){
 			var response;
 			try {
 				response = JSON.parse( responseJSON );
-				if ( response.status == "success" ) {
+				if ( response.status ) {
 					dataLayer.push( {
 						event: "form-detailed-specs-submit"
 					} );

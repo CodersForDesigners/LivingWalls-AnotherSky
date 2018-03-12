@@ -1270,7 +1270,7 @@ $.fn.filterByData = function(prop, val) {
 			var response;
 			try {
 				response = JSON.parse( responseJSON );
-				if ( response.status == "success" ) {
+				if ( response.status ) {
 					dataLayer.push( {
 						event: "form-pricing-enquiry-submit"
 					} );
