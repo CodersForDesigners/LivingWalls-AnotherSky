@@ -64,6 +64,7 @@ RewriteRule /winddirection-fb$ http://livingwalls.in/?utm_source=facebook&utm_me
 
 # the catch-all "else" block
 # forward the request to index.php; it will do the heavy-lifting
-# RewriteRule .? index.php [QSA,L]
+RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" !-f
+RewriteRule .? index.php [QSA,L]
 
 </IfModule>

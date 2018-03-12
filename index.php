@@ -84,13 +84,13 @@
 	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
 	<!-- Stylesheet -->
-	<!-- <link rel="stylesheet" type="text/css" href="/style.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/1_standardize.css">
-	<link rel="stylesheet" type="text/css" href="css/pages/overview.css?v=20180308">
+	<!-- <link rel="stylesheet" type="text/css" href="/style.css?v=20180312"> -->
+	<link rel="stylesheet" type="text/css" href="css/1_standardize.css?v=20180312">
+	<link rel="stylesheet" type="text/css" href="css/pages/overview.css?v=20180312">
 
 	<!-- Slick Carousel -->
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css?v=20180312"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css?v=20180312"/>
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery-min.js"></script>
@@ -193,7 +193,7 @@
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong><br>
 				Apartments</span>
 				<span class="h4-text block">₹ 1.9cr TO 2.9cr</span>
-				<a href="#apartment_pricing" target="_blank" class="button block pricing-page aligncenter">Choose Your Apartment</a>
+				<a href="#apartment-pricing" target="_blank" class="button block pricing-page aligncenter">Choose Your Apartment</a>
 			</div>
 
 			<div class="inline-middle pricing-action">
@@ -271,7 +271,7 @@
 
 	<!-- Step - 1 -->
 	<a name="start-tour"></a>
-	<div id="1_location" class="section-row step-1-base figcap before top-left rera-generic clearfix">
+	<div id="step-1-location" class="section-row step-1-base figcap before top-left rera-generic clearfix">
 		<div id="video_commute" class="video-player">
 			<video>
 				<source src="media/images/tabletops/commute.mp4" type="video/mp4">
@@ -301,7 +301,7 @@
 	</div>
 
 	<!-- Timelapse Section -->
-	<div class="timelapse-section">
+	<div id="timelapse-1" class="timelapse-section">
 		<div class="container-video">
 			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_01.mp4" data-l-src="media/images/timelapse/night_day_01.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
@@ -313,7 +313,7 @@
 	<!-- END : Timelapse Section -->
 
 	<!-- Step - 2 -->
-	<div id="2_party" class="section-row step-2-base figcap before top-left rera-generic clearfix">
+	<div id="step-2-party" class="section-row step-2-base figcap before top-left rera-generic clearfix">
 		<div id="video_party" class="video-player">
 			<video>
 				<source src="media/images/tabletops/party.mp4" type="video/mp4">
@@ -339,7 +339,7 @@
 	</div>
 
 	<!-- Timelapse Section -->
-	<div class="timelapse-section">
+	<div id="timelapse-2" class="timelapse-section">
 		<div class="container-video">
 			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/balcony_01.mp4" data-l-src="media/images/timelapse/balcony_01.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
@@ -351,7 +351,7 @@
 	<!-- END : Timelapse Section -->
 
 	<!-- Step - 3 -->
-	<div id="3_design" class="section-row step-3-base figcap before top-left rera-generic clearfix">
+	<div id="step-3-design" class="section-row step-3-base figcap before top-left rera-generic clearfix">
 		<div id="video_design" class="video-player">
 			<video>
 				<source src="media/images/tabletops/design.mp4" type="video/mp4">
@@ -485,7 +485,7 @@
 
 
 	<!-- slick — Image Carousel : Interiors -->
-	<section class="carousel-section">
+	<section id="carousel-interiors" class="carousel-section">
 		<div class="slick-carousel">
 
 			<div class="slide">
@@ -606,7 +606,7 @@
 
 
 	<!-- Step - 4 -->
-	<div id="4_children" class="section-row step-4-base figcap before top-left rera-generic clearfix">
+	<div id="step-4-children" class="section-row step-4-base figcap before top-left rera-generic clearfix">
 		<div id="video_kids" class="video-player">
 			<video>
 				<source src="media/images/tabletops/kids.mp4" type="video/mp4">
@@ -634,7 +634,7 @@
 
 
 	<!-- Timelapse Section -->
-	<div class="timelapse-section">
+	<div id="timelapse-3" class="timelapse-section">
 		<div class="container-video">
 			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/night_day_02.mp4" data-l-src="media/images/timelapse/night_day_02.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
@@ -647,7 +647,7 @@
 
 
 	<!-- Construction Report -->
-	<div id="construnction" class="section-row construction-section clearfix">
+	<div id="construction" class="section-row construction-section clearfix">
 
 		<!-- slick — Image Carousel : Construction -->
 		<div class="carousel-section">
@@ -767,7 +767,7 @@
 
 
 	<!-- Apartment Pricing Engine section -->
-	<div id="apartment_pricing" class="section-row apartment-pricing-section">
+	<div id="apartment-pricing" class="section-row apartment-pricing-section">
 		<!-- Apartment Selector -->
 		<div class="apartment-selector clearfix">
 			<div class="section-content clearfix">
@@ -1050,7 +1050,7 @@
 
 
 	<!-- Timelapse Section -->
-	<div class="timelapse-section">
+	<div id="timelapse-4" class="timelapse-section">
 		<div class="container-video">
 			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_11.mp4" data-l-src="media/images/timelapse/angle_11.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
@@ -1063,7 +1063,7 @@
 
 
 	<!-- Step - 5 -->
-	<div id="5_fitness" class="section-row step-5-base figcap before top-left rera-generic clearfix">
+	<div id="step-5-fitness" class="section-row step-5-base figcap before top-left rera-generic clearfix">
 		<div id="video_fitness" class="video-player">
 			<video>
 				<source src="media/images/tabletops/fitness.mp4" type="video/mp4">
@@ -1092,7 +1092,7 @@
 
 
 	<!-- Timelapse Section -->
-	<div class="timelapse-section">
+	<div id="timelapse-5" class="timelapse-section">
 		<div class="container-video">
 			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_12.mp4" data-l-src="media/images/timelapse/angle_12.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
@@ -1105,7 +1105,7 @@
 
 
 	<!-- Step - 6 -->
-	<div id="6_environment" class="section-row step-6-base clearfix">
+	<div id="step-6-environment" class="section-row step-6-base clearfix">
 		<div class="section-content clearfix">
 			<div class="section-title clearfix">
 				<i class="section-index step-6-highlight">
@@ -1127,7 +1127,7 @@
 
 
 	<!-- Timelapse Section -->
-	<div class="timelapse-section">
+	<div id="timelapse-6" class="timelapse-section">
 		<div class="container-video">
 			<video class="video-timelapse" loop="" muted="" playsinline="" data-s-src="media/images_mobile/timelapse/angle_09.mp4" data-l-src="media/images/timelapse/angle_09.mp4">Your browser does not support HTML5 video.</video>
 			<picture class="timelapse-fallback-image">
@@ -1140,7 +1140,7 @@
 
 
 	<!-- Step - 7 -->
-	<div id="7_maintenance" class="section-row step-7-base figcap before top-left rera-generic clearfix">
+	<div id="step-7-maintenance" class="section-row step-7-base figcap before top-left rera-generic clearfix">
 		<div id="video_maintenance" class="video-player">
 			<video>
 				<source src="media/images/tabletops/maintenance.mp4" type="video/mp4">
@@ -1277,7 +1277,7 @@
 			</div>
 
 			<div class="inline-top pricing-apartment">
-				<a href="#apartment_pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
+				<a href="#apartment-pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
 			<div class="inline-top pricing-action">
@@ -1642,14 +1642,14 @@
 			<a class="button inline menu-item js_menu_item" href="#getaquote">Get a Quote</a><br>
 			<a class="button inline menu-item js_menu_item" href="#masterplan">Project Masterplan</a><br>
 			<a class="button inline menu-item js_menu_item" href="#construnction">Construction Status</a><br>
-			<a class="button white inline menu-item js_menu_item" href="#apartment_pricing">Apartment Pricing</a><br>
-			<a class="button outline inline menu-item js_menu_item" href="#1_location">1. Location</a><br>
-			<a class="button outline inline menu-item js_menu_item" href="#2_party">2. Party</a><br>
-			<a class="button outline inline menu-item js_menu_item" href="#3_design">3. Design</a><br>
-			<a class="button outline inline menu-item js_menu_item" href="#4_children">4. Children</a><br>
-			<a class="button outline inline menu-item js_menu_item" href="#5_fitness">5. Health and Fitness</a><br>
-			<a class="button outline inline menu-item js_menu_item" href="#6_environment">6. Environment Friendly</a><br>
-			<a class="button outline inline menu-item js_menu_item" href="#7_maintenance">7. Maintenance</a><br>
+			<a class="button white inline menu-item js_menu_item" href="#apartment-pricing">Apartment Pricing</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#step-1-location">1. Location</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#step-2-party">2. Party</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#step-3-design">3. Design</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#step-4-children">4. Children</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#step-5-fitness">5. Health and Fitness</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#step-6-environment">6. Environment Friendly</a><br>
+			<a class="button outline inline menu-item js_menu_item" href="#step-7-maintenance">7. Maintenance</a><br>
 			<a class="button inline menu-item js_menu_item" href="#ad_films">Ad Films</a><br>
 			<a class="button inline menu-item js_menu_item" href="#about">About Us</a><br>
 			<a class="button inline menu-item js_menu_item" href="#contact">Contact Us</a><br>
@@ -1674,7 +1674,7 @@
 
 
 <!-- JS Modules -->
-<script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+<script type="text/javascript" src="plugins/slick/slick.min.js?v=20180312"></script>
 
 
 <script type="text/javascript">
@@ -1731,40 +1731,40 @@
 </script>
 
 <!-- utility functions -->
-<script type="text/javascript" src="js/modules/util.js"></script>
+<script type="text/javascript" src="js/modules/util.js?v=20180312"></script>
 
 <!-- Navigation Menu -->
-<script type="text/javascript" src="js/modules/navigation.js"></script>
+<script type="text/javascript" src="js/modules/navigation.js?v=20180312"></script>
 
 <!-- jQuery Plugins -->
-<script type="text/javascript" src="js/jquery.visible.min.js"></script>
-<script type="text/javascript" src="js/modules/scrollSmooth.js"></script>
-<script type="text/javascript" src="js/hammer.js"></script>
+<script type="text/javascript" src="js/jquery.visible.min.js?v=20180312"></script>
+<script type="text/javascript" src="js/modules/scrollSmooth.js?v=20180312"></script>
+<script type="text/javascript" src="js/hammer.js?v=20180312"></script>
 
 <!-- Design Tabs JS -->
-<script type="text/javascript" src="js/modules/tabs.js"></script>
+<script type="text/javascript" src="js/modules/tabs.js?v=20180312"></script>
 
 <!-- Modal Window JS -->
-<script type="text/javascript" src="js/modules/modal.js"></script>
+<script type="text/javascript" src="js/modules/modal.js?v=20180312"></script>
 
 <!-- Image Carousel JS -->
-<script type="text/javascript" src="js/overview/carousel-image.js"></script>
+<script type="text/javascript" src="js/overview/carousel-image.js?v=20180312"></script>
 
 <!-- Video Carousel JS -->
-<!-- <script type="text/javascript" src="js/overview/carousel-video.js"></script> -->
+<!-- <script type="text/javascript" src="js/overview/carousel-video.js?v=20180312"></script> -->
 
 <!-- Overview Forms JS -->
-<script type="text/javascript" src="js/overview/forms-overview.js"></script>
+<script type="text/javascript" src="js/overview/forms-overview.js?v=20180312"></script>
 
 <!-- Animation JS -->
-<script type="text/javascript" src="js/overview/animation.js"></script>
+<script type="text/javascript" src="js/overview/animation.js?v=20180312"></script>
 
 <!-- TimeLapse JS -->
-<script type="text/javascript" src="js/overview/timelapse.js"></script>
+<script type="text/javascript" src="js/overview/timelapse.js?v=20180312"></script>
 
 <!-- Pricing Component -->
-<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
-<script type="text/javascript" src="js/apartment-pricing/pricing.js"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js?v=20180312"></script>
+<script type="text/javascript" src="js/apartment-pricing/pricing.js?v=20180312"></script>
 
 
 <!-- Tracking -->

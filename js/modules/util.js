@@ -5,6 +5,64 @@
 window.__LW__ = window.__LW__ || { };
 
 
+/*
+ *
+ */
+function runOnDebounce ( eventHandlerExecutorFunction, debounceBy ) {
+
+	debounceBy = debounceBy || 51; // 51 milli-seconds
+	var animationFrameId = null;
+	var timeoutId = null;
+
+	return function ( event ) {
+
+		if ( timeoutId ) {
+			window.clearTimeout( timeoutId );
+			timeoutId = null;
+		}
+		timeoutId = window.setTimeout( function () {
+
+			if ( animationFrameId ) {
+				window.cancelAnimationFrame( animationFrameId );
+				animationFrameId = null;
+			}
+			animationFrameId = window.requestAnimationFrame( eventHandlerExecutorFunction );
+
+		}, debounceBy );
+	};
+
+}
+
+function runOnThrottle ( eventHandlerExecutorFunction, throttleBy ) {
+
+	throttleBy = throttleBy || 51;
+	var animationFrameId = null;
+	var timeoutId = null;
+
+	return function ( event ) {
+
+		// If the event handling is pending, do not schedule another
+		// i.e. do nothing
+		if ( timeoutId ) {
+			return;
+		}
+
+		timeoutId = window.setTimeout( function () {
+
+			if ( animationFrameId ) {
+				window.cancelAnimationFrame( animationFrameId );
+				animationFrameId = null;
+			}
+			animationFrameId = window.requestAnimationFrame( eventHandlerExecutorFunction );
+			// window.clearTimeout( timeoutId );
+			timeoutId = null;
+
+		}, throttleBy );
+
+	};
+
+}
+
 
 /* -----
 	EXECUTE FUNCTION RIGHT BEFORE PAINT
@@ -48,35 +106,7 @@ function runViewportResizeHandlers () {
 	} );
 }
 
-window.addEventListener(
-	"resize",
-	function () {
-
-		var animationFrameId = null;
-		var timeoutId = null;
-
-		// \/ optimization
-		// leveraging both a throttle/debounce and an animation frame
-		return function ( event ) {
-
-			if ( timeoutId ) {
-				window.clearTimeout( timeoutId );
-				timeoutId = null;
-			}
-			timeoutId = window.setTimeout( function () {
-
-				if ( animationFrameId ) {
-					window.cancelAnimationFrame( animationFrameId );
-					animationFrameId = null;
-				}
-				animationFrameId = window.requestAnimationFrame( runViewportResizeHandlers );
-
-			}, 51 );
-		};
-
-	}(),
-	true
-);
+window.addEventListener( "resize", runOnDebounce( runViewportResizeHandlers ), true );
 
 
 /*
@@ -105,49 +135,33 @@ onViewportResize( getViewportCategory );
  * VIEWPORT "SCROLL" EVENT HANDLING INFRASTRUCTURE
  ----- */
 // list of "scroll" event handlers
-window.__LW__.viewportScrollHandlers = [ ];
+window.__LW__.viewportThrottledScrollHandlers = [ ];
+window.__LW__.viewportDebouncedScrollHandlers = [ ];
 
 // this function allows you to register a new "scroll" event handler, or
-function onViewportScroll ( fn ) {
-	window.__LW__.viewportScrollHandlers.push( fn );
+function onViewportScrollThrottle ( fn ) {
+	window.__LW__.viewportThrottledScrollHandlers.push( fn );
+}
+function onViewportScrollDebounce ( fn ) {
+	window.__LW__.viewportDebouncedScrollHandlers.push( fn );
 }
 
-// this function invokes all the registered "scroll" event handlers
-function runViewportScrollHandlers () {
-	window.__LW__.viewportScrollHandlers.forEach( function ( fn ) {
+// this function invokes all the registered "scroll" event handlers that are to be throttled
+function runViewportThrottledScrollHandlers () {
+	window.__LW__.viewportThrottledScrollHandlers.forEach( function ( fn ) {
+		fn();
+	} );
+}
+// this function invokes all the registered "scroll" event handlers that are to be debounced
+function runViewportDebouncedScrollHandlers () {
+	window.__LW__.viewportDebouncedScrollHandlers.forEach( function ( fn ) {
 		fn();
 	} );
 }
 
-window.addEventListener(
-	"scroll",
-	function () {
+window.addEventListener( "scroll", runOnThrottle( runViewportThrottledScrollHandlers ), true );
 
-		var animationFrameId = null;
-		var timeoutId = null;
-
-		// \/ optimization
-		// leveraging both a throttle and an animation frame
-		return function ( event ) {
-
-			if ( ! timeoutId ) {
-				timeoutId = window.setTimeout( function () {
-
-					if ( animationFrameId ) {
-						window.cancelAnimationFrame( animationFrameId );
-						animationFrameId = null;
-					}
-					animationFrameId = window.requestAnimationFrame( runViewportScrollHandlers );
-					window.clearTimeout( timeoutId );
-					timeoutId = null;
-
-				}, 51 );
-			}
-		};
-
-	}(),
-	true
-);
+window.addEventListener( "scroll", runOnDebounce( runViewportDebouncedScrollHandlers, 5000 ), true );
 
 
 
