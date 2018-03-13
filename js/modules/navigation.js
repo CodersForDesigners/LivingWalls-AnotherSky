@@ -274,7 +274,8 @@ var manageHistoryOnScroll = function () {
 			sectionScrollTop = $locationSection.position().top;
 		}
 		else if (
-			scrollTop >= $getAQuoteSection.position().top - viewportHeight / 2
+			! $getAQuoteSection.hasClass( "js_ignore" )
+			&& scrollTop >= $getAQuoteSection.position().top - viewportHeight / 2
 			&& scrollTop <= $getAQuoteSection.position().top + $getAQuoteSection.height() + viewportHeight / 2
 		) {
 			currentSection = $getAQuoteSection.attr( "id" );
