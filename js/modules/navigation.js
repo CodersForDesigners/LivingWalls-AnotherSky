@@ -79,7 +79,7 @@ onViewportScrollThrottle( onScrollNavigation );
  * Change the URL fragment depending on the section currently being viewed
  */
 var intervalToCheckForEngagement = 250;
-var thresholdTimeForEngagement = 5000;
+var thresholdTimeForEngagement = 2000;
 window.__LW__.TIME_SPENT_ON_SECTION = 0;
 var manageHistoryOnScroll = function () {
 
