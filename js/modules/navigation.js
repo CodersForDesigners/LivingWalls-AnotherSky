@@ -282,7 +282,7 @@ var manageHistoryOnScroll = function () {
 			sectionScrollTop = $getAQuoteSection.position().top;
 		}
 		else {
-			currentSection = "/";
+			currentSection = "welcome";
 			sectionScrollTop = 0;
 		}
 
