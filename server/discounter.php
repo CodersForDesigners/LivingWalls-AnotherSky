@@ -103,7 +103,7 @@ $attachments[ ] = [
 //  Greetings from Living Walls. Thank you for showing interest in our product. We have attached your quotation for Apartment - ".$apartment_number." to this email.<br><br>
 //  If you would like to view other available apartments, use our online pricing app - livingwalls.in/apartment-pricing <br><br>
 //  www.livingwalls.in<br>
-//  Support Line | +08049405726";
+//  Support Line | +91 96633 96979";
 $customer_message = "Customer Name : ".$name."<br>Customer Id : ".$customer_id;
 
 

@@ -182,7 +182,7 @@
 				<a href="/"><img src="media/images/logo-landscape.svg"></a>
 			</div>
 			<!-- <div class="phone-number inline-middle">
-				<a href="tel:+918049405726" class="call h3-text">080 4940 5726</a>
+				<a href="tel:+919663396979" class="call h3-text">+91 96633 96979</a>
 			</div> -->
 		</div>
 		<div class="landing-content">
@@ -273,7 +273,7 @@
 
 			<div class="pricing-missed-call inline-middle aligncenter">
 				<span class="h2-text block">To Schedule a Site visit</span>
-				<a href="tel:+918049405726" class="button outline block ga_general_button aligncenter">Call 080 4940 5726</a>
+				<a href="tel:+919663396979" class="button outline block ga_general_button aligncenter">Call +91 96633 96979</a>
 			</div>
 		</div>
 	</div>
@@ -935,10 +935,10 @@
 				<!-- OR separator before -->
 				<div id="call_section_before">
 					<div class="or-separator aligncenter" style="padding: 32px 0;"><span><small style="background-color: #303233;">or</small></span></div>
-					<div class="phone-number"><p style="color: #999999;" class="h4-text block aligncenter">To Schedule a Site visit Call <a style="color: #FF5640; padding-left: 5px;" href="tel:+918049405726">080 4940 5726</a></p></div>
+					<div class="phone-number"><p style="color: #999999;" class="h4-text block aligncenter">To Schedule a Site visit Call <a style="color: #FF5640; padding-left: 5px;" href="tel:+919663396979">+91 96633 96979</a></p></div>
 					<div class="pricing-missed-call inline-middle aligncenter">
 						<span class="h2-text block">To Schedule a Site visit</span>
-						<a href="tel:+918049405726" class="button outline block ga_general_button aligncenter">Call 080 4940 5726</a>
+						<a href="tel:+919663396979" class="button outline block ga_general_button aligncenter">Call +91 96633 96979</a>
 					</div>
 				</div>
 
@@ -1454,7 +1454,7 @@
 					Banaswadi-Horamavu Jn<br>
 					Outer Ring Road<br>
 					Bangalore - 5600 43<br>
-					<a class="call" href="tel:+918049405726">080 4940 5726</a></p>
+					<a class="call" href="tel:+919663396979">+91 96633 96979</a></p>
 				</div>
 
 				<div class="address-2 inline-top">
@@ -1651,7 +1651,7 @@
 	<div id="content-navigation" class="content">
 		<div class="navigation">
 			<a class="button outline inline menu-item js_menu_item" href="#landing">Welcome</a><br>
-			<a class="button white inline menu-item call" href="tel:+918049405726">080 4940 5726</a><br>
+			<a class="button white inline menu-item call" href="tel:+919663396979">+91 96633 96979</a><br>
 			<a class="button inline menu-item js_menu_item" href="#getaquote">Get a Quote</a><br>
 			<a class="button inline menu-item js_menu_item" href="#masterplan">Project Masterplan</a><br>
 			<a class="button inline menu-item js_menu_item" href="#construnction">Construction Status</a><br>

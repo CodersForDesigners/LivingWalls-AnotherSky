@@ -12,7 +12,7 @@ $customer_message = <<<TEXT
 Greetings from Living Walls. Thank you for showing interest in our product. We have your contact information and we will get in touch with you soon.<br><br>
 In the meanwhile, if you would like to view our available apartments, use our online pricing app - livingwalls.in/apartment-pricing <br><br>
 www.livingwalls.in<br>
-Support Line | +08049405726
+Support Line | +91 96633 96979
 TEXT;
 
 
