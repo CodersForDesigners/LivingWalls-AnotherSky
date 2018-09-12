@@ -58,7 +58,7 @@
 .detailed-specs-btn-form-container form > button {
 	position: relative;
 	margin-right: 9%;
-	background-image: url( "/media/images/icon-arrow-right-small.svg" );
+	background-image: url( "../../media/images/icon-arrow-right-small.svg" );
 	background-repeat: no-repeat;
 	background-position: center;
 	color: transparent;

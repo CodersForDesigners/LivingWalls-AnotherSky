@@ -113,7 +113,7 @@ $(document).ready(function(){
 				    // $(e.target).attr('data_cid_resource', d);
 
 			        // Builder Email
-			        $.post('../server/overview_contact_smtp_builder.php', {
+			        $.post('server/overview_contact_smtp_builder.php', {
 			            name: $(e.target).find(".js_name").val(),
 			            mobile: $(e.target).find(".js_phone").val(),
 			            // cid_resource: $(e.target).attr('data_cid_resource'),
@@ -141,7 +141,7 @@ $(document).ready(function(){
 				first_name = names.join( " " );
 			}
 			$.ajax( {
-				url: "/server/create-lead.php",
+				url: "server/create-lead.php",
 				method: "POST",
 				data: {
 					lead_source: "Home",
@@ -205,7 +205,7 @@ $(document).ready(function(){
         	$(e.target).find("input[type='submit']").attr("value", "Sending...").addClass('loading');
 
 	        // Customer Email
-	        $.post('../server/overview_contact_smtp_customer.php', {
+	        $.post('server/overview_contact_smtp_customer.php', {
 	            name: $(e.target).prev(".contact_form_overview_part_one").find(".js_name").val(),
 	            email: $(e.target).find(".js_email").val(),
 	        }, function(d){
@@ -222,7 +222,7 @@ $(document).ready(function(){
 			// });
 
 	        // Builder Email
-	        $.post('../server/overview_contact_smtp_builder.php', {
+	        $.post('server/overview_contact_smtp_builder.php', {
 	            my_budget: $(e.target).find(".js_my_budget :selected").val(),
 	            find_us: $(e.target).find(".js_find_us :selected").val(),
 	            name: $(e.target).prev(".contact_form_overview_part_one").find(".js_name").val(),
@@ -281,7 +281,7 @@ $(document).ready(function(){
 			.val( null )
 
 		$.ajax( {
-			url: "/server/create-lead.php",
+			url: "server/create-lead.php",
 			method: "POST",
 			data: data
 		} )

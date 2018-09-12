@@ -8,6 +8,16 @@
 	// pull in Lazaro disclaimer and footer
 	require 'inc/lazaro.php';
 
+	// Figure out the base URL
+	$urlFragments = preg_split( '/\//', $_SERVER[ 'REQUEST_URI' ] );
+	$baseURL = '';
+	foreach ( $urlFragments as $fragment ) {
+		if ( ! empty( $fragment ) ) {
+			$baseURL = '/' . $fragment . '/';
+			break;
+		}
+	}
+
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +38,9 @@
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- Base URL -->
+	<base href="<?php echo $baseURL ?>">
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
