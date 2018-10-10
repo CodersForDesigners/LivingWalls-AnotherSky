@@ -1799,10 +1799,6 @@
 </noscript> -->
 <!-- End of Google Remarketing -->
 
-<!-- Live Chat -->
-<script src="http://cwc.livserv.in/chat.js?lid=18645"></script>
-<script src="http://cw1.livserv.in?did=18645&pid=1"></script>
-
 </body>
 
 </html>
