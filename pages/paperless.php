@@ -19,7 +19,7 @@
 			Excepteur sint occaecat cupidatat non proident.">
 	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
 	<meta name="author" content="Lazaro Advertising">
-	<link rel="canonical" href="http://livingwalls.in/another-sky/paperless">
+	<link rel="canonical" href="https://livingwalls.in/another-sky/paperless">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">

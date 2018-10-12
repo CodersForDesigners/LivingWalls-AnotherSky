@@ -102,8 +102,8 @@ foreach ($parking_array as $parking_pdf_with_parking) {
 	$attachments[ ] = [
 		'name' => $apartment[ 'apt_number' ] . '.pdf',
 		'url' => '../enquiries/customer/' . $apartment[ 'apt_number' ] . '.pdf'
-		// 'url' => 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/enquiries/customer/' . $apartment[ 'apt_number' ] . '.pdf'
-		// 'url' => 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/server/build/' . $apartment[ 'apt_number' ] . '.pdf'
+		// 'url' => 'https://' . $_SERVER[ 'HTTP_HOST' ] . '/enquiries/customer/' . $apartment[ 'apt_number' ] . '.pdf'
+		// 'url' => 'https://' . $_SERVER[ 'HTTP_HOST' ] . '/server/build/' . $apartment[ 'apt_number' ] . '.pdf'
 	];
 
 }
@@ -138,7 +138,7 @@ require 'mailer.php';
  * over to another server that supports SMTP
  */
 // cURL is used to make an HTTP request
-// $request = curl_init( "http://lazaro.in/server/proxy_mailer.php" );
+// $request = curl_init( "https://lazaro.in/server/proxy_mailer.php" );
 
 // curl_setopt( $request, CURLOPT_CUSTOMREQUEST, "POST" );
 // curl_setopt( $request, CURLOPT_POSTFIELDS, http_build_query( $mail_data ) );

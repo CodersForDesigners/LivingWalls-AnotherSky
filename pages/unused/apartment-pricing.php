@@ -24,7 +24,7 @@
 			Excepteur sint occaecat cupidatat non proident.">
 	<meta name="keywords" content="Keyword_A, Keyword_B, Keyword_C, Keyword_D, Keyword_E">
 	<meta name="author" content="Lazaro Advertising">
-	<link rel="canonical" href="http://livingwalls.in/another-sky/apartment-pricing">
+	<link rel="canonical" href="https://livingwalls.in/another-sky/apartment-pricing">
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -480,7 +480,7 @@
 
 	<!-- Lazaro -->
 	<div class="lazaro clearfix">
-		<a href="http://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg?v=2.1"><strong>www.lazaro.in</strong> - Customer Journey Strategy &amp; Implementation</a>
+		<a href="https://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg?v=2.1"><strong>www.lazaro.in</strong> - Customer Journey Strategy &amp; Implementation</a>
 	</div>
 
 </div><!-- End Wrapper -->

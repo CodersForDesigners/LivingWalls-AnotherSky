@@ -92,8 +92,8 @@ $path = 'enquiries/salesperson/' . $apartment[ 'apt_number' ]. '.pdf';
 file_put_contents( $path , $dompdf->output() );
 $attachments[ ] = [
 	'name' => $apartment[ 'apt_number' ] . '.pdf',
-	// 'url' => 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/discount-engine/sales_build/' . $apartment[ 'apt_number' ] . '.pdf'
-	'url' => 'http://' . $_SERVER[ 'HTTP_HOST' ] . '/enquiries/salesperson/' . $apartment[ 'apt_number' ] . '.pdf'
+	// 'url' => 'https://' . $_SERVER[ 'HTTP_HOST' ] . '/discount-engine/sales_build/' . $apartment[ 'apt_number' ] . '.pdf'
+	'url' => 'https://' . $_SERVER[ 'HTTP_HOST' ] . '/enquiries/salesperson/' . $apartment[ 'apt_number' ] . '.pdf'
 ];
 
 	// echo $html;
@@ -134,7 +134,7 @@ require 'mailer.php';
  * over to another server that supports SMTP
  */
 // cURL is used to make an HTTP request
-// $request = curl_init( "http://lazaro.in/server/proxy_mailer.php" );
+// $request = curl_init( "https://lazaro.in/server/proxy_mailer.php" );
 
 // curl_setopt( $request, CURLOPT_CUSTOMREQUEST, "POST" );
 // curl_setopt( $request, CURLOPT_POSTFIELDS, http_build_query( $mail_data ) );

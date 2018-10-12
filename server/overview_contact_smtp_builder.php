@@ -59,7 +59,7 @@ require 'mailer.php';
  * over to another server that supports SMTP
  */
 // cURL is used to make an HTTP request
-// $request = curl_init( "http://lazaro.in/server/proxy_mailer.php" );
+// $request = curl_init( "https://lazaro.in/server/proxy_mailer.php" );
 
 // curl_setopt( $request, CURLOPT_CUSTOMREQUEST, "POST" );
 // curl_setopt( $request, CURLOPT_POSTFIELDS, http_build_query( $mail_data ) );

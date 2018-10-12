@@ -33,8 +33,8 @@
 		content="We went about designing Another Sky with a focus on the resident's comfort. 3BHK and 4BHK Apartments Designed to Just Work. Obscenely Awesome Apartments on the Outer Ring Road.">
 	<meta name="keywords" content="Apartments, 3BHK, 4BHK, Bangalore, Ring Road">
 	<meta name="author" content="Lazaro Advertising Pvt. Ltd.">
-	<link rel="canonical" href="http://livingwalls.in/">
-	<!-- <link rel="canonical" href="http://livingwalls.in/another-sky/"> -->
+	<link rel="canonical" href="https://livingwalls.in/">
+	<!-- <link rel="canonical" href="https://livingwalls.in/another-sky/"> -->
 
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -1513,7 +1513,7 @@
 
 	<!-- Lazaro -->
 	<div class="section-row lazaro clearfix">
-		<a href="http://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg"><strong>www.lazaro.in</strong> - Marketing &amp; Advertising Partner</a>
+		<a href="https://lazaro.in" class="block clearfix" target="_blank"><img class="fl-left" src="media/images/lazaro-logo.svg"><strong>www.lazaro.in</strong> - Marketing &amp; Advertising Partner</a>
 	</div>
 
 	<!-- Lazaro Signature -->
