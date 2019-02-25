@@ -28,7 +28,7 @@
 
 	<!-- Page Meta -->
 	<meta charset="utf-8">
-	<title>LivingWalls | Ready to Occupy Apartments on the Outer Ring Road</title>
+	<title>OFFICIAL LivingWalls | Ready to Occupy Apartments on the Outer Ring Road</title>
 	<meta name="description"
 		content="We went about designing Another Sky with a focus on the resident's comfort. 3BHK and 4BHK Apartments Designed to Just Work. Obscenely Awesome Apartments on the Outer Ring Road.">
 	<meta name="keywords" content="Apartments, 3BHK, 4BHK, Bangalore, Ring Road">
