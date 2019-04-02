@@ -264,6 +264,27 @@
 						</p>
 					</form>
 
+					<!-- Phone Trap -->
+					<form class="phone-form loginner_form_phone">
+						<div class="container-phone-country-code">
+							<select class="input-large fill-green js_phone_country_code">
+								<?php require __DIR__ . '/inc/phone-country-codes.php'; ?>
+							</select>
+							<div class="container-country-code-label button button-large fill-off-light">
+								<span class="js_phone_country_code_label">+91</span>
+							</div>
+						</div>
+						<input class="text-field input-large block js_phone_number" type="text" name="phone" placeholder="Phone number">
+						<button class="submit button button-large fill-green" type="submit">→</button>
+						<div class="feedback-message label strong text-uppercase text-center js_feedback_message">Enter your phone number</div>
+					</form>
+					<form class="otp-form loginner_form_otp">
+						<input class="text-field input-large block js_otp" type="text" name="otp" placeholder="OTP">
+						<button class="submit button button-large" type="submit">→</button>
+						<div class="feedback-message label strong text-uppercase text-center js_feedback_message">We've sent you an OTP.</div>
+					</form>
+					<!-- END: Phone Trap -->
+
 					<ul class="dots">
 						<li>dot</li>
 						<li>dot</li>
