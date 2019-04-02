@@ -108,6 +108,160 @@
 	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery-min.js"></script>
 
+	<!-- Phone Trap CSS -->
+	<style type="text/css">
+		/* -- Phone Form -- */
+		.phone-form {
+			position: relative;
+		}
+
+		.phone-form .feedback-message {
+			text-align: center;
+			color: #303233;
+			font-size: 12px;
+			text-transform: uppercase;
+			padding-top: 7px;
+		}
+
+		.phone-form .input-field {
+			position: relative;
+			z-index: 1;
+			padding: 0 58px;
+		}
+
+		.phone-form .container-phone-country-code {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+		}
+
+		.phone-form .container-phone-country-code .container-country-code-label {
+			position: absolute;
+			z-index: 3;
+			top: 0;
+			left: 0;
+			width: 50px;
+			padding: 0;
+			padding-right: 5px;
+			text-align: right;
+
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+
+			color: #303233;
+			background-color: transparent;
+			border-color: transparent;
+
+			box-shadow: none;
+			pointer-events: none;
+
+			background-image: url(../../media/images/select-arrow.svg);
+			background-size: 32px;
+			background-repeat: no-repeat;
+			background-position: 4px center;
+		}
+
+		.phone-form .container-phone-country-code select {
+			width: 50px;
+			padding: 0;
+			opacity: 0;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+
+			box-shadow: none;
+		}
+
+		.phone-form .submit {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 0;
+			width: 50px;
+			padding: 0;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+
+			box-shadow: none;
+		}
+
+
+		@media( min-width: 640px )  {}
+		@media( min-width: 1040px ) {
+			.phone-form .container-phone-country-code .container-country-code-label {
+				width: 60px;
+			}
+
+			.phone-form .feedback-message {
+				font-size: 14px;
+			}
+
+			.phone-form .container-phone-country-code select {
+				width: 60px;
+			}
+
+			.phone-form .input-field {
+				padding: 0 68px;
+			}
+
+			.phone-form .submit {
+				width: 60px;
+			}
+
+		}
+		@media( min-width: 1480px ) {}
+
+
+
+		/* -- OTP Form -- */
+		.otp-form {
+			position: relative;
+		}
+
+		.otp-form .feedback-message {
+			text-align: center;
+			color: #303233;
+			font-size: 12px;
+			text-transform: uppercase;
+			padding-top: 7px;
+		}
+
+		.otp-form .input-field {
+			position: relative;
+			z-index: 1;
+			padding-right: 58px;
+		}
+		.otp-form .submit {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 0;
+			width: 50px;
+			padding: 0;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+
+			box-shadow: none;
+		}
+
+		@media( min-width: 640px )  {}
+		@media( min-width: 1040px ) {
+			.otp-form .input-field {
+				padding-right: 68px;
+			}
+
+			.otp-form .feedback-message {
+				font-size: 14px;
+			}
+
+			.otp-form .submit {
+				width: 60px;
+			}
+
+		}
+		@media( min-width: 1480px ) {}
+	</style>
+
 	<!-- `picture` element polyfill -->
 	<script type="text/javascript">
 		(function () {
@@ -265,23 +419,23 @@
 					</form>
 
 					<!-- Phone Trap -->
-					<form class="phone-form loginner_form_phone">
+					<form class="phone-form form-row loginner_form_phone">
 						<div class="container-phone-country-code">
-							<select class="input-large fill-green js_phone_country_code">
+							<select class="input-field js_phone_country_code">
 								<?php require __DIR__ . '/inc/phone-country-codes.php'; ?>
 							</select>
-							<div class="container-country-code-label button button-large fill-off-light">
+							<div class="container-country-code-label button fill-off-light">
 								<span class="js_phone_country_code_label">+91</span>
 							</div>
 						</div>
-						<input class="text-field input-large block js_phone_number" type="text" name="phone" placeholder="Phone number">
-						<button class="submit button button-large fill-green" type="submit">→</button>
+						<input class="input-field block js_phone_number" type="text" name="phone" placeholder="Phone number">
+						<button class="submit button" type="submit">→</button>
 						<div class="feedback-message label strong text-uppercase text-center js_feedback_message">Enter your phone number</div>
 					</form>
-					<form class="otp-form loginner_form_otp">
-						<input class="text-field input-large block js_otp" type="text" name="otp" placeholder="OTP">
-						<button class="submit button button-large" type="submit">→</button>
-						<div class="feedback-message label strong text-uppercase text-center js_feedback_message">We've sent you an OTP.</div>
+					<form class="otp-form form-row loginner_form_otp">
+						<input class="input-field block js_otp" type="text" name="otp" placeholder="OTP">
+						<button class="submit button" type="submit">→</button>
+						<div class="feedback-message js_feedback_message">We've sent you an OTP.</div>
 					</form>
 					<!-- END: Phone Trap -->
 
