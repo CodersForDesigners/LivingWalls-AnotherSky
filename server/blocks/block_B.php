@@ -160,7 +160,7 @@ $BHK3_B = array (
 						// $apartmentB051,
 						// $apartmentB071,
 						// $apartmentB131,
-						$apartmentB151,
+						// $apartmentB151,
 					);
 
 $BHK3_B_pdf = array (
@@ -168,7 +168,7 @@ $BHK3_B_pdf = array (
 						// 'B051' => $apartmentB051,
 						// 'B071' => $apartmentB071,
 						// 'B131' => $apartmentB131,
-						'B151' => $apartmentB151,
+						// 'B151' => $apartmentB151,
 					);
 
 $BHK3P_B = array (
