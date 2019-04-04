@@ -14,6 +14,14 @@ $("body").on("click", ".js_modal_trigger", function ( event ) {
 	else if ( modId == "content-text" ) {
 		var modForm = $( this ).attr( "data-modal-form" );
 		$( ".content-text .former." + modForm ).removeClass("visuallyhidden");
+		// Make a note on the CRM
+		var unitNumber = $( event.target ).data( "viewDetails" );
+		console.log( unitNumber )
+		__OMEGA.utils.addNoteToUser( "Omega Event Log",
+			"Customer VIEWED unit " + unitNumber + " on \"Another Sky\" project webpage."
+		).catch( function ( e ) {
+			console.log( e.message )
+		} )
 	}
 
 	else if ( modId == "content-video" ) {

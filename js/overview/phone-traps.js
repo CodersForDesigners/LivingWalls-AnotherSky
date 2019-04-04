@@ -46,16 +46,6 @@ $( ".js_phone_country_code" ).on( "blur", function ( event ) {
 // -----
 // 1. Define all hook functions that are common across all the phone traps
 // -----
-var onTrigger = function onTrigger ( event ) {
-	var $triggerElement = $( event.target ).closest( ".js_user_required" );
-	$triggerElement.closest( ".is-hide" ).removeClass( "is-hide" );
-	var $trapSite = $triggerElement.closest( "[ data-loginner ]" );
-	$trapSite
-		.find( ".loginner_form_phone" )
-			.removeClass( "fade" )
-			.find( ".js_phone_number" )
-				.get( 0 ).focus();
-};
 var onPhoneValidationError = function onPhoneValidationError ( message ) {
 	__OMEGA.utils.notify( message, {
 		level: "error",
@@ -99,10 +89,23 @@ var onOTPVerified = function ( context, phoneNumber ) {
 // -----
 // 2. Set the traps.....
 // -----
+/*
+ * Quote sections
+ */
+var quotesOnTrigger = function onTrigger ( event ) {
+	var $triggerElement = $( event.target ).closest( ".js_user_required" );
+	$triggerElement.closest( ".is-hide" ).removeClass( "is-hide" );
+	var $trapSite = $triggerElement.closest( "[ data-loginner ]" );
+	$trapSite
+		.find( ".loginner_form_phone" )
+			.removeClass( "fade" )
+			.find( ".js_phone_number" )
+				.get( 0 ).focus();
+};
 // Get a Quote ( at the top )
 var $getQuoteTopFormSite = $( "[ data-loginner = 'Get Quote Top' ]" );
 Loginner.registerLoginPrompt( "Get Quote Top", {
-	onTrigger: onTrigger,
+	onTrigger: quotesOnTrigger,
 	onPhoneValidationError: onPhoneValidationError,
 	onPhoneSend: onPhoneSend,
 	onShowOTP: onShowOTP,
@@ -111,7 +114,7 @@ Loginner.registerLoginPrompt( "Get Quote Top", {
 	onOTPError: onOTPError,
 	onOTPVerified: onOTPVerified,
 	onLogin: function ( user, context ) {
-		if ( this ) {
+		if ( this instanceof HTMLElement ) {
 			// Disable and Hide the form
 			$( this )
 				.find( "input, select, button" )
@@ -127,7 +130,7 @@ Loginner.registerLoginPrompt( "Get Quote Top", {
 // Get a Quote ( at the bottom )
 var $getQuoteTopFormSite = $( "[ data-loginner = 'Get Quote Bottom' ]" );
 Loginner.registerLoginPrompt( "Get Quote Bottom", {
-	onTrigger: onTrigger,
+	onTrigger: quotesOnTrigger,
 	onPhoneValidationError: onPhoneValidationError,
 	onPhoneSend: onPhoneSend,
 	onShowOTP: onShowOTP,
@@ -136,7 +139,7 @@ Loginner.registerLoginPrompt( "Get Quote Bottom", {
 	onOTPError: onOTPError,
 	onOTPVerified: onOTPVerified,
 	onLogin: function ( user, context ) {
-		if ( this ) {
+		if ( this instanceof HTMLElement ) {
 			// Disable and Hide the form
 			$( this )
 				.find( "input, select, button" )
@@ -147,5 +150,38 @@ Loginner.registerLoginPrompt( "Get Quote Bottom", {
 		else {
 			__OMEGA.utils.notify( "We have your number. We'll contact you soon." );
 		}
+	}
+} );
+
+
+
+// Apartment Pricing
+var $getQuoteTopFormSite = $( "[ data-loginner = 'Apartment Pricing' ]" );
+var $apartmentSelected;
+Loginner.registerLoginPrompt( "Apartment Pricing", {
+	onTrigger: function onTrigger ( event ) {
+		$apartmentSelected = $( event.target ).closest( ".js_user_required" );
+		var $pricingTrap = $( event.target ).closest( "[ data-loginner ]" ).find( ".js_pricing_trap" );
+		var domPricingTrap = $pricingTrap.get( 0 );
+		$pricingTrap.slideDown( function () {
+			var scrollY = window.scrollY + domPricingTrap.getBoundingClientRect().bottom - $( window ).height() + 100;
+			window.scrollTo( { top: scrollY, behavior: "smooth" } );
+		} );
+	},
+	onPhoneValidationError: onPhoneValidationError,
+	onPhoneSend: onPhoneSend,
+	onShowOTP: onShowOTP,
+	onOTPSend: onOTPSend,
+	onPhoneError: onPhoneError,
+	onOTPError: onOTPError,
+	onOTPVerified: onOTPVerified,
+	onLogin: function ( user, context, targetElement ) {
+		if ( this instanceof HTMLElement ) {
+			// Disable and Hide the trap
+			$( this ).closest( ".js_pricing_trap" ).slideUp();
+			// Resolve to the default behavior
+		}
+		if ( targetElement )
+			targetElement.click();
 	}
 } );

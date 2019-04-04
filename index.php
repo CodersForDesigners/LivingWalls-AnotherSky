@@ -951,7 +951,7 @@
 
 
 	<!-- Apartment Pricing Engine section -->
-	<div id="apartment-pricing" class="section-row apartment-pricing-section">
+	<div id="apartment-pricing" class="section-row apartment-pricing-section" data-loginner="Apartment Pricing">
 		<!-- Apartment Selector -->
 		<div class="apartment-selector clearfix">
 			<div class="section-content clearfix">
@@ -1139,64 +1139,33 @@
 				</div>
 			</div>
 
-			<!-- Wishlist -->
-			<div class="section-row apartment-wishlist clearfix">
-				<div class="section-content clearfix">
-
-					<div class="apt-wishlist">
-
-						<!-- Description -->
-						<span class="title h3-text block">My <img src="media/images/pricing/heart-on.svg"> Wishlist</span>
-						<p class="description">Add apartments to your wishlist. They will appear below. You can compare, add or remove apartments in this wishlist. Fill the form, we will E-mail you <strong>PDFs with a detailed Cost Breakup &amp; a Floorplan,</strong> only for the apartments in this list. We can then get in touch and assist you with your purchase.</p>
-						<!-- Bubbles -->
-						<ul id="js_wishlist" class="wishlist">
-							<!-- Wish Goes Here -->
-						</ul>
-
+			<!-- Phone Trap -->
+			<div class="section-content clearfix js_pricing_trap" style="display: none">
+				<div class="aligncenter">
+					<p class="title h4-text block" style="margin: 0 0 1rem">Provide your phone number.</p>
+					<div class="inline-middle">
+						<form class="phone-form form-row loginner_form_phone">
+							<div class="container-phone-country-code">
+								<select class="input-field js_phone_country_code">
+									<?php require __DIR__ . '/inc/phone-country-codes.php'; ?>
+								</select>
+								<div class="container-country-code-label button fill-off-light">
+									<span class="js_phone_country_code_label">+91</span>
+								</div>
+							</div>
+							<input class="input-field block js_phone_number" type="text" name="phone" placeholder="Phone number">
+							<button class="submit button" type="submit">→</button>
+							<div class="feedback-message label strong text-uppercase text-center js_feedback_message" style="color: #FFFFFF"></div>
+						</form>
+						<form class="otp-form form-row loginner_form_otp hidden">
+							<input class="input-field block js_otp" type="text" name="otp" placeholder="OTP">
+							<button class="submit button" type="submit">→</button>
+							<div class="feedback-message js_feedback_message" style="color: #FFFFFF">We've sent you an OTP.</div>
+						</form>
 					</div>
-
-					<!-- Form -->
-					<form id="contact_form_pricing">
-						<p class="form-row">
-							<input id="name" class="input-field block" type="text" placeholder="Name...">
-						</p>
-						<p class="form-row">
-							<input id="email" class="input-field block" type="text" placeholder="Email...">
-						</p>
-						<p class="form-row">
-							<input id="mobile" class="input-field block" type="text" placeholder="Mobile...">
-						</p>
-						<p class="form-row">
-							<select id="finding_us" class="input-field block">
-								<option selected="true" disabled="true">How did you find us?</option>
-								<option value="Web-P - YouTube">YouTube</option>
-								<option value="Web-P - Radio">Radio</option>
-								<option value="Web-P - Cinema">Cinema - PVR / INOX</option>
-								<option value="Web-P - Google Search">Google Search</option>
-								<option value="Web-P - Facebook">Facebook</option>
-								<option value="Web-P - Friend">A friend told me</option>
-								<option value="Web-P - Hoarding">Saw a hoarding</option>
-								<option value="Web-P - Ad Words">Online Image Ad</option>
-								<option value="Web-P - LinkedIn">LinkedIn</option>
-								<option value="Web-P - Newspaper Ad">Newspaper Ad</option>
-								<option value="Web-P - Site Visit">Site Visit</option>
-								<option value="Web-P - Others">Others</option>
-							</select>
-						</p>
-						<p class="form-row js_submit_button_section">
-							<!-- <input type="submit" class="block button ga_contact_me_pricing" value="Get in touch"> -->
-							<input type="submit" class="block button ga_contact_me_pricing" value="Submit">
-						</p>
-					</form>
-
-					<!-- OR separator before -->
-					<div id="call_section_after">
-					</div>
-
-					<!-- Thank you iFrame -->
-					<iframe id="iframe_for_a" name="iframe_for_a" style="height: 0;"></iframe>
 				</div>
 			</div>
+			<!-- END: Phone Trap -->
 
 		</div><!-- End of One More Wrapper -->
 
