@@ -420,7 +420,7 @@
 				<a href="#apartment-pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
-			<div class="inline-top pricing-action" data-loginner="Get Quote Top">
+			<div class="inline-top pricing-action" data-loginner="Get Quote Top" data-context="get-quote-top">
 				<div class="form is-hide alignleft js_quote_quote_btn js_user_required">
 					<p class="h4-text block aligncenter">Get a Quote</p>
 
@@ -951,7 +951,7 @@
 
 
 	<!-- Apartment Pricing Engine section -->
-	<div id="apartment-pricing" class="section-row apartment-pricing-section" data-loginner="Apartment Pricing">
+	<div id="apartment-pricing" class="section-row apartment-pricing-section" data-loginner="Apartment Pricing" data-context="apartment-pricing">
 		<!-- Apartment Selector -->
 		<div class="apartment-selector clearfix">
 			<div class="section-content clearfix">
@@ -1318,7 +1318,7 @@
 				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/stp.svg"></i>An STP that runs on 1/5th the power <small>The Sewage Treatment Plant we're installing is a low power consumption unit. It basically runs on 1/5th of the electricity used to run a conventional STP.</small></p>
 			</div>
 		</div>
-		<div class="block aligncenter" data-loginner="Detailed Specifications">
+		<div class="block aligncenter" data-loginner="Detailed Specifications" data-context="detailed-specifications">
 			<div class="detailed-specs-btn-form-container inline button white-outline js_get_detailed_specs">
 				<a href="media/images/specifications.pdf" target="_blank" style="width: 100%; display: none">Download</a>
 				<button class="js_get_detailed_specs_trigger js_user_required">Get Detailed Specifications</button>
@@ -1451,7 +1451,7 @@
 				<a href="#apartment-pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
-			<div class="inline-top pricing-action" data-loginner="Get Quote Bottom">
+			<div class="inline-top pricing-action" data-loginner="Get Quote Bottom" data-context="get-quote-bottom">
 				<div class="form is-hide alignleft js_quote_quote_btn js_user_required">
 					<p class="h4-text block aligncenter">Get a Quote</p>
 

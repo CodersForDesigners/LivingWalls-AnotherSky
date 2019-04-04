@@ -80,8 +80,8 @@ var onOTPError = function ( code, message ) {
 	$( this ).find( "input, select, button" ).prop( "disabled", false );
 };
 var onOTPVerified = function ( context, phoneNumber ) {
-	// var url = "/trac/user/new/" + context;
-	// __OMEGA.utils.trackPageVisit( url );
+	var url = "/trac/user/new/" + context;
+	__OMEGA.utils.trackPageVisit( url );
 };
 
 

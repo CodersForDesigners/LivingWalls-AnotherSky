@@ -8,7 +8,9 @@ RewriteEngine On
 ## a little hackery follows to make this work
 ## on the live server and local environment setup
 # this is for live server environment
-	# If the URL don't map to an existing file
+	# Tracking and Analytics
+RewriteRule ^/?trac/ pages/tracking.php [QSA,L,NC]
+	# Otherwise, if the URL don't map to an existing file
 RewriteCond "%{DOCUMENT_ROOT}%{REQUEST_URI}" !-f
 RewriteCond "%{REQUEST_URI}" ^/([^/]+)/([^/]+.*)
 RewriteCond "%{DOCUMENT_ROOT}/%1/pages/%2\.php" -f
