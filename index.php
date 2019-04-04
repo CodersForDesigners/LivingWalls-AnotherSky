@@ -1103,16 +1103,6 @@
 					<a href="#info" id="js_find_apartments" class="button block">Find Apartments</a>
 				</div>
 
-				<!-- OR separator before -->
-				<div id="call_section_before">
-					<div class="or-separator aligncenter" style="padding: 32px 0;"><span><small style="background-color: #303233;">or</small></span></div>
-					<div class="phone-number"><p style="color: #999999;" class="h4-text block aligncenter">To Schedule a Site visit Call <a style="color: #FF5640; padding-left: 5px;" href="tel:+919663396979">+91 96633 96979</a></p></div>
-					<div class="pricing-missed-call inline-middle aligncenter">
-						<span class="h2-text block">To Schedule a Site visit</span>
-						<a href="tel:+919663396979" class="button outline block ga_general_button aligncenter">Call +91 96633 96979</a>
-					</div>
-				</div>
-
 			</div>
 		</div>
 
