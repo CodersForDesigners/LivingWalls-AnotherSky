@@ -2,7 +2,7 @@
 /*
  * Getting a Quote
  */
-$( document ).on( "click", ".js_getaquote .js_user_required", function ( event ) {
+$( document ).on( "click", ".js_get_quote_section .js_quote_quote_btn", function ( event ) {
 	__OMEGA.utils.addNoteToUser( "Omega Event Log",
 		"Customer REQUESTED for a quote on the \"Another Sky\" project webpage."
 	).catch( function ( e ) {
@@ -12,7 +12,7 @@ $( document ).on( "click", ".js_getaquote .js_user_required", function ( event )
 	var message = "We have your number. We'll call you soon.";
 	alert( message );
 	// Disable the button
-	$( ".js_getaquote" ).find( ".js_user_required" ).addClass( "no-pointer" );
+	$( ".js_get_quote_section" ).find( ".js_quote_quote_btn" ).addClass( "no-pointer" );
 	// Change the button's message
-	$( ".js_getaquote" ).find( "[ data-loginner ]" ).attr( "style", '--quote-feedback-message: "We\'ll contact you soon."' )
+	$( ".js_get_quote_section" ).find( "[ data-loginner ]" ).attr( "style", '--quote-feedback-message: "We\'ll contact you soon."' )
 } );

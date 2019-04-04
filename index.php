@@ -407,7 +407,7 @@
 
 
 	<!-- Pricing Section -->
-	<div id="getaquote" class="section-row repeat-pricing-section clearfix js_getaquote">
+	<div id="getaquote" class="section-row repeat-pricing-section clearfix js_get_quote_section">
 		<div class="section-content clearfix">
 			<div class="block aligncenter pricing-title">
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong>
@@ -421,7 +421,7 @@
 			</div>
 
 			<div class="inline-top pricing-action" data-loginner="Get Quote Top">
-				<div class="form is-hide alignleft js_user_required">
+				<div class="form is-hide alignleft js_quote_quote_btn js_user_required">
 					<p class="h4-text block aligncenter">Get a Quote</p>
 
 					<!-- Phone Trap -->
@@ -1421,7 +1421,7 @@
 
 
 	<!-- Repeat Pricing Section -->
-	<div id="getaquote_2" class="section-row repeat-pricing-section clearfix js_getaquote">
+	<div id="getaquote_2" class="section-row repeat-pricing-section clearfix js_get_quote_section">
 		<div class="section-content clearfix">
 			<div class="block aligncenter pricing-title">
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong>
@@ -1435,7 +1435,7 @@
 			</div>
 
 			<div class="inline-top pricing-action" data-loginner="Get Quote Bottom">
-				<div class="form is-hide alignleft js_user_required">
+				<div class="form is-hide alignleft js_quote_quote_btn js_user_required">
 					<p class="h4-text block aligncenter">Get a Quote</p>
 
 					<!-- Phone Trap -->

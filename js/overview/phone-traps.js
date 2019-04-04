@@ -122,9 +122,6 @@ Loginner.registerLoginPrompt( "Get Quote Top", {
 
 			$( this ).find( ".js_feedback_message" ).text( "We'll contact you soon." );
 		}
-		else {
-			__OMEGA.utils.notify( "We have your number. We'll contact you soon." );
-		}
 	}
 } );
 // Get a Quote ( at the bottom )
@@ -146,9 +143,6 @@ Loginner.registerLoginPrompt( "Get Quote Bottom", {
 				.prop( "disabled", true );
 
 			$( this ).find( ".js_feedback_message" ).text( "We'll contact you soon." );
-		}
-		else {
-			__OMEGA.utils.notify( "We have your number. We'll contact you soon." );
 		}
 	}
 } );
