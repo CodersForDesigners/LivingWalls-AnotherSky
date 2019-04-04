@@ -26,19 +26,6 @@ $("body").on("click", ".js_modal_trigger", function ( event ) {
 		$( ".content-projects .project." + modProj ).removeClass("visuallyhidden");
 	}
 
-	/* close with escape button */
-	$(window).on( "keyup",function(evt) {
-		if (evt.keyCode == 27) {
-
-			close_modal();
-
-			$(window).off('keyup');
-
-			// Triggering special event for pricing_close_lightbox()
-			$(window).trigger("js_pricing_close_lightbox");
-		}
-	});
-
 	// extract scroll offset from the window and stick into the page container
 	var scrollOffset = $( window ).scrollTop();
 
@@ -48,6 +35,22 @@ $("body").on("click", ".js_modal_trigger", function ( event ) {
 
 });
 
+
+/* close with escape button */
+$( window ).on( "keyup", function ( event ) {
+
+	if ( event.keyCode != 27 )
+		return;
+
+	if ( ! $( "body" ).hasClass( "modal_freeze" ) )
+		return;
+
+	close_modal();
+
+	// Triggering special event for pricing_close_lightbox()
+	$( window ).trigger( "js_pricing_close_lightbox" );
+
+} );
 
 /* Click outside to close */
 $(".modal").on("click", function( e ) {
