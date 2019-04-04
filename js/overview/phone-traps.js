@@ -149,6 +149,42 @@ Loginner.registerLoginPrompt( "Get Quote Bottom", {
 
 
 
+// Detailed Specifications
+var $detailedSpecsFormSite = $( "[ data-loginner = 'Detailed Specifications' ]" );
+Loginner.registerLoginPrompt( "Detailed Specifications", {
+	onTrigger: function onTrigger ( event ) {
+		var $targetEl = $( event.target );
+		var $specificationsButtonContainer = $targetEl.closest( ".js_user_required" ).parent();
+		$specificationsButtonContainer.slideUp( function () {
+			var $pricingTrap = $targetEl.closest( "[ data-loginner ]" ).find( ".js_spec_trap" );
+			$pricingTrap.slideDown();
+		} );
+	},
+	onPhoneValidationError: onPhoneValidationError,
+	onPhoneSend: onPhoneSend,
+	onShowOTP: onShowOTP,
+	onOTPSend: onOTPSend,
+	onPhoneError: onPhoneError,
+	onOTPError: onOTPError,
+	onOTPVerified: onOTPVerified,
+	onLogin: function ( user, context, targetElement ) {
+		if ( this instanceof HTMLElement ) {
+			// Disable and Hide the trap
+			$( this ).closest( ".js_spec_trap" ).slideUp( function () {
+				// Bring back the button
+				$( ".js_get_detailed_specs" ).slideDown();
+			} );
+		}
+		if ( targetElement ) {
+			$( targetElement ).slideUp( function () {
+				$( targetElement ).parent().find( "a" ).slideDown();
+			} );
+		}
+	}
+} );
+
+
+
 // Apartment Pricing
 var $getQuoteTopFormSite = $( "[ data-loginner = 'Apartment Pricing' ]" );
 var $apartmentSelected;

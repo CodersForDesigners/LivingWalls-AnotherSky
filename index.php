@@ -1318,16 +1318,33 @@
 				<p class="h4-text"><i class="h4-icon"><img src="media/images/icons/step-7/stp.svg"></i>An STP that runs on 1/5th the power <small>The Sewage Treatment Plant we're installing is a low power consumption unit. It basically runs on 1/5th of the electricity used to run a conventional STP.</small></p>
 			</div>
 		</div>
-		<div class="block aligncenter">
+		<div class="block aligncenter" data-loginner="Detailed Specifications">
 			<div class="detailed-specs-btn-form-container inline button white-outline js_get_detailed_specs">
-				<a class="visuallyhidden" href="media/images/specifications.pdf" target="_blank">Download</a>
-				<button class="js_get_detailed_specs_trigger" href="media/images/specifications.pdf" target="_blank">Get Detailed Specifications</button>
-				<form class="js_form_get_detailed_specs">
-					<input type="text" name="form_specifications_email" placeholder="Enter your phone number">
-					<button type="submit">→</button>
+				<a href="media/images/specifications.pdf" target="_blank" style="width: 100%; display: none">Download</a>
+				<button class="js_get_detailed_specs_trigger js_user_required">Get Detailed Specifications</button>
+			</div>
+			<!-- Phone Trap -->
+			<div class="inline-middle js_spec_trap" style="display: none">
+				<form class="phone-form form-row loginner_form_phone">
+					<div class="container-phone-country-code">
+						<select class="input-field js_phone_country_code">
+							<?php require __DIR__ . '/inc/phone-country-codes.php'; ?>
+						</select>
+						<div class="container-country-code-label button fill-off-light">
+							<span class="js_phone_country_code_label">+91</span>
+						</div>
+					</div>
+					<input class="input-field block js_phone_number" type="text" name="phone" placeholder="Phone number">
+					<button class="submit button" type="submit" style="background-color: #9FA4A4; border-color: #FFFFFF">→</button>
+					<div class="feedback-message label strong text-uppercase text-center js_feedback_message" style="color: #FFFFFF">Provide your phone number</div>
+				</form>
+				<form class="otp-form form-row loginner_form_otp hidden">
+					<input class="input-field block js_otp" type="text" name="otp" placeholder="OTP">
+					<button class="submit button" type="submit" style="background-color: #9FA4A4; border-color: #FFFFFF">→</button>
+					<div class="feedback-message js_feedback_message" style="color: #FFFFFF">We've sent you an OTP.</div>
 				</form>
 			</div>
-			<div class="detailed-specs-form-error fade-out js_detailed_specs_form_error">Please enter a valid 10-digit phone number.</div>
+			<!-- END: Phone Trap -->
 		</div>
 	</div>
 

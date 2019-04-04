@@ -31,47 +31,6 @@
 	-webkit-transition: -webkit-transform 0.5s ease-out;
 	transition: transform 0.5s ease-out;
 }
-.detailed-specs-btn-form-container form {
-	position: absolute;
-	top: 0;
-	left: 100%;
-	width: 100%;
-	text-align: justify;
-	-webkit-transition: -webkit-transform 0.5s ease-out;
-	transition: transform 0.5s ease-out;
-	z-index: 1;
-}
-
-.detailed-specs-btn-form-container form:after {
-	content: "";
-	display: inline-block;
-	width: 100%;
-}
-.detailed-specs-btn-form-container form > input {
-	margin-left: 9%;
-	background-color: transparent;
-}
-.detailed-specs-btn-form-container form > input::placeholder {
-	color: #bbbbbb;
-	font-size: 0.9rem;
-}
-.detailed-specs-btn-form-container form > button {
-	position: relative;
-	margin-right: 9%;
-	background-image: url( "../../media/images/icon-arrow-right-small.svg" );
-	background-repeat: no-repeat;
-	background-position: center;
-	color: transparent;
-}
-.detailed-specs-btn-form-container form > button:after {
-	content: "";
-	position: absolute;
-	top: -50%;
-	left: -110%;
-	padding: 30px;
-	background-color: rgba( 255, 255, 255, 0.4 );
-	border: 1px solid white;
-}
 
 .detailed-specs-btn-form-container.interact > button,
 .detailed-specs-btn-form-container.interact > a {
