@@ -140,7 +140,8 @@ function triggerAuthFlowIfRequired ( event ) {
 		if ( ! $targetElement.is( "form" ) ) {
 			var context = loginPrompt;
 			var user = getCookieData( "omega-user" );
-			Loginner.prompts[ loginPrompt ].onLogin( user, context );
+			$targetElement.removeClass( "js_user_required" );
+			Loginner.prompts[ loginPrompt ].onLogin( user, context, $targetElement.get( 0 ) );
 		}
 		return;
 	}
