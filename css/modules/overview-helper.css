@@ -80,6 +80,15 @@
     display: none !important;
 }
 
+/*
+ * Responsive showing / hiding
+ */
+@media ( min-width: 641px ) {
+    .show-for-mobile {
+        display: none;
+    }
+}
+
 /**
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility

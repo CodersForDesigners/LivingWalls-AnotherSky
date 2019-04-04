@@ -597,7 +597,7 @@ input[type="submit"].done:focus {
 }
 
 .repeat-pricing-section .pricing-action .form.is-hide:after {
-	content: 'Get A Quote';
+	content: var(--quote-feedback-message, "Get A Quote" );
 	background-color: #FFFFFF;
 	position: absolute;
 	top: 0;

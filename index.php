@@ -113,6 +113,11 @@
 		/* -- Phone Form -- */
 		.phone-form {
 			position: relative;
+			transition: opacity 0.2s 0.4s ease-out;
+		}
+
+		.phone-form.fade {
+			opacity: 0;
 		}
 
 		.phone-form .feedback-message {
@@ -274,6 +279,54 @@
 		}())
 	</script>
 
+	<script>
+
+		var __envProduction = true;
+
+		/*
+		 * Omega Settings
+		 */
+		// Establish global state
+		window.__OMEGA = window.__OMEGA || { };
+
+		( function ( __OMEGA ) {
+
+			var settings = __OMEGA.settings || { };
+
+				// Project
+			settings.Project = "LivingWalls Another Sky";
+				// OTP Template
+			settings.OTPTemplate = "LivingWalls";
+				// API endpoint
+			settings.apiEndpoint = settings.apiEndpoint || location.origin.replace( /\/+$/, "" ) + "/omega";
+			if ( ! __envProduction ) {
+				settings.apiEndpoint = "http://omega.api.192.168.0.19.xip.io";
+			}
+			settings.apiEndpoint = "https://livingwalls.in/omega";
+				// Base URL
+			settings.baseURL = "";
+			if ( __envProduction ) {
+				if ( document.getElementsByTagName( "base" ).length ) {
+					settings.baseURL = document.getElementsByTagName( "base" )[ 0 ].getAttribute( "href" ).replace( /\//g, "" );
+				}
+				else {
+					var urlParts = location.pathname.match( /[^/?]+/ );
+					if ( urlParts )
+						settings.baseURL = urlParts[ 0 ]
+				}
+			}
+				// Implicit prefix that an auto-generated user gets
+			settings.userImplicitNamePrefix = "AG";
+				// project base URL
+			settings.projectBaseURL = "another-sky";
+				// Zoho Assignment Rule ID
+			settings.assignmentRuleId = "3261944000000278029";
+			__OMEGA.settings = settings;
+
+		}( window.__OMEGA ) );
+
+	</script>
+
 	<!-- Analytics -->
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -354,72 +407,25 @@
 
 
 	<!-- Pricing Section -->
-	<div id="getaquote" class="section-row pricing-section clearfix">
+	<div id="getaquote" class="section-row repeat-pricing-section clearfix js_getaquote">
 		<div class="section-content clearfix">
-			<div class="inline-middle pricing-title">
-				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong><br>
+			<div class="block aligncenter pricing-title">
+				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong>
 				Apartments</span>
-				<span class="h4-text block">₹ 1.9cr TO 2.9cr</span>
-				<a href="#apartment-pricing" target="_blank" class="button block pricing-page aligncenter">Choose Your Apartment</a>
+				<span class="h4-text block">₹ 1.9cr to 2.9cr</span>
+				<a href="#apartment-pricing" target="_blank" class="button block pricing-page aligncenter show-for-mobile" style="margin: 0 auto 50px">Choose Your Apartment</a>
 			</div>
 
-			<div class="inline-middle pricing-action">
-				<div class="form alignleft">
-					<form class="contact_form_overview_part_one">
-						<p class="h4-text block aligncenter">Get a Quote</p>
+			<div class="inline-top pricing-apartment">
+				<a href="#apartment-pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
+			</div>
 
-						<p class="form-row">
-							<input class="input-field block js_name" type="text">
-							<label>Name...</label>
-						</p>
-						<p class="form-row">
-							<input class="input-field block js_phone" type="text">
-							<label>Mobile...</label>
-						</p>
-						<p class="form-row submit-button-section">
-							<input class="button black block" type="submit" value="Submit">
-						</p>
-					</form>
-
-					<form class="contact_form_overview_part_two visuallyhidden">
-						<p class="h4-text block aligncenter">More About You</p>
-
-						<p class="form-row">
-							<input class="input-field block js_email" type="text">
-							<label>Email...</label>
-						</p>
-						<p class="form-row">
-							<select class="input-field block js_my_budget">
-								<option selected="true" disabled="true">Budget...</option>
-								<option>1.9cr to 2.0cr</option>
-								<option>2.1cr to 2.4cr</option>
-								<option>2.5cr to 2.9cr</option>
-							</select>
-						</p>
-						<p class="form-row">
-							<select class="input-field block js_find_us">
-								<option selected="true" disabled="true">How did you find us?</option>
-								<option value="Web-O - YouTube">YouTube</option>
-								<option value="Web-O - Radio">Radio</option>
-								<option value="Web-O - Cinema">Cinema - PVR / INOX</option>
-								<option value="Web-O - Google Search">Google Search</option>
-								<option value="Web-O - Facebook">Facebook</option>
-								<option value="Web-O - Friend">A friend told me</option>
-								<option value="Web-O - Hoarding">Saw a hoarding</option>
-								<option value="Web-O - Ad Words">Online Image Ad</option>
-								<option value="Web-O - LinkedIn">LinkedIn</option>
-								<option value="Web-O - Newspaper Ad">Newspaper Ad</option>
-								<option value="Web-O - Site Visit">Site Visit</option>
-								<option value="Web-O - Others">Others</option>
-							</select>
-						</p>
-						<p class="form-row submit-button-section">
-							<input class="button black block" type="submit" value="Submit">
-						</p>
-					</form>
+			<div class="inline-top pricing-action" data-loginner="Get Quote Top">
+				<div class="form is-hide alignleft js_user_required">
+					<p class="h4-text block aligncenter">Get a Quote</p>
 
 					<!-- Phone Trap -->
-					<form class="phone-form form-row loginner_form_phone">
+					<form class="phone-form fade form-row loginner_form_phone">
 						<div class="container-phone-country-code">
 							<select class="input-field js_phone_country_code">
 								<?php require __DIR__ . '/inc/phone-country-codes.php'; ?>
@@ -430,29 +436,19 @@
 						</div>
 						<input class="input-field block js_phone_number" type="text" name="phone" placeholder="Phone number">
 						<button class="submit button" type="submit">→</button>
-						<div class="feedback-message label strong text-uppercase text-center js_feedback_message">Enter your phone number</div>
+						<div class="feedback-message label strong text-uppercase text-center js_feedback_message">Provide your phone number</div>
 					</form>
-					<form class="otp-form form-row loginner_form_otp">
+					<form class="otp-form form-row loginner_form_otp hidden">
 						<input class="input-field block js_otp" type="text" name="otp" placeholder="OTP">
 						<button class="submit button" type="submit">→</button>
 						<div class="feedback-message js_feedback_message">We've sent you an OTP.</div>
 					</form>
 					<!-- END: Phone Trap -->
 
-					<ul class="dots">
-						<li>dot</li>
-						<li>dot</li>
-					</ul>
 				</div>
-			</div>
-
-			<div class="pricing-missed-call inline-middle aligncenter">
-				<span class="h2-text block">To Schedule a Site visit</span>
-				<a href="tel:+919663396979" class="button outline block ga_general_button aligncenter">Call +91 96633 96979</a>
 			</div>
 		</div>
 	</div>
-
 
 	<span id="breakdance"></span>
 
@@ -1456,77 +1452,44 @@
 
 
 	<!-- Repeat Pricing Section -->
-	<div id="getaquote_2" class="section-row repeat-pricing-section clearfix">
+	<div id="getaquote_2" class="section-row repeat-pricing-section clearfix js_getaquote">
 		<div class="section-content clearfix">
 			<div class="block aligncenter pricing-title">
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong>
 				Apartments</span>
-				<span class="h4-text block">Ranging From ₹ 1.9cr To 2.9cr</span>
+				<span class="h4-text block">₹ 1.9cr to 2.9cr</span>
+				<a href="#apartment-pricing" target="_blank" class="button block pricing-page aligncenter show-for-mobile" style="margin: 0 auto 50px">Choose Your Apartment</a>
 			</div>
 
 			<div class="inline-top pricing-apartment">
 				<a href="#apartment-pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
-			<div class="inline-top pricing-action">
-				<div class="form is-hide alignleft">
-					<form class="contact_form_overview_part_one">
-						<p class="h4-text block aligncenter">Get a Quote</p>
+			<div class="inline-top pricing-action" data-loginner="Get Quote Bottom">
+				<div class="form is-hide alignleft js_user_required">
+					<p class="h4-text block aligncenter">Get a Quote</p>
 
-						<p class="form-row">
-							<input class="input-field block js_name" type="text">
-							<label>Name...</label>
-						</p>
-						<p class="form-row">
-							<input class="input-field block js_phone" type="text">
-							<label>Mobile...</label>
-						</p>
-						<p class="form-row submit-button-section">
-							<input class="button black block" type="submit" value="Submit">
-						</p>
-					</form>
-
-					<form class="contact_form_overview_part_two visuallyhidden">
-						<p class="h4-text block aligncenter">More About You</p>
-
-						<p class="form-row">
-							<input class="input-field block js_email" type="text">
-							<label>Email...</label>
-						</p>
-						<p class="form-row">
-							<select class="input-field block js_my_budget">
-								<option selected="true" disabled="true">Budget...</option>
-								<option>1.9cr to 2.0cr</option>
-								<option>2.1cr to 2.4cr</option>
-								<option>2.5cr to 2.9cr</option>
+					<!-- Phone Trap -->
+					<form class="phone-form fade form-row loginner_form_phone">
+						<div class="container-phone-country-code">
+							<select class="input-field js_phone_country_code">
+								<?php require __DIR__ . '/inc/phone-country-codes.php'; ?>
 							</select>
-						</p>
-						<p class="form-row">
-							<select class="input-field block js_find_us">
-								<option selected="true" disabled="true">How did you find us?</option>
-								<option value="Web-O - YouTube">YouTube</option>
-								<option value="Web-O - Radio">Radio</option>
-								<option value="Web-O - Cinema">Cinema - PVR / INOX</option>
-								<option value="Web-O - Google Search">Google Search</option>
-								<option value="Web-O - Facebook">Facebook</option>
-								<option value="Web-O - Friend">A friend told me</option>
-								<option value="Web-O - Hoarding">Saw a hoarding</option>
-								<option value="Web-O - Ad Words">Online Image Ad</option>
-								<option value="Web-O - LinkedIn">LinkedIn</option>
-								<option value="Web-O - Newspaper Ad">Newspaper Ad</option>
-								<option value="Web-O - Site Visit">Site Visit</option>
-								<option value="Web-O - Others">Others</option>
-							</select>
-						</p>
-						<p class="form-row submit-button-section">
-							<input class="button black block" type="submit" value="Submit">
-						</p>
+							<div class="container-country-code-label button fill-off-light">
+								<span class="js_phone_country_code_label">+91</span>
+							</div>
+						</div>
+						<input class="input-field block js_phone_number" type="text" name="phone" placeholder="Phone number">
+						<button class="submit button" type="submit">→</button>
+						<div class="feedback-message label strong text-uppercase text-center js_feedback_message">Provide your phone number</div>
 					</form>
+					<form class="otp-form form-row loginner_form_otp hidden">
+						<input class="input-field block js_otp" type="text" name="otp" placeholder="OTP">
+						<button class="submit button" type="submit">→</button>
+						<div class="feedback-message js_feedback_message">We've sent you an OTP.</div>
+					</form>
+					<!-- END: Phone Trap -->
 
-					<ul class="dots">
-						<li>dot</li>
-						<li>dot</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -1931,6 +1894,10 @@
 
 <!-- Design Tabs JS -->
 <script type="text/javascript" src="js/modules/tabs.js?v=20180312"></script>
+
+<script type="text/javascript" src="js/modules/omega/utils.js?v=20180315"></script>
+<script type="text/javascript" src="js/modules/omega/user.js?v=20180315"></script>
+<script type="text/javascript" src="js/overview/phone-traps.js?v=20180315"></script>
 
 <!-- Modal Window JS -->
 <script type="text/javascript" src="js/modules/modal.js?v=20180312"></script>
