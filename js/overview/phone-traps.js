@@ -210,8 +210,8 @@ Loginner.registerLoginPrompt( "Apartment Pricing", {
 			// Disable and Hide the trap
 			$( this ).closest( ".js_pricing_trap" ).slideUp();
 			// Resolve to the default behavior
+			if ( targetElement )
+				targetElement.click();
 		}
-		if ( targetElement )
-			targetElement.click();
 	}
 } );
