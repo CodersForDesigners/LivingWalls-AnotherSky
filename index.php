@@ -5,6 +5,9 @@
 	ini_set( "display_errors", "On" );
 	ini_set( "error_reporting", E_ALL );
 
+	// Version number
+	$version = 'v=20190409';
+
 	// pull in Lazaro disclaimer and footer
 	require 'inc/lazaro.php';
 
@@ -97,13 +100,13 @@
 	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
 	<!-- Stylesheet -->
-	<!-- <link rel="stylesheet" type="text/css" href="/style.css?v=20180312"> -->
-	<link rel="stylesheet" type="text/css" href="css/1_standardize.css?v=20180312">
-	<link rel="stylesheet" type="text/css" href="css/pages/overview.css?v=20180312">
+	<!-- <link rel="stylesheet" type="text/css" href="/style.css?<?= $version ?>"> -->
+	<link rel="stylesheet" type="text/css" href="css/1_standardize.css?<?= $version ?>">
+	<link rel="stylesheet" type="text/css" href="css/pages/overview.css?<?= $version ?>">
 
 	<!-- Slick Carousel -->
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css?v=20180312"/>
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css?v=20180312"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css?<?= $version ?>"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css?<?= $version ?>"/>
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery-min.js"></script>
@@ -356,7 +359,7 @@
 		fbq('track', "PageView");
 	</script>
 	<noscript>
-		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1003566166360897&ev=PageView&noscript=1"/>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1003566166360897&e<?= $version ?>&noscript=1"/>
 	</noscript>
 	<!-- End Facebook Pixel Code -->
 
@@ -1810,7 +1813,7 @@
 
 
 <!-- JS Modules -->
-<script type="text/javascript" src="plugins/slick/slick.min.js?v=20180312"></script>
+<script type="text/javascript" src="plugins/slick/slick.min.js?<?= $version ?>"></script>
 
 
 <script type="text/javascript">
@@ -1867,44 +1870,44 @@
 </script>
 
 <!-- utility functions -->
-<script type="text/javascript" src="js/modules/util.js?v=20180312"></script>
+<script type="text/javascript" src="js/modules/util.js?<?= $version ?>"></script>
 
 <!-- Navigation Menu -->
-<script type="text/javascript" src="js/modules/navigation.js?v=20180315"></script>
+<script type="text/javascript" src="js/modules/navigation.js?<?= $version ?>"></script>
 
 <!-- jQuery Plugins -->
-<script type="text/javascript" src="js/jquery.visible.min.js?v=20180312"></script>
-<script type="text/javascript" src="js/modules/scrollSmooth.js?v=20180312"></script>
-<script type="text/javascript" src="js/hammer.js?v=20180312"></script>
+<script type="text/javascript" src="js/jquery.visible.min.js?<?= $version ?>"></script>
+<script type="text/javascript" src="js/modules/scrollSmooth.js?<?= $version ?>"></script>
+<script type="text/javascript" src="js/hammer.js?<?= $version ?>"></script>
 
 <!-- Design Tabs JS -->
-<script type="text/javascript" src="js/modules/tabs.js?v=20180312"></script>
+<script type="text/javascript" src="js/modules/tabs.js?<?= $version ?>"></script>
 
-<script type="text/javascript" src="js/modules/omega/utils.js?v=20180315"></script>
-<script type="text/javascript" src="js/modules/omega/user.js?v=20180315"></script>
-<script type="text/javascript" src="js/overview/phone-traps.js?v=20180315"></script>
+<script type="text/javascript" src="js/modules/omega/utils.js?<?= $version ?>"></script>
+<script type="text/javascript" src="js/modules/omega/user.js?<?= $version ?>"></script>
+<script type="text/javascript" src="js/overview/phone-traps.js?<?= $version ?>"></script>
 
 <!-- Modal Window JS -->
-<script type="text/javascript" src="js/modules/modal.js?v=20180312"></script>
+<script type="text/javascript" src="js/modules/modal.js?<?= $version ?>"></script>
 
 <!-- Image Carousel JS -->
-<script type="text/javascript" src="js/overview/carousel-image.js?v=20180312"></script>
+<script type="text/javascript" src="js/overview/carousel-image.js?<?= $version ?>"></script>
 
 <!-- Video Carousel JS -->
-<!-- <script type="text/javascript" src="js/overview/carousel-video.js?v=20180312"></script> -->
+<!-- <script type="text/javascript" src="js/overview/carousel-video.js?<?= $version ?>"></script> -->
 
 <!-- Overview Forms JS -->
-<script type="text/javascript" src="js/overview/forms-overview.js?v=20180312"></script>
+<script type="text/javascript" src="js/overview/forms-overview.js?<?= $version ?>"></script>
 
 <!-- Animation JS -->
-<script type="text/javascript" src="js/overview/animation.js?v=20180312"></script>
+<script type="text/javascript" src="js/overview/animation.js?<?= $version ?>"></script>
 
 <!-- TimeLapse JS -->
-<script type="text/javascript" src="js/overview/timelapse.js?v=20180312"></script>
+<script type="text/javascript" src="js/overview/timelapse.js?<?= $version ?>"></script>
 
 <!-- Pricing Component -->
-<script type="text/javascript" src="js/ion.rangeSlider.min.js?v=20180312"></script>
-<script type="text/javascript" src="js/apartment-pricing/pricing.js?v=20180312"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js?<?= $version ?>"></script>
+<script type="text/javascript" src="js/apartment-pricing/pricing.js?<?= $version ?>"></script>
 
 <!-- Chat -->
 <script src="https://cwc.livserv.in/chat.js?lid=18645"></script>
