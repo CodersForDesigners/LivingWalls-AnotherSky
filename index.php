@@ -267,6 +267,15 @@
 		@media( min-width: 1480px ) {}
 	</style>
 
+	<!-- Chat Widget -->
+	<style type="text/css">
+		@media ( max-width: 640px ) {
+			.livprop_overlay {
+				display: none !important;
+			}
+		}
+	</style>
+
 	<!-- `picture` element polyfill -->
 	<script type="text/javascript">
 		(function () {
