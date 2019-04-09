@@ -1897,6 +1897,9 @@
 <script type="text/javascript" src="js/ion.rangeSlider.min.js?v=20180312"></script>
 <script type="text/javascript" src="js/apartment-pricing/pricing.js?v=20180312"></script>
 
+<!-- Chat -->
+<script src="https://cwc.livserv.in/chat.js?lid=18645"></script>
+<script src="https://cw1.livserv.in?did=18645&pid=1"></script>
 
 <!-- Tracking -->
 <!-- <script type="text/javascript" src="js/overview/tracking.js"></script> -->
