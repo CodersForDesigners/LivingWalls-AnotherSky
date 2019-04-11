@@ -1887,6 +1887,19 @@
 <script type="text/javascript" src="js/modules/omega/user.js?<?= $version ?>"></script>
 <script type="text/javascript" src="js/overview/phone-traps.js?<?= $version ?>"></script>
 
+<script type="text/javascript">
+	__OMEGA.utils.getUser( { meta: true } ).then( function ( user ) {
+		// Log the user in
+		__OMEGA.utils.loginUser( user );
+		// Log the visit
+		__OMEGA.utils.addNoteToUser( "Omega Event Log",
+			"Customer VIEWED the \"Another Sky\" project webpage."
+		).catch( function ( e ) {
+			console.log( e.message )
+		} );
+	} );
+</script>
+
 <!-- Modal Window JS -->
 <script type="text/javascript" src="js/modules/modal.js?<?= $version ?>"></script>
 
