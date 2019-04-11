@@ -698,6 +698,7 @@ function loginUser ( user ) {
 		uid: user.uid,
 		phoneNumber: user.phoneNumber,
 		project: user.project,
+		lastSeenAt: Date.now()
 	}
 	__OMEGA.utils.setCookie( cookieName, cookie, 90 * 24 * 60 * 60 );
 
