@@ -194,6 +194,48 @@ utils.trackPageVisit = function trackPageVisit ( name ) {
 
 /*
  *
+ * "Post" a mail
+ *
+ * @params
+ * 	subject -> the subject of the mail
+ * 	body -> the body of the mail
+ * 	to -> the email-address to send this to
+ *
+ */
+utils.postMail = function postMail ( subject, body, to ) {
+
+	var data = {
+		subject,
+		body,
+		to
+	};
+
+	var apiEndpoint = __OMEGA.settings.apiEndpoint;
+	var url = apiEndpoint + "/mail";
+
+	var ajaxRequest = $.ajax( {
+		url: url,
+		method: "POST",
+		data: data,
+		dataType: "json"
+	} );
+
+	return new Promise( function ( resolve, reject ) {
+		ajaxRequest.done( function ( response ) {
+			resolve( response );
+		} );
+		ajaxRequest.fail( function ( jqXHR, textStatus, e ) {
+			var errorResponse = getErrorResponse( jqXHR, textStatus, e );
+			reject( errorResponse );
+		} );
+	} );
+
+}
+
+
+
+/*
+ *
  * Show a notification
  *
  * This shows a notification toast with the provided message.
