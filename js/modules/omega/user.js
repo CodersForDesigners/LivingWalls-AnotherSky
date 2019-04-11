@@ -27,6 +27,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
  * Public API
  *
  */
+__OMEGA.query = { user: { attempts: 0 } };
 var Loginner = window.Loginner = { };
 Loginner.prompts = { };
 Loginner.registerLoginPrompt = function registerLoginPrompt ( name, handlers ) {
@@ -38,6 +39,9 @@ Loginner.registerLoginPrompt = function registerLoginPrompt ( name, handlers ) {
 /*
  *
  * Gets a user from the database, given an id.
+ * @args
+ * 	identifyingAttribute -> a value holding identifiable information on a user, but with no context; ex. a UID or a phone-number, but no mention what the value is
+ * 	options -> an object containing additional context on the identifyingAttribute
  *
  * Returns a promise with,
  * @params
@@ -46,11 +50,70 @@ Loginner.registerLoginPrompt = function registerLoginPrompt ( name, handlers ) {
  */
 function getUser ( identifyingAttribute, options ) {
 
-	if ( ! identifyingAttribute ) {
-		return;
+	// Support different types of function invocations
+		// The "just one object" argument approach
+	if ( identifyingAttribute && typeof identifyingAttribute == "object" ) {
+		options = identifyingAttribute;
+		identifyingAttribute = null;
+	}
+		// The second argument `options` object approach
+	else
+		options = options || { };
+
+	// Pull the user from the (memory/cookie) cache ( if there )
+	var user = __OMEGA.user;
+	if ( ! user )
+		user = getCookieData( "omega-user" );
+
+	// If the uid is not a number ( i.e. base64 encoded ),
+	// 	then the data has to be normalized to the new storage convention
+	if ( user.uid ) {
+		if ( user.uid != parseInt( user.uid, 10 ) ) {
+			user.uid = atob( user.uid );
+			loginUser( user );
+		}
 	}
 
-	options = options || { };
+	// Determine whether the user being requested and the one stored locally
+	// 	are the same. If no identifying attribute has been specified,
+	// 	then we assume they are the same.
+	var userHasChanged;
+		// But before that, if it has been awhile since the user's information
+		//  has been refreshed, then we fetch the user again regardless
+	var userLastUpdated = getCookieData( "omega-user-updated" );
+	if ( ! ( userLastUpdated && userLastUpdated.when ) )
+		userHasChanged = true;
+	else if ( identifyingAttribute ) {
+		if ( options.by && user[ options.by ] != identifyingAttribute )
+			userHasChanged = true;
+		else if ( user.uid != identifyingAttribute )
+			userHasChanged = true;
+	}
+	else
+		userHasChanged = false;
+
+	var userLastSeenAt = user.lastSeenAt || null;
+
+	// If the user object contains more than just the meta details,
+	// 	then there's no need to re-fetch it from the server
+	if ( ! userHasChanged ) {
+		if ( user.name )
+			return Promise.resolve( user );
+	}
+
+	// If only the meta-data has been requested,
+	// 	and the user being requested ain't different, then return that
+	if ( options.meta )
+		if ( ! userHasChanged )
+			return Promise.resolve( user );
+
+
+	/*
+	 * If no user was found in local storage,
+	 *	or the user being requested was different,
+	 * 	then, we'll attempt to fetch the user from the server
+	 */
+	identifyingAttribute = identifyingAttribute || user.uid;
 	options.by = options.by || 'uidv2';
 
 	var project = __OMEGA.settings.Project;
@@ -80,22 +143,51 @@ function getUser ( identifyingAttribute, options ) {
 
 		ajaxRequest.done( function ( response ) {
 			var user = response.data;
+			// Set the current timestamp as when the user was "last seen"
+			user.lastSeenAt = userLastSeenAt || Date.now();
+			// Cache the user object under the namespace
+			__OMEGA.user = user;
+			// Check if the user is a duplicate, if so attempt to log out and log in again with using the phone-number
+			if ( user.isDuplicate ) {
+				if ( __OMEGA.query.user.attempts < 1 ) {
+					__OMEGA.query.user.attempts += 1;
+					return resolve( getUser( user.phoneNumber, { by: "phoneNumber" } ) );
+				}
+				else
+					__OMEGA.utils.postMail(
+						"Duplicate User on Re-fetch",
+						`Got a duplicate user the first time.
+						Tried again using the phone number ${ user.phoneNumber } and then got a duplicate user once more.
+
+						Name: ${ user.name }
+						UID: ${ user.uid }
+						Phone number: ${ user.phoneNumber }`
+					);
+			}
+			// Set a cookie for when the user was last pulled with fresh data
+			__OMEGA.utils.setCookie( "omega-user-updated", {
+				when: ( new Date() ).getTime()
+			}, 60 * 60 );
+			// Reset the fetch attempts
+			__OMEGA.query.user.attempts = 0;
+			// Finally, return the user object
 			resolve( user );
 		} );
 		ajaxRequest.fail( function ( jqXHR, textStatus, e ) {
-			var statusCode = -1;
-			var message;
-			if ( jqXHR.responseJSON ) {
-				statusCode = jqXHR.responseJSON.statusCode;
-				message = jqXHR.responseJSON.message;
-			}
-			else if ( typeof e == "object" ) {
-				message = e.stack;
-			}
-			else {
-				message = jqXHR.responseText;
-			}
-			reject( { code: statusCode, message: message } );
+			var errorResponse = getErrorResponse( jqXHR, textStatus, e );
+			// If we previously got a duplicate user, and now we got nothing
+			var user = __OMEGA.user;
+			if ( user && user.isDuplicate && __OMEGA.query.user.attempts >= 1 )
+				__OMEGA.utils.postMail(
+					"No User on Re-fetching a Duplicate one",
+					`Got a duplicate user the first time.
+					Tried again using the phone number ${ user.phoneNumber } and then got no user.
+
+					Name: ${ user.name }
+					UID: ${ user.uid }
+					Phone number: ${ user.phoneNumber }`
+				);
+			reject( errorResponse );
 		} );
 
 	} );
