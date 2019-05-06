@@ -348,7 +348,8 @@ $( document ).on( "submit", ".loginner_form_phone", function ( event ) {
 	 * Process the data
 	 ----- */
 	// Authenticate the user
-	var context = $form.closest( "[ data-loginner ]" ).data( "context" );
+	var context = Loginner.prompts[ loginPrompt ].context;
+	var specificContext = $form.closest( "[ data-loginner ]" ).data( "context" );
 	Loginner.prompts[ loginPrompt ].onPhoneSend.call( domForm );
 	getUser( phoneNumber, { by: "phoneNumber" } )
 		.then( function ( user ) {
@@ -357,7 +358,7 @@ $( document ).on( "submit", ".loginner_form_phone", function ( event ) {
 			// If the user exists, log the user in
 			loginUser( user );
 			// Then, close the login prompt
-			Loginner.prompts[ loginPrompt ].onLogin.call( domForm, user, context );
+			Loginner.prompts[ loginPrompt ].onLogin.call( domForm, user, specificContext );
 		} )
 		.catch( function ( { code, message } ) {
 			// If no user was found, send an OTP
@@ -370,13 +371,13 @@ $( document ).on( "submit", ".loginner_form_phone", function ( event ) {
 					var project = __OMEGA.settings.Project;
 					// Register the user
 					return (
-						createUser( phoneNumber, project, context )
+						createUser( phoneNumber, project, specificContext, context )
 							// Then, log in the user
 							.then( function ( user ) {
 								// Log the user in
 								loginUser( user );
 								// Then, close the login prompt
-								Loginner.prompts[ loginPrompt ].onLogin.call( domForm, user, context );
+								Loginner.prompts[ loginPrompt ].onLogin.call( domForm, user, specificContext );
 							} )
 							.catch( function ( { code, message } ) {
 								if ( code == 1 ) {
@@ -565,30 +566,31 @@ $( document ).on( "submit", ".loginner_form_otp", function ( event ) {
 	verifyOTP( otp )
 		.then( function ( response ) {
 			// If the OTP matched,
-			var context = $form.closest( "[ data-loginner ]" ).data( "context" );
+			var context = Loginner.prompts[ loginPrompt ].context;
+			var specificContext = $form.closest( "[ data-loginner ]" ).data( "context" );
 			// Register the user
 			var phoneNumber = __OMEGA.user.phoneNumber;
 			var project = __OMEGA.settings.Project;
 				// Call the `onOTPVerified` hook
 			if ( Loginner.prompts[ loginPrompt ].onOTPVerified )
-				Loginner.prompts[ loginPrompt ].onOTPVerified.call( domForm, context, phoneNumber, project );
+				Loginner.prompts[ loginPrompt ].onOTPVerified.call( domForm, specificContext, phoneNumber, project );
 
-			createUser( phoneNumber, project, context )
+			createUser( phoneNumber, project, specificContext, context )
 				// Then, log in the user
 				.then( function ( user ) {
 					// Log the user in
 					loginUser( user );
 					// Then, close the login prompt
-					Loginner.prompts[ loginPrompt ].onLogin.call( domForm, user, context );
+					Loginner.prompts[ loginPrompt ].onLogin.call( domForm, user, specificContext );
 				} )
 				.catch( function ( { code, message } ) {
 					if ( code == 1 ) {
 						console.log( message )
-						Loginner.prompts[ loginPrompt ].onLogin.call( domForm, phoneNumber, context );
+						Loginner.prompts[ loginPrompt ].onLogin.call( domForm, phoneNumber, specificContext );
 					}
 				} )
 			// Register a conversion
-			// registerConversion( context );
+			// registerConversion( specificContext );
 			// Close the login prompt
 			// closeLoginPrompt( loginPrompt );
 		} )
