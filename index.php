@@ -65,19 +65,12 @@
 	<meta name="theme-color" content="#444444">
 
 	<!-- Open Graph Name Space -->
-	<!-- <meta property="og:title" content="Your Title Here">
+	<meta property="og:title" content="Another Sky | LivingWalls | Ready to Occupy Apartments on the Outer Ring Road">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://example.com/product.html">
-	<meta property="og:site_name" content="http://example.com/">
-	<meta property="og:image" content="http://example.com/download/og-thumbnail-image.png">
-	<meta property="og:image:width" content="310">
-	<meta property="og:image:height" content="310">
-	<meta property="og:image" content="http://example.com/download/og-cover-image.png">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<meta property="og:description"
-		content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-			Excepteur sint occaecat cupidatat non proident."> -->
+	<meta property="og:url" content="https://livingwalls.in/another-sky/">
+	<meta property="og:description" content="We went about designing Another Sky with a focus on the resident's comfort. 3BHK and 4BHK Apartments Designed to Just Work. Obscenely Awesome Apartments on the Outer Ring Road.">
+	<meta property="og:site_name" content="LivingWalls">
+	<meta property="og:image" content="https://livingwalls.in/another-sky/media/images_mobile/landing-image.jpg">
 
 	<!-- Facebook APP ID -->
 	<!-- <meta property="fb:app_id" content="Your FB_APP_ID"> -->
