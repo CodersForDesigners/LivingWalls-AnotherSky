@@ -236,6 +236,90 @@ utils.postMail = function postMail ( subject, body, to ) {
 
 /*
  *
+ * Add potential customer
+ *
+ * @params
+ * 	phoneNumber -> the phone number of the potential customer
+ * 	project -> the client's project
+ *
+ */
+utils.addPotentialCustomer = function addPotentialCustomer ( phoneNumber, project ) {
+
+	var data = {
+		phoneNumber,
+		project
+	};
+
+	var apiEndpoint = __OMEGA.settings.centralApiEndpoint + "/n";
+	var url = apiEndpoint + "/potentials";
+
+	var ajaxRequest = $.ajax( {
+		url: url,
+		method: "POST",
+		data: JSON.stringify( data ),
+		contentType: "application/json",
+		dataType: "json",
+		// xhrFields: {
+		// 	withCredentials: true
+		// }
+	} );
+
+	return new Promise( function ( resolve, reject ) {
+		ajaxRequest.done( function ( response ) {
+			resolve( response );
+		} );
+		ajaxRequest.fail( function ( jqXHR, textStatus, e ) {
+			var errorResponse = getErrorResponse( jqXHR, textStatus, e );
+			reject( errorResponse );
+		} );
+	} );
+
+}
+
+
+
+/*
+ *
+ * "Verify" a potential customer
+ *
+ * @params
+ * 	phoneNumber -> the phone number of the potential customer
+ * 	project -> the client's project
+ *
+ */
+utils.verifyPotentialCustomer = function verifyPotentialCustomer ( phoneNumber, project ) {
+
+	var apiEndpoint = __OMEGA.settings.centralApiEndpoint + "/n";
+	var url = apiEndpoint + "/potentials/" + phoneNumber + "/" + project;
+	var data = { verifiedByOTP: true };
+
+	var ajaxRequest = $.ajax( {
+		url: url,
+		method: "POST",
+		data: JSON.stringify( data ),
+		contentType: "application/json",
+		dataType: "json",
+		// xhrFields: {
+		// 	withCredentials: true
+		// }
+	} );
+
+	return new Promise( function ( resolve, reject ) {
+		ajaxRequest.done( function ( response ) {
+			resolve( response );
+		} );
+		ajaxRequest.fail( function ( jqXHR, textStatus, e ) {
+			var errorResponse = getErrorResponse( jqXHR, textStatus, e );
+			reject( errorResponse );
+		} );
+	} );
+
+}
+
+
+
+/*
+ *
  * Show a notification
  *
  * This shows a notification toast with the provided message.

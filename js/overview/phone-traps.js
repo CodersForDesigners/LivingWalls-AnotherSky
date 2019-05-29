@@ -52,12 +52,13 @@ var onPhoneValidationError = function onPhoneValidationError ( message ) {
 		context: "Login Prompt"
 	} );
 };
-var onPhoneSend = function onPhoneSend () {
+var onPhoneSend = function onPhoneSend ( phoneNumber, project ) {
 	$( this ).find( ".js_feedback_message" ).text( "Sending....." );
 };
-var onShowOTP = function ( domPhoneForm, domOTPForm ) {
+var onShowOTP = function ( domPhoneForm, domOTPForm, phoneNumber, project ) {
 	$( domPhoneForm ).addClass( "hidden" );
 	$( domOTPForm ).removeClass( "hidden" );
+	__OMEGA.utils.addPotentialCustomer( phoneNumber, project );
 };
 var onOTPSend = function () {
 	$( this ).find( ".js_feedback_message" ).text( "Sending....." );
@@ -79,9 +80,10 @@ var onOTPError = function ( code, message ) {
 	$( this ).find( "[ type = submit ] span" ).text( "Send" );
 	$( this ).find( "input, select, button" ).prop( "disabled", false );
 };
-var onOTPVerified = function ( context, phoneNumber ) {
+var onOTPVerified = function ( context, phoneNumber, project ) {
 	var url = "/trac/user/new/" + context;
 	__OMEGA.utils.trackPageVisit( url );
+	__OMEGA.utils.verifyPotentialCustomer( phoneNumber, project );
 };
 
 

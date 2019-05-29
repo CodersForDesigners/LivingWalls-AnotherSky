@@ -350,7 +350,8 @@ $( document ).on( "submit", ".loginner_form_phone", function ( event ) {
 	// Authenticate the user
 	var context = Loginner.prompts[ loginPrompt ].context;
 	var specificContext = $form.closest( "[ data-loginner ]" ).data( "context" );
-	Loginner.prompts[ loginPrompt ].onPhoneSend.call( domForm );
+	var project = __OMEGA.settings.Project;
+	Loginner.prompts[ loginPrompt ].onPhoneSend.call( domForm, phoneNumber, project );
 	getUser( phoneNumber, { by: "phoneNumber" } )
 		.then( function ( user ) {
 			// Store the user on the side
@@ -396,7 +397,7 @@ $( document ).on( "submit", ".loginner_form_phone", function ( event ) {
 			__OMEGA.user = __OMEGA.user || { };
 			__OMEGA.user.otpSessionId = otpSessionId;
 			var domOTPForm = $form.closest( "[ data-loginner ]" ).find( ".loginner_form_otp" ).get( 0 );
-			Loginner.prompts[ loginPrompt ].onShowOTP( domForm, domOTPForm );
+			Loginner.prompts[ loginPrompt ].onShowOTP( domForm, domOTPForm, phoneNumber, project );
 		} )
 		.catch( function ( { code, message } ) {
 			if ( code == 1 ) {
