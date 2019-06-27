@@ -308,7 +308,7 @@
 				settings.apiEndpoint = "http://omega.api.192.168.0.19.xip.io";
 			}
 			settings.apiEndpoint = "https://livingwalls.in/omega";
-			settings.centralApiEndpoint = "https://api.omega.seyonii.com";
+			settings.centralApiEndpoint = "https://livingwalls.in/omega-api";
 				// Base URL
 			settings.baseURL = "";
 			if ( __envProduction ) {
