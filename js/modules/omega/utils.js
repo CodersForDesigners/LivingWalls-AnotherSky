@@ -250,8 +250,8 @@ utils.addPotentialCustomer = function addPotentialCustomer ( phoneNumber, projec
 		project
 	};
 
-	var apiEndpoint = __OMEGA.settings.centralApiEndpoint + "/n";
-	var url = apiEndpoint + "/potentials";
+	var apiEndpoint = __CUPID.settings.apiEndpoint;
+	var url = apiEndpoint + "/people";
 
 	var ajaxRequest = $.ajax( {
 		url: url,
@@ -289,8 +289,8 @@ utils.addPotentialCustomer = function addPotentialCustomer ( phoneNumber, projec
  */
 utils.verifyPotentialCustomer = function verifyPotentialCustomer ( phoneNumber, project ) {
 
-	var apiEndpoint = __OMEGA.settings.centralApiEndpoint + "/n";
-	var url = apiEndpoint + "/potentials/" + phoneNumber + "/" + project;
+	var apiEndpoint = __CUPID.settings.apiEndpoint;
+	var url = apiEndpoint + "/people/" + phoneNumber + "/" + project;
 	var data = { verifiedByOTP: true };
 
 	var ajaxRequest = $.ajax( {
