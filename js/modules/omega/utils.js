@@ -246,8 +246,9 @@ utils.postMail = function postMail ( subject, body, to ) {
 utils.addPotentialCustomer = function addPotentialCustomer ( phoneNumber, project ) {
 
 	var data = {
-		phoneNumber,
-		project
+		client: "LivingWalls",
+		interest: project,
+		phoneNumber: phoneNumber
 	};
 
 	var apiEndpoint = __CUPID.settings.apiEndpoint;
@@ -287,11 +288,14 @@ utils.addPotentialCustomer = function addPotentialCustomer ( phoneNumber, projec
  * 	project -> the client's project
  *
  */
-utils.verifyPotentialCustomer = function verifyPotentialCustomer ( phoneNumber, project ) {
+utils.verifyPotentialCustomer = function verifyPotentialCustomer ( phoneNumber ) {
 
 	var apiEndpoint = __CUPID.settings.apiEndpoint;
-	var url = apiEndpoint + "/people/" + phoneNumber + "/" + project;
-	var data = { verifiedByOTP: true };
+	var url = apiEndpoint + "/people/verify";
+	var data = {
+		client: "LivingWalls",
+		phoneNumbers: [ phoneNumber ]
+	};
 
 	var ajaxRequest = $.ajax( {
 		url: url,

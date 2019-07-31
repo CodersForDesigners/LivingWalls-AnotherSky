@@ -83,7 +83,7 @@ var onOTPError = function ( code, message ) {
 var onOTPVerified = function ( context, phoneNumber, project ) {
 	var url = "/trac/user/new/" + context;
 	__OMEGA.utils.trackPageVisit( url );
-	__OMEGA.utils.verifyPotentialCustomer( phoneNumber, project );
+	__OMEGA.utils.verifyPotentialCustomer( phoneNumber );
 };
 
 
