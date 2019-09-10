@@ -799,7 +799,15 @@ function loginUser ( user ) {
 	}
 	__OMEGA.utils.setCookie( cookieName, cookie, 90 * 24 * 60 * 60 );
 
-	// Create another one for Tag Manager
+	// Tell Google Analytics who this user is,
+	// 	so that it can associate it across browsers and devices
+	if ( window.ga ) {
+		ga( "set", "userId", user.uid );
+		ga( "send", "event", "authentication", "user-id available" );
+	}
+
+	// OLD YET FALLBACK APPROACH: Create a cookie for Tag Manager
+		// so that Google Analytics will recognise the user
 	var cookieName = "omega-user-id";
 	var cookie = user.uid;
 	__OMEGA.utils.setCookie( cookieName, cookie, 90 * 24 * 60 * 60 );
