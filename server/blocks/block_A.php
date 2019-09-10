@@ -53,16 +53,16 @@ $apartmentA112 = array(
 					// 'apt_pg_ho_ef' => '0-1-1',
 					);
 
-$apartmentA161 = array(
-					'apt_number' => 'A161',
-					'apt_area' => '3258',
-					'apt_floor' => '16',
-					'apt_type' => '16B',
-					'apt_price' => calculate_total(16, 3258, 350000, -1),
-					'apt_size'	=> '4BHK',
-					'apt_blocking' => '0',
-					// 'apt_pg_ho_ef' => '0-1-1',
-					);
+// $apartmentA161 = array(
+// 					'apt_number' => 'A161',
+// 					'apt_area' => '3258',
+// 					'apt_floor' => '16',
+// 					'apt_type' => '16B',
+// 					'apt_price' => calculate_total(16, 3258, 350000, -1),
+// 					'apt_size'	=> '4BHK',
+// 					'apt_blocking' => '0',
+// 					// 'apt_pg_ho_ef' => '0-1-1',
+// 					);
 
 $apartmentA061 = array(
 					'apt_number' => 'A061',
@@ -120,7 +120,7 @@ $BHK4 = array(
 				  $apartmentA041,
 				  // $apartmentA101,
 				  $apartmentA111,
-				  $apartmentA161,
+				  // $apartmentA161,
 				  // $apartmentA061,
 				  // $apartmentA081,
 				  // $apartmentA121,
@@ -132,7 +132,7 @@ $BHK4_pdf = array(
 				  'A041' => $apartmentA041,
 				  // 'A101' => $apartmentA101,
 				  'A111' => $apartmentA111,
-				  'A161' => $apartmentA161,
+				  // 'A161' => $apartmentA161,
 				  // 'A061' => $apartmentA061,
 				 // 'A081' => $apartmentA081,
 				 // 'A121' => $apartmentA121,
@@ -226,16 +226,16 @@ $apartmentA023 = array(
 // 					// 'apt_pg_ho_ef' => '0-1-1',
 // 					);
 
-$apartmentA132 = array(
-					'apt_number' => 'A132',
-					'apt_area' => '2335',
-					'apt_floor' => '13',
-					'apt_type' => '9',
-					'apt_price' => calculate_total(13, 2335, 350000, -1),
-					'apt_size'	=> '3BHK',
-					'apt_blocking' => '0',
-					// 'apt_pg_ho_ef' => '0-0-0',
-					);
+// $apartmentA132 = array(
+// 					'apt_number' => 'A132',
+// 					'apt_area' => '2335',
+// 					'apt_floor' => '13',
+// 					'apt_type' => '9',
+// 					'apt_price' => calculate_total(13, 2335, 350000, -1),
+// 					'apt_size'	=> '3BHK',
+// 					'apt_blocking' => '0',
+// 					// 'apt_pg_ho_ef' => '0-0-0',
+// 					);
 
 // $apartmentA142 = array(
 // 					'apt_number' => 'A142',
@@ -316,7 +316,7 @@ $apartmentA122 = array(
 
 $BHK3_A = array (
 						// $apartmentA112,
-						$apartmentA132,
+						// $apartmentA132,
 						// $apartmentA142,
 						// $apartmentA092,
 						// $apartmentA152,
@@ -327,7 +327,7 @@ $BHK3_A = array (
 
 $BHK3_A_pdf = array (
 						// 'A112' => $apartmentA112,
-						'A132' => $apartmentA132,
+						// 'A132' => $apartmentA132,
 						// 'A142' => $apartmentA142,
 						// 'A092' => $apartmentA092,
 						// 'A152' => $apartmentA152,
