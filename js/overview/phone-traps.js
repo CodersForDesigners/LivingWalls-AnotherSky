@@ -54,11 +54,13 @@ var onPhoneValidationError = function onPhoneValidationError ( message ) {
 };
 var onPhoneSend = function onPhoneSend ( phoneNumber, project ) {
 	$( this ).find( ".js_feedback_message" ).text( "Sending....." );
+	__OMEGA.utils.getAnalyticsId().then( function ( clientId ) {
+		__OMEGA.utils.addPotentialCustomer( phoneNumber, project, clientId );
+	} );
 };
 var onShowOTP = function ( domPhoneForm, domOTPForm, phoneNumber, project ) {
 	$( domPhoneForm ).addClass( "hidden" );
 	$( domOTPForm ).removeClass( "hidden" );
-	__OMEGA.utils.addPotentialCustomer( phoneNumber, project );
 };
 var onOTPSend = function () {
 	$( this ).find( ".js_feedback_message" ).text( "Sending....." );

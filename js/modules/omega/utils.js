@@ -243,12 +243,13 @@ utils.postMail = function postMail ( subject, body, to ) {
  * 	project -> the client's project
  *
  */
-utils.addPotentialCustomer = function addPotentialCustomer ( phoneNumber, project ) {
+utils.addPotentialCustomer = function addPotentialCustomer ( phoneNumber, project, clientId ) {
 
 	var data = {
 		client: "LivingWalls",
 		interest: project,
-		phoneNumber: phoneNumber
+		phoneNumber: phoneNumber,
+		clientId: clientId
 	};
 
 	var apiEndpoint = __CUPID.settings.apiEndpoint;
@@ -315,6 +316,65 @@ utils.verifyPotentialCustomer = function verifyPotentialCustomer ( phoneNumber )
 		ajaxRequest.fail( function ( jqXHR, textStatus, e ) {
 			var errorResponse = getErrorResponse( jqXHR, textStatus, e );
 			reject( errorResponse );
+		} );
+	} );
+
+}
+
+
+
+/*
+ *
+ * Get the unique analytics id dropped by Google Analytics
+ *
+ */
+utils.callFunctionIfNotCalledIn = function callFunctionIfNotCalledIn ( fn, seconds ) {
+
+	var called = false;
+	var seconds = seconds || 1;
+
+	function theFunction () {
+		if ( called )
+			return;
+		called = true;
+		return fn.apply( this, [ ].slice.call( arguments ) );
+	}
+
+	setTimeout( theFunction, seconds * 1000 );
+
+	return theFunction;
+
+}
+
+
+
+/*
+ *
+ * Get the unique analytics id dropped by Google Analytics
+ *
+ */
+utils.getAnalyticsId = function getAnalyticsId ( trackerName ) {
+
+	if ( ! ga )
+		return Promise.resolve();
+
+	return new Promise( function ( resolve, reject ) {
+		var resolvePromise = utils.callFunctionIfNotCalledIn( function ( value ) {
+			if ( value )
+				return resolve( value );
+			else
+				return resolve();
+		} );
+		ga( function ( defaultTracker ) {
+			var tracker;
+			if ( trackerName )
+				tracker = ga.getByName( trackerName );
+			if ( defaultTracker )
+				tracker = defaultTracker;
+			else
+				tracker = ga.getAll()[ 0 ];
+
+			return resolvePromise( tracker.get( "clientId" ) );
 		} );
 	} );
 
