@@ -784,6 +784,10 @@ __OMEGA.utils.updateUser = updateUser;
  *
  */
 function loginUser ( user ) {
+
+	// For some time, because Zoho returns UIDs with spaces in them
+	user.uid = user.uid.toString().trim();
+
 	// Create a cookie
 	var cookieName = "omega-user";
 	var cookie = {
