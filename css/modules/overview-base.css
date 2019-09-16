@@ -577,7 +577,8 @@ input[type="submit"].done:focus {
 .repeat-pricing-section .pricing-apartment { text-align: left; }
 .repeat-pricing-section .pricing-action { text-align: right; }
 
-.repeat-pricing-section .pricing-apartment .button {
+.repeat-pricing-section .pricing-apartment .button,
+.repeat-pricing-section .pricing-action .button {
 	width: 100%;
 	max-width: 340px;
 }

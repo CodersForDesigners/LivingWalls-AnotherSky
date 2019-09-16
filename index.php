@@ -448,7 +448,10 @@
 				<a href="#apartment-pricing" target="_blank" class="button block ga_general_button aligncenter">Choose Your Apartment</a>
 			</div>
 
-			<div class="inline-top pricing-action" data-loginner="Get Quote Top" data-context="get-quote-top">
+			<div class="inline-top pricing-action">
+				<a class="input-field button aligncenter" href="tel:+919663396979" style="display: inline-block;">or Call: <span style="font-weight: 700">+91-96633-96979</span></a>
+			</div>
+			<div class="inline-top pricing-action hidden" data-loginner="Get Quote Top" data-context="get-quote-top">
 				<div class="form is-hide alignleft js_quote_quote_btn js_user_required">
 					<p class="h4-text block aligncenter">Get a Quote</p>
 
