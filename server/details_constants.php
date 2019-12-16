@@ -15,7 +15,7 @@ function calculate_total($selected_apt_floor, $area_sq_ft, $car_parking, $amoeba
 		// this condition is only used when this function call comes in from the sales end discounter
 		$cost_per_sqft = $amoeba['rate_sqft'];
 		if ($cost_per_sqft == 'false') {
-			$cost_per_sqft = 7950;
+			$cost_per_sqft = 8300;
 		}
 
 		$floor_rise_cost = $amoeba['floor_rise'];
@@ -30,7 +30,7 @@ function calculate_total($selected_apt_floor, $area_sq_ft, $car_parking, $amoeba
 			$clubhouse = 0;
 		}
 	} else {
-		$cost_per_sqft = 7950;
+		$cost_per_sqft = 8300;
 		$floor_rise_cost = 25;
 		$clubhouse = 100000;
 	}
