@@ -588,7 +588,8 @@ $(document).ready( function() {
 				break;
 			}
 		}
-		concerned_array = concerned_array.filter(associative_array_cost_range_filter);
+		// Don't filter out these units anymore. The price range filter widget has been removed.
+		// concerned_array = concerned_array.filter(associative_array_cost_range_filter);
 		var temp_type = current_apt_type;
 		if (temp_type == "3BHKP") {
 			temp_type = "3BHK+";
