@@ -80,14 +80,14 @@
 					<span class="symbol--inr"><?= $apt_info[ "#corpus_deposit" ] ?></span>
 				</td>
 			</tr>
-			<tr>
+			<!-- <tr>
 				<th class="span--3by4 align--left text--thin text--subdued apartment-detail">
 					Maintenance Fee (1 Year)
 				</th>
 				<td class="span--quarter align--right text--thin text--subdued apartment-detail">
 					<span class="symbol--inr"><?= $apt_info[ "#maintenance" ] ?></span>
 				</td>
-			</tr>
+			</tr> -->
 			<tr>
 				<th class="span--3by4 align--left text--thin text--subdued apartment-detail">
 					Legal Charges

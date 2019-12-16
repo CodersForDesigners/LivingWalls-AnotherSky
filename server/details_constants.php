@@ -58,7 +58,7 @@ function calculate_total($selected_apt_floor, $area_sq_ft, $car_parking, $amoeba
 	$corpus_deposit = $area_sq_ft * 42;
 
 	// $total = $base_cost + $vat + $service_tax + $infrastructure + $corpus_deposit + $maintenance + $legal;
-	$total = $base_cost + $gst + $infrastructure + $corpus_deposit + $maintenance + $legal;
+	$total = $base_cost + $gst + $infrastructure + $corpus_deposit + /*$maintenance +*/ $legal;
 
 	if ( (! is_array($amoeba) ) && $amoeba == -1) {
 		return $total;
@@ -76,7 +76,7 @@ function calculate_total($selected_apt_floor, $area_sq_ft, $car_parking, $amoeba
 													// '#gst' => commafy( $gst ),
 													'#infrastructure' => commafy($infrastructure),
 													'#corpus_deposit' => commafy($corpus_deposit),
-													'#maintenance' => commafy($maintenance),
+													// '#maintenance' => commafy($maintenance),
 													'#legal' => commafy($legal),
 													'#your_price' => commafy($total),
 													'#registration' => commafy($registration),

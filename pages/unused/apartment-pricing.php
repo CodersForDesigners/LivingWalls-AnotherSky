@@ -538,7 +538,7 @@
 				<div class="breakup-section block">
 					<div class="breakup block clearfix"><span>Infrastructure Charges</span> <span id="infrastructure" class="fl-right">₹ 00,000,00</span></div>
 					<div class="breakup block clearfix"><span>Corpus Deposit</span> <span id="corpus_deposit" class="fl-right">₹ 00,000,00</span></div>
-					<div class="breakup block clearfix"><span>Maintenance Fee (1 Year)</span> <span id="maintenance" class="fl-right">₹ 00,000,00</span></div>
+					<!-- <div class="breakup block clearfix"><span>Maintenance Fee (1 Year)</span> <span id="maintenance" class="fl-right">₹ 00,000,00</span></div> -->
 					<div class="breakup block clearfix"><span>Legal Charges</span> <span id="legal" class="fl-right">₹ 00,000,00</span></div>
 				</div>
 				<hr>
