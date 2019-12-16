@@ -440,7 +440,7 @@
 			<div class="block aligncenter pricing-title">
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong>
 				Apartments</span>
-				<span class="h4-text block">₹ 1.9cr to 2.9cr</span>
+				<span class="h4-text block">₹ 1.98cr to 2.8cr</span>
 				<a href="#apartment-pricing" target="_blank" class="button block pricing-page aligncenter show-for-mobile" style="margin: 0 auto 50px">Choose Your Apartment</a>
 			</div>
 
@@ -1464,7 +1464,7 @@
 			<div class="block aligncenter pricing-title">
 				<span class="h2-text block"><strong>3 &amp; 4 Bedroom</strong>
 				Apartments</span>
-				<span class="h4-text block">₹ 1.9cr to 2.9cr</span>
+				<span class="h4-text block">₹ 1.98cr to 2.8cr</span>
 				<a href="#apartment-pricing" target="_blank" class="button block pricing-page aligncenter show-for-mobile" style="margin: 0 auto 50px">Choose Your Apartment</a>
 			</div>
 
