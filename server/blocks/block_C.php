@@ -3,16 +3,16 @@
 // require_once "../server/details_constants.php";
 require_once __DIR__ . "/../details_constants.php";
 
-$apartmentC002 = array(
-					'apt_number' => 'C002',
-					'apt_area' => '2919',
-					'apt_floor' => '0',
-					'apt_type' => '1A',
-					'apt_price' => calculate_total(0, 2919, 350000, -1),
-					'apt_size'	=> '3BHK+',
-					'apt_blocking' => '0',
-					// 'apt_pg_ho_ef' => '1-1-1',
-					);
+// $apartmentC002 = array(
+// 					'apt_number' => 'C002',
+// 					'apt_area' => '2919',
+// 					'apt_floor' => '0',
+// 					'apt_type' => '1A',
+// 					'apt_price' => calculate_total(0, 2919, 350000, -1),
+// 					'apt_size'	=> '3BHK+',
+// 					'apt_blocking' => '0',
+// 					// 'apt_pg_ho_ef' => '1-1-1',
+// 					);
 
 // $apartmentC012 = array(
 // 					'apt_number' => 'C012',
@@ -145,16 +145,16 @@ $apartmentC061 = array(
 					// 'apt_pg_ho_ef' => '0-0-0',
 					);
 
-$apartmentC121 = array(
-					'apt_number' => 'C121',
-					'apt_area' => '2494',
-					'apt_floor' => '12',
-					'apt_type' => '11',
-					'apt_price' => calculate_total(12, 2494, 350000, -1),
-					'apt_size'	=> '3BHK',
-					'apt_blocking' => '0',
-					// 'apt_pg_ho_ef' => '0-0-0',
-					);
+// $apartmentC121 = array(
+// 					'apt_number' => 'C121',
+// 					'apt_area' => '2494',
+// 					'apt_floor' => '12',
+// 					'apt_type' => '11',
+// 					'apt_price' => calculate_total(12, 2494, 350000, -1),
+// 					'apt_size'	=> '3BHK',
+// 					'apt_blocking' => '0',
+// 					// 'apt_pg_ho_ef' => '0-0-0',
+// 					);
 
 // $apartmentC151 = array(
 // 					'apt_number' => 'C151',
@@ -174,7 +174,7 @@ $BHK3_C = array (
 						$apartmentC031,
 						$apartmentC061,
 						// $apartmentC111,
-						$apartmentC121,
+						// $apartmentC121,
 						// $apartmentC151,
 					);
 
@@ -185,12 +185,12 @@ $BHK3_C_pdf = array (
 						'C031' => $apartmentC031,
 						'C061' => $apartmentC061,
 						// 'C111' => $apartmentC111,
-						'C121' => $apartmentC121,
+						// 'C121' => $apartmentC121,
 						// 'C151' => $apartmentC151,
 					);
 
 $BHK3P_C = array (
-						$apartmentC002,
+						// $apartmentC002,
 						// $apartmentC012,
 						$apartmentC022,
 						// $apartmentC072,
@@ -201,7 +201,7 @@ $BHK3P_C = array (
 
 
 $BHK3P_C_pdf = array (
-						'C002' => $apartmentC002,
+						// 'C002' => $apartmentC002,
 						// 'C012' => $apartmentC012,
 						'C022' => $apartmentC022,
 						// 'C072' => $apartmentC072,
