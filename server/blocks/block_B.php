@@ -101,16 +101,16 @@ require_once __DIR__ . "/../details_constants.php";
 //					'apt_pg_ho_ef' => '0-1-1',
 // 					);
 
-$apartmentB021 = array(
-					'apt_number' => 'B021',
-					'apt_area' => '2261',
-					'apt_floor' => '2',
-					'apt_type' => '7',
-					'apt_price' => calculate_total(2, 2261, 350000, -1),
-					'apt_size'	=> '3BHK',
-					'apt_blocking' => '0',
-					// 'apt_pg_ho_ef' => '0-0-0',
-					);
+// $apartmentB021 = array(
+// 					'apt_number' => 'B021',
+// 					'apt_area' => '2261',
+// 					'apt_floor' => '2',
+// 					'apt_type' => '7',
+// 					'apt_price' => calculate_total(2, 2261, 350000, -1),
+// 					'apt_size'	=> '3BHK',
+// 					'apt_blocking' => '0',
+// 					// 'apt_pg_ho_ef' => '0-0-0',
+// 					);
 
 // $apartmentB051 = array(
 // 					'apt_number' => 'B051',
@@ -156,7 +156,7 @@ $apartmentB151 = array(
 					);
 
 $BHK3_B = array (
-						$apartmentB021,
+						// $apartmentB021,
 						// $apartmentB051,
 						// $apartmentB071,
 						// $apartmentB131,
@@ -164,7 +164,7 @@ $BHK3_B = array (
 					);
 
 $BHK3_B_pdf = array (
-						'B021' => $apartmentB021,
+						// 'B021' => $apartmentB021,
 						// 'B051' => $apartmentB051,
 						// 'B071' => $apartmentB071,
 						// 'B131' => $apartmentB131,
