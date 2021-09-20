@@ -9,16 +9,16 @@
 require_once __DIR__ . "/../details_constants.php";
 
 // 4BHK section
-// $apartmentA041 = array(
-// 					'apt_number' => 'A041',
-// 					'apt_area' => '3178',
-// 					'apt_floor' => '4',
-// 					'apt_type' => '16',
-// 					'apt_price' => calculate_total(4, 3178, 350000, -1),
-// 					'apt_size'	=> '4BHK',
-// 					'apt_blocking' => '1',
-// 					// 'apt_pg_ho_ef' => '0-1-1',
-// 					);
+$apartmentA041 = array(
+					'apt_number' => 'A041',
+					'apt_area' => '3178',
+					'apt_floor' => '4',
+					'apt_type' => '16',
+					'apt_price' => calculate_total(4, 3178, 350000, -1),
+					'apt_size'	=> '4BHK',
+					'apt_blocking' => '1',
+					// 'apt_pg_ho_ef' => '0-1-1',
+					);
 
 // $apartmentA101 = array(
 // 					'apt_number' => 'A101',
@@ -117,7 +117,7 @@ $apartmentA061 = array(
 // 					);
 
 $BHK4 = array(
-				  // $apartmentA041,
+				  $apartmentA041,
 				  // $apartmentA101,
 				  // $apartmentA111,
 				  // $apartmentA161,
@@ -129,7 +129,7 @@ $BHK4 = array(
 		  	);
 
 $BHK4_pdf = array(
-				  // 'A041' => $apartmentA041,
+				  'A041' => $apartmentA041,
 				  // 'A101' => $apartmentA101,
 				  // 'A111' => $apartmentA111,
 				  // 'A161' => $apartmentA161,
