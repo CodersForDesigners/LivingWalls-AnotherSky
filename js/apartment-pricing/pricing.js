@@ -519,9 +519,6 @@ $(document).ready( function() {
 		// print_list();
 		$( "#js_find_apartments" ).trigger( "click" );
 	});
-	setTimeout( function () {
-		$(".js_apt_type_selector:first").trigger('click');
-	}, 1000 );
 
 	/* -----
 		{ E2 }

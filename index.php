@@ -6,7 +6,7 @@
 	ini_set( "error_reporting", E_ALL );
 
 	// Version number
-	$version = 'v=20210913';
+	$version = 'v=20190409';
 
 	// pull in Lazaro disclaimer and footer
 	require 'inc/lazaro.php';
