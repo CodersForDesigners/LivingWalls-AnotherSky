@@ -25,16 +25,16 @@ require_once __DIR__ . "/../details_constants.php";
 // 					// 'apt_pg_ho_ef' => '0-1-1',
 // 					);
 
-// $apartmentC022 = array(
-// 					'apt_number' => 'C022',
-// 					'apt_area' => '2600',
-// 					'apt_floor' => '2',
-// 					'apt_type' => '5',
-// 					'apt_price' => calculate_total(2, 2600, 350000, -1),
-// 					'apt_size'	=> '3BHK+',
-// 					'apt_blocking' => '0',
-// 					// 'apt_pg_ho_ef' => '0-1-1',
-// 					);
+$apartmentC022 = array(
+					'apt_number' => 'C022',
+					'apt_area' => '2600',
+					'apt_floor' => '2',
+					'apt_type' => '5',
+					'apt_price' => calculate_total(2, 2600, 350000, -1),
+					'apt_size'	=> '3BHK+',
+					'apt_blocking' => '0',
+					// 'apt_pg_ho_ef' => '0-1-1',
+					);
 
 $apartmentC072 = array(
 					'apt_number' => 'C072',
@@ -192,7 +192,7 @@ $BHK3_C_pdf = array (
 $BHK3P_C = array (
 						// $apartmentC002,
 						// $apartmentC012,
-						// $apartmentC022,
+						$apartmentC022,
 						// $apartmentC072,
 						// $apartmentC082,
 						// $apartmentC032,
@@ -203,7 +203,7 @@ $BHK3P_C = array (
 $BHK3P_C_pdf = array (
 						// 'C002' => $apartmentC002,
 						// 'C012' => $apartmentC012,
-						// 'C022' => $apartmentC022,
+						'C022' => $apartmentC022,
 						// 'C072' => $apartmentC072,
 						// 'C082' => $apartmentC082,
 						// 'C032' => $apartmentC032,
