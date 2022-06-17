@@ -36,6 +36,9 @@
 .menu.sticky {
 	position: fixed;
 }
+.menu:not(.sticky) {
+	background-color: rgba( 0, 0, 0, 0.5 );
+}
 
 .menu .section-row {
 	padding: 0;
