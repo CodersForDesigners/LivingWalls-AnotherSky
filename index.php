@@ -410,11 +410,11 @@
 			</picture>
 		</div>
 		<div class="logo block aligncenter">
-			<a href="/"><img src="media/images/logo.svg"></a>
+			<a href="https://livingwalls.in/"><img src="media/images/LW_Logos_2022_lw-AS-small-light.svg"></a>
 		</div>
 		<div class="header-nav">
 			<div class="logo-landscape inline-middle">
-				<a href="/"><img src="media/images/logo-landscape.svg"></a>
+				<a href="https://livingwalls.in/" style="padding: 10px"><img src="media/images/LW_Logos_2022_lw-AS-large-light.svg"></a>
 			</div>
 			<!-- <div class="phone-number inline-middle">
 				<a href="tel:+919663396979" class="call h3-text">+91 96633 96979</a>
@@ -1589,7 +1589,7 @@
 	<div id="contact" class="section-row addresses-section clearfix">
 		<div class="section-content clearfix">
 			<div class="address-logo inline-top">
-				<img class="fl-left" src="media/images/logo.svg">
+				<img class="fl-left" src="media/images/LW_Logos_2022_lw-AS-small-light.svg">
 			</div>
 
 			<div class="address-content inline-top">

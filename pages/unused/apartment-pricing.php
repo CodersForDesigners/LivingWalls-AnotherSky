@@ -140,7 +140,7 @@
 	<div class="header-nav">
 		<div class="section-row">
 			<div class="logo-landscape inline-middle">
-				<a href="/"><img src="media/images/logo-landscape.svg?v=2.3"></a>
+				<a href="https://livingwalls.in/"><img src="media/images/LW_Logos_2022_lw-AS-large-light.svg?v=2.3"></a>
 			</div>
 			<div class="phone-number inline-middle">
 				<a href="tel:+919663396979" class="call h3-text">+91 96633 96979</a>
@@ -154,7 +154,7 @@
 		<div class="section-content clearfix">
 			<!-- Logo -->
 			<div class="p-logo block aligncenter">
-				<a href="/"><img src="media/images/logo.svg?v=2.1"></a>
+				<a href="/"><img src="media/images/archive/logo.svg?v=2.1"></a>
 			</div>
 			<!-- Select Apartment Size -->
 			<div class="block apt-sizes-title aligncenter">

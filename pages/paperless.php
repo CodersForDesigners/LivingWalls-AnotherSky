@@ -44,7 +44,7 @@
 <div class="document" id="js-document">
 
 	<figure class="container--logo">
-		<img src="media/images/logo.svg">
+		<img src="media/images/archive/logo.svg">
 	</figure>
 
 	<h1 class="h1 align--center text--uc">Paperless Form Entry</h1>
