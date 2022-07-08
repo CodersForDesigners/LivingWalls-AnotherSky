@@ -45,6 +45,9 @@
 	<!-- Base URL -->
 	<base href="<?php echo $baseURL ?>">
 
+	<!-- Preloads -->
+	<link rel="preload" href="media/images/icon-controls/left-arrow.svg" as="image" type="image/svg+xml">
+
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -396,6 +399,10 @@
 	<div class="menu js_nav_menu">
 		<div class="section-row clearfix">
 			<a class="hamburger button black inline js_modal_trigger" href="#" data-modal-trigger="content-navigation">Menu<!-- <img src="media/images/select-arrow.svg"> -->
+			</a>
+			<a class="nav-back" href="https://livingwalls.in">
+				<img src="media/images/icon-controls/left-arrow.svg">
+				<span>Back</span>
 			</a>
 		</div>
 	</div>
