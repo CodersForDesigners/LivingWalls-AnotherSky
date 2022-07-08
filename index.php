@@ -31,9 +31,8 @@
 
 	<!-- Page Meta -->
 	<meta charset="utf-8">
-	<title>OFFICIAL LivingWalls | Ready to Occupy Apartments on the Outer Ring Road</title>
-	<meta name="description"
-		content="We went about designing Another Sky with a focus on the resident's comfort. 3BHK and 4BHK Apartments Designed to Just Work. Obscenely Awesome Apartments on the Outer Ring Road.">
+	<title>3 & 4 BHK Apartments in Horamavu | Another Sky | LivingWalls</title>
+	<meta name="description" content="3 & 4 BHK Apartments in Horamavu. Obscenely Awesome Apartments with Personal party spaces, Sheltered Balconies and Vertical Gardens.">
 	<meta name="keywords" content="Apartments, 3BHK, 4BHK, Bangalore, Ring Road">
 	<meta name="author" content="Lazaro Advertising Pvt. Ltd.">
 	<link rel="canonical" href="https://livingwalls.in/">
@@ -68,7 +67,7 @@
 	<meta name="theme-color" content="#444444">
 
 	<!-- Open Graph Name Space -->
-	<meta property="og:title" content="Another Sky | LivingWalls | Ready to Occupy Apartments on the Outer Ring Road">
+	<meta property="og:title" content="3 & 4 BHK Apartments in Horamavu | Another Sky | LivingWalls">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://livingwalls.in/another-sky/">
 	<meta property="og:description" content="We went about designing Another Sky with a focus on the resident's comfort. 3BHK and 4BHK Apartments Designed to Just Work. Obscenely Awesome Apartments on the Outer Ring Road.">
